@@ -1,6 +1,6 @@
 ---
 title: "ZRA Item Sync Implementation Plan"
-description: "For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this..."
+description: "Register each inventory item with ZRA Smart Invoice on create and update, mirroring the customer sync architecture."
 ---
 
 **Goal:** Register each inventory item with ZRA Smart Invoice via `POST /items/saveItem` when created or updated, with a fire-and-forget pattern that mirrors the existing customer-sync architecture. The frontend item form gets dropdowns and required ZRA fields backed by the existing reference-data endpoints.

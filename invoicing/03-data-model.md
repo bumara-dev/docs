@@ -1,5 +1,6 @@
 ---
 title: "Invoicing Module — Data Model"
+description: "Entity relationships and core table definitions behind invoices, customers, vendors, payments, and credit notes."
 ---
 
 ## Entity Relationship Diagram

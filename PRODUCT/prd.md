@@ -1,13 +1,13 @@
 ---
 title: "Bumara ERP - Product Requirements Document"
-description: "Version: 1.3 Status: Draft Last Updated: October 2, 2025 Author: Nsangu Phiri Reviewers: [Team members - add after review]"
+description: "Product requirements for Bumara, a compliance-first business operating system for Zambian and wider African SMEs."
 ---
 
 **Version:** 1.3  
 **Status:** Draft  
 **Last Updated:** October 2, 2025  
 **Author:** Nsangu Phiri  
-**Reviewers:** [Team members - add after review]
+**Reviewers:** _Pending review_
 
 ---
 

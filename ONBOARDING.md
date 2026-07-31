@@ -70,14 +70,14 @@ Welcome to the team! This guide will help you get up to speed.
 
 ## Team Structure
 
-**CTO (NSANGU):**
+**CTO:**
 
 - Product decisions
 - Technical decisions
 - Code reviews
 - Unblocking
 
-**Senior Developer (RAY):**
+**Senior Developer:**
 
 - Code reviews
 - Unblocking
@@ -179,83 +179,91 @@ git checkout -b feature/123-add-product-list
 
 ### 3. Code
 
-## Before you start
+**Before you start:**
 
-Read the user story
-Check acceptance criteria
-Ask questions if unclear
+- Read the user story
+- Check acceptance criteria
+- Ask questions if unclear
 
-While coding:
+**While coding:**
 
-Write clean, readable code
-Add comments for complex logic
-Write tests
-Test manually
-Commit often
+- Write clean, readable code
+- Add comments for complex logic
+- Write tests
+- Test manually
+- Commit often
 
 ### 6. Code Review
 
-What happens:
+**What happens:**
 
-Another dev reviews your code
-They leave comments
-You discuss and make changes
-They approve
-You merge
+- Another dev reviews your code
+- They leave comments
+- You discuss and make changes
+- They approve
+- You merge
 
-As a reviewer:
+**As a reviewer:**
 
-Be kind and constructive
-Ask questions
-Suggest improvements
-Approve if looks good
+- Be kind and constructive
+- Ask questions
+- Suggest improvements
+- Approve if looks good
 
-As an author:
+**As an author:**
 
-Respond to all comments
-Make requested changes
-Explain your decisions
-Don't take it personally
+- Respond to all comments
+- Make requested changes
+- Explain your decisions
+- Don't take it personally
 
-Review within 4 hours - keep things moving!
+**Review within 4 hours - keep things moving!**
 
 ### 7. Merge & Deploy
 
 After approval:
-bash# Merge to main
+
+```bash
+# Merge to main
 
 # GitHub Actions will deploy to staging automatically
+```
 
-Check staging: Make sure it works
-Move issue to "Done"
+- Check staging: Make sure it works
+- Move issue to "Done"
 
-Code Standards
-TypeScript
+---
 
-Use TypeScript strict mode
-No any types (use unknown if needed)
-Define interfaces for data structures
-Use type guards
+## Code Standards
 
-### Resources
+### TypeScript
 
-Documentation
+- Use TypeScript strict mode
+- No `any` types (use `unknown` if needed)
+- Define interfaces for data structures
+- Use type guards
 
-Product: docs/PRODUCT/
-Architecture: docs/ARCHITECTURE/
-This guide: docs/ONBOARDING.md
+---
 
-External Docs
+## Resources
 
-Next.js Docs
-Hono Docs
-Clerk Docs
-Drizzle Docs
-Tailwind Docs (if using)
+### Documentation
 
-Communication
+- Product: `docs/PRODUCT/`
+- Architecture: `docs/ARCHITECTURE/`
+- This guide: `docs/ONBOARDING.md`
 
-Daily questions: #dev-team channel on Teams
-Urgent help: DM @[CTO name]
-Ideas/suggestions: #product-ideas channel
-Bugs: Create GitHub issue
+### External Docs
+
+- Next.js Docs
+- Hono Docs
+- Clerk Docs
+- Drizzle Docs
+- Tailwind Docs (if using)
+
+### Communication
+
+- Daily questions: #dev-team channel on Teams
+- Urgent help: DM the CTO on Teams
+- Ideas/suggestions: #product-ideas channel
+- Bugs: Create GitHub issue

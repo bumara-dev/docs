@@ -1,6 +1,6 @@
 ---
 title: "Form 3 Pre-fill Feature — Developer Implementation Guide"
-description: "Subtitle: Bumara Compliance Platform | PACRA Service Request Module Version: 3.0.0 Status: Draft — Pending Technical Review Date: 2026-03-05"
+description: "Developer implementation guide for the PACRA Form 3 prefill feature: stack and wiring, document generation, the wizard, and API handlers."
 ---
 
 **Subtitle:** Bumara Compliance Platform | PACRA Service Request Module
@@ -133,6 +133,7 @@ Never write `fs.readFileSync` in any code example.
 app.get('/path', ...middleware, async (c) => {
   return c.json({ data }, 200)
 })
+```
 
 **CONSTRAINT 3 — Neon serverless DB connection.**
 

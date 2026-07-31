@@ -1,9 +1,8 @@
 ---
 title: "Bumara User Personas"
-description: "Last Updated: [Today's date] Author: Nsangu Phiri"
+description: "The user personas behind Bumara product decisions, starting with the hands-on SME business owner."
 ---
 
-**Last Updated:** [Today's date]  
 **Author:** Nsangu Phiri
 
 ---

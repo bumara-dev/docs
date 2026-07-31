@@ -1,6 +1,6 @@
 ---
 title: "PACRA Company Registration — Codebase Scan Findings"
-description: "Scan Date: 2026-01-12 Purpose: Document existing infrastructure for PACRA Company Registration before implementation"
+description: "Codebase scan of the infrastructure behind PACRA company registration: endpoints, templates, tenant UI, documents, and progress model."
 ---
 
 ## 0.1 Backend Endpoints and Schemas

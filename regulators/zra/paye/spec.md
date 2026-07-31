@@ -1,6 +1,6 @@
 ---
 title: "ZRA PAYE Specification"
-description: "Module: Compliance → ZRA → PAYE Last Updated: 2026-01-24"
+description: "Specification for ZRA PAYE: template configuration, core concepts, API endpoints, and the underlying data model."
 ---
 
 ## Overview

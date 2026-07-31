@@ -1,6 +1,6 @@
 ---
 title: "Service Request System Architecture"
-description: "This document describes the architecture for handling service request creation in the backoffice catalog, rules engine, and how to easily add new..."
+description: "The layered architecture behind service request creation — catalog, rules engine, handlers — and how to add a new regulator service."
 ---
 
 ## Overview

@@ -1,6 +1,6 @@
 ---
 title: "Service Request Handler Pattern"
-description: "The Service Request Handler Pattern provides a plugin-based system for adding regulator-specific custom logic to service request creation. This allows..."
+description: "A plugin pattern that lets most service requests work from template configuration alone, with custom handlers as the escape hatch."
 ---
 
 ## Overview

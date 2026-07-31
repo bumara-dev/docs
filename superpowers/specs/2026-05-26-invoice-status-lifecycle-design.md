@@ -1,6 +1,6 @@
 ---
 title: "Invoice Status Lifecycle Refactor"
-description: "Date: 2026-05-26 Status: Approved"
+description: "Design: split the conflated invoice status enum into separate document and payment status columns with explicit transition rules."
 ---
 
 **Date:** 2026-05-26

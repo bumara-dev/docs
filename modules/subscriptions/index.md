@@ -1,6 +1,6 @@
 ---
 title: "Subscriptions & Pricing Module"
-description: "This module implements comprehensive pricing plans, feature gates, and usage tracking for Bumara. It enables subscription-based access control with..."
+description: "Pricing plans, feature gates, and usage tracking — subscription-based access control with per-feature limits and Stripe billing."
 ---
 
 This module implements comprehensive pricing plans, feature gates, and usage tracking for Bumara. It enables subscription-based access control with per-feature limits and Stripe integration for billing.

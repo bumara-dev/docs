@@ -1,6 +1,6 @@
 ---
 title: "ZRA Item Sync (Inventory → ZRA Smart Invoice) — Design"
-description: "Date: 2026-06-11 Status: Approved Owner: Invoicing domain"
+description: "Design: best-effort registration of each inventory item with ZRA Smart Invoice, mirroring the customer sync architecture."
 ---
 
 **Date:** 2026-06-11

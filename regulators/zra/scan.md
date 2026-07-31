@@ -1,6 +1,6 @@
 ---
 title: "ZRA MVP Implementation — Codebase Scan"
-description: "Scan Date: 2026-01-15 Goal: Document existing architecture to inform ZRA MVP implementation"
+description: "Codebase scan of the architecture informing the ZRA MVP: the PACRA activation engine, templates, schema and enums, and tenant UI patterns."
 ---
 
 ## 1. PACRA Activation Engine Reference

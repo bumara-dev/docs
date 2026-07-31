@@ -1,6 +1,6 @@
 ---
 title: "ZRA Customer Sync Implementation Plan"
-description: "For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this..."
+description: "Register each customer with ZRA on create and update, using best-effort semantics so customer mutations never fail because of a ZRA outage."
 ---
 
 **Goal:** Automatically register each customer with ZRA via `POST /branches/saveBrancheCustomers` when the customer is created or updated, with best-effort failure semantics so customer mutations never fail because of a ZRA outage.

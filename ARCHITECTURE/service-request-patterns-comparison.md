@@ -1,6 +1,6 @@
 ---
 title: "Service Request System Design Patterns - Comparison"
-description: "This document compares different architectural patterns for managing service requests across multiple regulators, evaluating their trade-offs for the..."
+description: "A side-by-side comparison of architectural patterns for managing service requests across regulators, and the trade-offs of each."
 ---
 
 This document compares different architectural patterns for managing service requests across multiple regulators, evaluating their trade-offs for the Bumara platform.

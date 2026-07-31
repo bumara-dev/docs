@@ -1,6 +1,6 @@
 ---
 title: "Invoice Status Lifecycle Refactor — Implementation Plan"
-description: "For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this..."
+description: "Split the invoice status enum into separate document and payment statuses, move side effects to an explicit approval step, and guard immutability for ZRA-transmitted invoices."
 ---
 
 **Goal:** Split the invoice status enum into document status (`draft`/`approved`/`fulfilled`/`cancelled`) and payment status (`unpaid`/`partial`/`paid`), move side effects to an explicit approval step, and guard immutability for ZRA-transmitted invoices.

@@ -1,6 +1,6 @@
 ---
 title: "Payroll Module — User Guide"
-description: "The Payroll module handles everything related to paying your employees: setting up compensation structures, tracking attendance, calculating salaries..."
+description: "Set up compensation, track attendance, calculate Zambian statutory deductions, generate payslips, and file regulatory returns."
 ---
 
 ## What This Module Does

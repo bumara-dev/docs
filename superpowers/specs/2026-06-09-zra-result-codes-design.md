@@ -1,6 +1,6 @@
 ---
 title: "ZRA Result Codes — Design"
-description: "Date: 2026-06-09 Status: Approved Owner: Invoicing domain"
+description: "Design: replace binary ZRA result handling with a three-category typed code catalog, persisted on every transmission and sync record."
 ---
 
 **Date:** 2026-06-09

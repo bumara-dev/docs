@@ -1,6 +1,6 @@
 ---
 title: "Step 5: Request Submission Implementation"
-description: "Date: January 8, 2026 Status: Complete Module: Submission Request Flow"
+description: "The Request Submission feature that lets tenants ask Bumara to submit filings and service requests, with its gate rules and endpoints."
 ---
 
 ## Overview

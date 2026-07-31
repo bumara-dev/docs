@@ -1,6 +1,6 @@
 ---
 title: "ZRA Customer Sync — Queue-Backed Implementation Plan"
-description: "For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this..."
+description: "Move ZRA customer sync onto a dedicated Cloudflare Queue with built-in retries and a dead-letter queue, replacing the in-request waitUntil call."
 ---
 
 **Goal:** Replace `c.executionCtx.waitUntil(syncCustomerToZra(...))` in `createCustomerHandler` and `updateCustomerHandler` with a fire-and-forget enqueue onto a dedicated Cloudflare Queue (`zra-customer-sync`), processed by `api-jobs` on its own fresh DB connection with built-in retries and a DLQ. Adds a centralized `runAfterResponse(c, promise, label?)` helper.

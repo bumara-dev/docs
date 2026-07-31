@@ -1,6 +1,6 @@
 ---
 title: "PACRA Company Registration — Implementation Specification"
-description: "Version: 1.0.0 Last Updated: 2026-01-12"
+description: "Specification for the PACRA company registration wizard: routes, steps, step visibility, company types, and endpoint contracts."
 ---
 
 ## Overview

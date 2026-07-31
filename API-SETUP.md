@@ -1,6 +1,6 @@
 ---
 title: "API SETUP"
-description: "This guide walks you through configuring the API application (packages/backend) with a Neon PostgreSQL database (via Drizzle ORM), exposing local..."
+description: "Configure the Hono API worker with a Neon PostgreSQL database via Drizzle ORM, expose local webhooks with ngrok, and run the dev server."
 ---
 
 ## Bumara API Setup (Hono + Neon + ngrok)

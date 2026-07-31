@@ -1,6 +1,6 @@
 ---
 title: "ZRA Turnover Tax (TOT) Specification"
-description: "Module: Compliance → ZRA → Turnover Tax Last Updated: 2026-01-24"
+description: "Specification for ZRA Turnover Tax: template configuration, core concepts, the filing status lifecycle, and API endpoints."
 ---
 
 ## Overview

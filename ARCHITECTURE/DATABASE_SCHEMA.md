@@ -1,6 +1,6 @@
 ---
 title: "Bumara Database Architecture"
-description: "Bumara is a business compliance platform for Zambian businesses, designed to centralize and automate regulatory obligations across multiple government..."
+description: "The Bumara database schema, built around a regulator registry table rather than hardcoded regulator logic."
 ---
 
 ## Table of Contents

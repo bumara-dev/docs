@@ -1,6 +1,6 @@
 ---
 title: "Invoicing Module — User Guide"
-description: "The Invoicing module lets you manage your entire billing cycle: create quotes, send invoices, track payments, and stay compliant with Zambian tax..."
+description: "How to run your billing cycle in Bumara: quotes, invoices, payment tracking, and ZRA Smart Invoice compliance."
 ---
 
 ## What is this module?

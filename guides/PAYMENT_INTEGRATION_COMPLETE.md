@@ -1,6 +1,6 @@
 ---
 title: "Payment Integration - Complete Implementation Summary"
-description: "This document summarizes the complete payment flow integration for filings and service requests, including the mock payment gateway, modernized payment..."
+description: "Summary of the completed payment flow integration for filings and service requests, and what is still pending."
 ---
 
 ## Overview

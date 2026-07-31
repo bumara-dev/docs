@@ -1,6 +1,6 @@
 ---
 title: "Webhooks"
-description: "The payments module uses webhooks for asynchronous event handling. Events from payment providers are received at provider-specific endpoints in the..."
+description: "How provider webhooks are received, normalized to a common format, and processed by the payments event processor."
 ---
 
 ## Overview

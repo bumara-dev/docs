@@ -1,6 +1,6 @@
 ---
 title: "POS & Scanners"
-description: "This document covers the Point of Sale (POS) system and both scanner types — barcode and visual product recognition — across two inventory features..."
+description: "The POS system plus barcode and visual product recognition scanning, as used by Cash Sales and Stock Counts."
 ---
 
 This document covers the Point of Sale (POS) system and both scanner types — **barcode** and **visual product recognition** — across two inventory features: **Cash Sales** and **Stock Counts**.

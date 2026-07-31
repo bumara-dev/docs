@@ -1,5 +1,6 @@
 ---
 title: "Payroll Module — Diagrams"
+description: "System architecture and process flows for payroll runs, salary calculation, encryption, regulator integration, and PAYE filing."
 ---
 
 ## 1. System Architecture

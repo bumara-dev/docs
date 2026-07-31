@@ -1,6 +1,6 @@
 ---
 title: "Mock Payment Gateway - Implementation Summary"
-description: "✅ Status: Core implementation complete (Sprint 1) 🚀 What's working: End-to-end payment flow with mock gateway, auto-verification, and submission..."
+description: "What shipped in the mock payment gateway: checkout UI route, simulation endpoint, webhook auto-verification, and test coverage."
 ---
 
 ## What Was Implemented

@@ -1,6 +1,6 @@
 ---
 title: "PACRA Timeline - Codebase Scan Results"
-description: "Scan Date: January 2026 Purpose: Document existing event/audit infrastructure before implementing PACRA Timeline"
+description: "Codebase scan of existing event and audit infrastructure, the gaps found, and the recommended approach for the PACRA Timeline."
 ---
 
 ## 0.1 Existing Event Storage

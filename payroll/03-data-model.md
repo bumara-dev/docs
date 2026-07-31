@@ -1,5 +1,6 @@
 ---
 title: "Payroll Module — Data Model"
+description: "Entity relationships and table definitions for payroll settings, employees, compensation, statutory config, payslips, and loans."
 ---
 
 ## Entity Relationship Overview

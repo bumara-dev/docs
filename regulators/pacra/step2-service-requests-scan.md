@@ -1,6 +1,6 @@
 ---
 title: "PACRA Service Requests - Implementation Scan"
-description: "Scan Date: January 8, 2026 Purpose: Document existing service request infrastructure before implementing enhancements"
+description: "Codebase scan of the existing service request infrastructure - routes, schema, services, hooks, and seeded PACRA templates."
 ---
 
 ## 1. Tenant App Routes/Pages

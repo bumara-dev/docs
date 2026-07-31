@@ -1,6 +1,6 @@
 ---
 title: "ZRA Reference Data Sync Implementation Plan"
-description: "For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this..."
+description: "Pull and cache ZRA standard codes, item classifications, and notices into the database so ERP dropdowns match ZRA exactly, refreshed daily."
 ---
 
 **Goal:** Pull and cache ZRA's standard codes, item classifications, and notices into the database so ERP dropdowns match ZRA exactly, refreshed daily by the existing cron worker with a backoffice manual trigger.

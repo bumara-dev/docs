@@ -1,6 +1,6 @@
 ---
 title: "ZRA Result Codes Implementation Plan"
-description: "For agentic workers: REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this..."
+description: "Add a typed catalog of ZRA result codes classified as success, informational, or error, persisted on every transmission and sync record."
 ---
 
 **Goal:** Add a typed catalog of ZRA result codes with three-category classification (success / informational / error), enrich `ZraApiResponse` with the parsed code/message/date/category, and persist these on every transmission, sync log, and customer-sync record.

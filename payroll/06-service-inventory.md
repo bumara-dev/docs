@@ -1,5 +1,6 @@
 ---
 title: "Payroll Module — Service Inventory"
+description: "Every payroll service-layer function by slice, with its parameters, return type, and behavior."
 ---
 
 ## 1. Service Layer Functions

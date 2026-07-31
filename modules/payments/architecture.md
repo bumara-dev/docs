@@ -1,5 +1,6 @@
 ---
 title: "Payments Architecture"
+description: "Design principles and system architecture for payments: provider abstraction, idempotency, audit trail, and tenant isolation."
 ---
 
 ## Design Principles

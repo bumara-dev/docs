@@ -1,6 +1,6 @@
 ---
 title: "Invoicing Module — Technical Architecture"
-description: "The invoicing module is a full-stack, multi-tenant invoicing system built on a monorepo architecture. It handles the complete invoicing lifecycle —..."
+description: "The invoicing module's architecture: tech stack, package structure, multi-tenancy, request flow, and ZRA Smart Invoice compliance."
 ---
 
 ## System Overview

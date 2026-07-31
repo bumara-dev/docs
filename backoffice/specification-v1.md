@@ -1,6 +1,6 @@
 ---
 title: "Bumara Backoffice Specification"
-description: "Version: v1 (MVP → V1) Audience: Product, Engineering, Ops/Compliance, Finance Applies to: Backoffice (separate internal app), shared backend services..."
+description: "V1 specification for the Backoffice, the internal app Bumara staff use to deliver managed compliance services for tenant organizations."
 ---
 
 **Version:** v1 (MVP → V1)  

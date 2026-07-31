@@ -298,7 +298,7 @@
             "group": "Regulator work",
             "pages": [
               "guides/adding-new-service-request",
-              "form3-prefill-feature-developer-implementation-guide"
+              "guides/pacra-form-prefill-implementation"
             ]
           }
         ]
@@ -351,8 +351,7 @@
             "pages": [
               "backoffice/implementation-plan",
               "backoffice/specification-v1",
-              "invoicing/discussion",
-              "guides/pacra-form-prefill-implementation"
+              "invoicing/discussion"
             ]
           }
         ]

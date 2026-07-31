@@ -1,6 +1,6 @@
 ---
 title: "Bumara Inventory Module — Technical & Functional Documentation"
-description: "Version: 1.0 Date: February 9, 2026 Branch: feature/inventory Platform: Next.js 14+, TypeScript, Drizzle ORM, PostgreSQL"
+description: "The inventory module end to end: item tracking, multi-location stock, adjustments, transfers, and counts with a full audit trail."
 ---
 
 **Version:** 1.0

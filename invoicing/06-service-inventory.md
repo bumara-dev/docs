@@ -1,5 +1,6 @@
 ---
 title: "Invoicing Module — Service & Component Inventory"
+description: "Every backend service, function, and frontend component in the invoicing module, and what each one does."
 ---
 
 ## Backend Services

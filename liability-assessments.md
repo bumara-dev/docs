@@ -1,6 +1,6 @@
 ---
 title: "Liability Assessments — Comprehensive Reference"
-description: "A Liability Assessment is a structured compliance audit performed on behalf of an organization (tenant) across every statutory regulator to which that..."
+description: "How Bumara audits an organization's outstanding statutory obligations across every regulator it is registered with, and scores the result."
 ---
 
 ## Table of Contents

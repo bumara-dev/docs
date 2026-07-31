@@ -1,6 +1,6 @@
 ---
 title: "NAPSA Database Integration - Completion Guide"
-description: "This document outlines the completed NAPSA (National Pension Scheme Authority) database integration and provides the SQL seed data needed to register..."
+description: "The completed NAPSA database integration — Drizzle schema, relations, and the seed data that registers NAPSA as an active regulator."
 ---
 
 ## Overview

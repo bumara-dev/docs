@@ -1,6 +1,6 @@
 ---
 title: "ZRA Withholding Tax (WHT) Specification"
-description: "Module: Compliance → ZRA → Withholding Tax Last Updated: 2026-01-24"
+description: "Specification for ZRA Withholding Tax: template configuration, core concepts, the filing status lifecycle, and API endpoints."
 ---
 
 ## Overview

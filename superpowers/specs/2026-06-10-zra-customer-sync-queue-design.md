@@ -1,6 +1,6 @@
 ---
 title: "ZRA Customer Sync — Queue-Backed Design"
-description: "Date: 2026-06-10 Status: Approved, pending implementation plan Supersedes (partially): 2026-06-08-zra-customer-sync-design.md — Task 5 (waitUntil block..."
+description: "Design: move ZRA customer sync onto a Cloudflare Queue after waitUntil raced the database pool teardown and threw."
 ---
 
 **Date:** 2026-06-10

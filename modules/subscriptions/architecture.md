@@ -1,5 +1,6 @@
 ---
 title: "Subscriptions Architecture"
+description: "How the subscriptions module fits together — system overview, package structure, data flow, and key design decisions."
 ---
 
 ## System Overview

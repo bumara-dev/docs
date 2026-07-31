@@ -1,6 +1,6 @@
 ---
 title: "Payroll Module — API Reference"
-description: "All endpoints require authentication (requireAuth) and organization context (requireOrg). Base path: /payroll (api-payroll worker) and /paye..."
+description: "Every payroll and PAYE endpoint, with request bodies, response shapes, and the auth and organization context each one requires."
 ---
 
 All endpoints require authentication (`requireAuth`) and organization context (`requireOrg`).

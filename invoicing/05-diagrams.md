@@ -1,5 +1,6 @@
 ---
 title: "Invoicing Module — Diagrams"
+description: "Flow diagrams for the invoice lifecycle, quote conversion, payment allocation, ZRA transmission, and inventory integration."
 ---
 
 ## 1. Invoice Lifecycle Flow

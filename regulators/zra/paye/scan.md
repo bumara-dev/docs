@@ -1,6 +1,6 @@
 ---
 title: "ZRA PAYE End-to-End Implementation — Codebase Scan"
-description: "Scan Date: 2026-01-17 (Updated) Goal: Document existing ZRA PAYE infrastructure and gaps to implement end-to-end tenant data capture → backoffice..."
+description: "Codebase scan of the existing ZRA PAYE data model and the gaps to close for end-to-end tenant capture and backoffice handling."
 ---
 
 ## 0. Executive Summary

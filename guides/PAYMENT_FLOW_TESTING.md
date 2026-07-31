@@ -1,6 +1,6 @@
 ---
 title: "Payment Flow Testing Guide"
-description: "This guide walks through manual testing of the complete payment flow integration, including the mock payment gateway, payment modal UI, and..."
+description: "Manual test walkthrough for the end-to-end payment flow, covering the mock gateway, the payment modal, and auto-verification."
 ---
 
 ## Overview

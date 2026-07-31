@@ -1,6 +1,6 @@
 ---
 title: "Task System Overview"
-description: "The Bumara Task System provides a structured checklist framework for tracking work required on Filings and Service Requests. Tasks ensure that all..."
+description: "The task system: checklist items tied to Filings and Service Requests that gate submission to regulators."
 ---
 
 The Bumara Task System provides a structured checklist framework for tracking work required on **Filings** and **Service Requests**. Tasks ensure that all required steps are completed before submission to regulators.

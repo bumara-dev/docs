@@ -1,6 +1,6 @@
 ---
 title: "ZRA Reference Data Sync — Design"
-description: "Date: 2026-06-05 Status: Approved Owner: Invoicing domain"
+description: "Design: cache ZRA reference data — standard codes, item classifications, notices — so ERP dropdowns match ZRA, synced daily."
 ---
 
 **Date:** 2026-06-05

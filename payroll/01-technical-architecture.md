@@ -1,6 +1,6 @@
 ---
 title: "Payroll Module — Technical Architecture"
-description: "The Payroll module handles the complete employee compensation lifecycle: employee management, salary configuration, payroll execution, statutory..."
+description: "The payroll module's architecture: technology stack, package structure, multi-tenancy, PII encryption, and atomic payroll runs."
 ---
 
 ## 1. Overview

@@ -1,6 +1,6 @@
 ---
 title: "ZRA Customer Sync — Design"
-description: "Date: 2026-06-08 Status: Approved Owner: Invoicing domain"
+description: "Design: best-effort registration of each customer with ZRA on create and update, with sync status tracked on the customer row."
 ---
 
 **Date:** 2026-06-08

@@ -1,6 +1,6 @@
 ---
 title: "Bumara Multi-Worker Architecture"
-description: "This document provides comprehensive documentation on Bumara's multi-worker Cloudflare architecture, authentication system, Hono context patterns, and..."
+description: "Bumara's multi-worker Cloudflare architecture: worker layout, the authentication middleware chain, Hono context patterns, and deployment."
 ---
 
 This document provides comprehensive documentation on Bumara's multi-worker Cloudflare architecture, authentication system, Hono context patterns, and deployment procedures.

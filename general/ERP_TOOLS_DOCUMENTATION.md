@@ -1,6 +1,6 @@
 ---
 title: "ERP Tools — Detailed Feature Documentation"
-description: "The ERP Tools module is a collection of 10 standalone financial calculators and compliance tools designed specifically for the Zambian business..."
+description: "Ten standalone financial calculators and compliance tools for the Zambian business environment, covering tax, employment law, and planning."
 ---
 
 ## Table of Contents

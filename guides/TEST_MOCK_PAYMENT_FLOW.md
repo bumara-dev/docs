@@ -1,6 +1,6 @@
 ---
 title: "Testing Mock Payment Flow - Step-by-Step Guide"
-description: "✅ Environment configured for mock mode 📍 Location: packages/backend/.env - PAYMENTPROVIDER=mock - BASEURL=http://localhost:3000 - SKIPPAYMENTCHECKS..."
+description: "A step-by-step test scenario for a PACRA annual return payment against the mock gateway, from filing creation through checkout."
 ---
 
 ## Prerequisites

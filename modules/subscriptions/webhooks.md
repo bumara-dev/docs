@@ -1,6 +1,6 @@
 ---
 title: "Subscription Webhooks"
-description: "Payment webhooks handle Stripe events for subscription lifecycle management. The webhook processor normalizes events and routes them to appropriate..."
+description: "How Stripe events drive the subscription lifecycle, and how each event type is normalized and routed to its handler."
 ---
 
 ## Overview

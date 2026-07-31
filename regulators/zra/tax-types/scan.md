@@ -1,6 +1,6 @@
 ---
 title: "ZRA Tax Types - Repository Scan"
-description: "Scan Date: 2026-01-18 Purpose: Understand existing patterns for implementing ZRA Tax Type Registration + Configuration"
+description: "Codebase scan of the ZRA connection model, activation engine, and template patterns behind tax type registration and configuration."
 ---
 
 ## 1. ZRA Connection Model

@@ -1,6 +1,6 @@
 ---
 title: "ZRA Service Requests - Codebase Scan"
-description: "Scan Date: 2026-01-16 Purpose: Document existing PACRA patterns and ZRA infrastructure before implementing ZRA Service Requests"
+description: "Codebase scan of existing PACRA service request patterns and ZRA infrastructure to reuse when building ZRA service requests."
 ---
 
 ## 0.1 Existing PACRA Service Request Implementation

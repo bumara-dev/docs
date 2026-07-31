@@ -1,6 +1,6 @@
 ---
 title: "Task System Specification"
-description: "Version: 1.1 Last Updated: 2026-01-19"
+description: "The task specification — task types, the lifecycle state machine, transition rules, and UI action anchors."
 ---
 
 ## 1. What is a Task?

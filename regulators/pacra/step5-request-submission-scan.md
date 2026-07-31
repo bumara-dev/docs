@@ -1,6 +1,6 @@
 ---
 title: "Step 5: Request Submission - Pre-Implementation Scan"
-description: "Date: January 8, 2026 Status: Complete Purpose: Document existing entities and gaps before implementing Request Submission feature"
+description: "Codebase scan of existing submission entities, status enums, endpoints, and readiness gates ahead of the Request Submission build."
 ---
 
 ## 0.1 Existing Submission-Related Entities

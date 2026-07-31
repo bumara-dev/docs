@@ -1,6 +1,6 @@
 ---
 title: "ADR-0001: Documents Storage with S3 Presigned URLs"
-description: "Status: Accepted Date: 2025-12-31 Authors: Engineering Team Reviewers: CTO"
+description: "ADR: use AWS S3 with presigned URLs for both uploads and downloads in the Documents module."
 ---
 
 **Status:** Accepted  
