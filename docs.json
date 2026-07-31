@@ -1,72 +1,362 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Bumara",
+  "description": "Documentation for the Bumara compliance, payroll, invoicing, and inventory platform.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#007f7f",
+    "light": "#00b6b6",
+    "dark": "#007f7f"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "/"
+  },
+  "appearance": {
+    "default": "system"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/bumara-dev/bumara"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Get started",
+      "href": "/SETUP"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/bumara-dev/bumara"
     }
+  },
+  "search": {
+    "prompt": "Search the Bumara docs"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get started",
+            "pages": ["index", "SETUP", "API-SETUP", "ONBOARDING"]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "ARCHITECTURE/index",
+              "multi-worker-architecture",
+              "ARCHITECTURE/DATABASE_SCHEMA",
+              "ARCHITECTURE/service-request-system",
+              "ARCHITECTURE/service-request-handlers",
+              "ARCHITECTURE/service-request-patterns-comparison",
+              "ARCHITECTURE/regulator-payment-system",
+              "ARCHITECTURE/payment-gateway-simulation",
+              "ARCHITECTURE/NAPSA_INTEGRATION"
+            ]
+          },
+          {
+            "group": "Decisions",
+            "pages": ["adr/0001-documents-s3-presigned-urls"]
+          },
+          {
+            "group": "Product",
+            "pages": ["PRODUCT/prd", "PRODUCT/personas", "general/ERP_TOOLS_DOCUMENTATION"]
+          }
+        ]
+      },
+      {
+        "tab": "Apps",
+        "groups": [
+          {
+            "group": "Inventory",
+            "pages": [
+              "inventory/index",
+              "inventory/01-overview",
+              "inventory/02-architecture",
+              "inventory/03-data-model",
+              "inventory/04-api-spec",
+              "inventory/05-workflows",
+              "inventory/06-ui-ux",
+              "inventory/07-events-notifications",
+              "inventory/08-testing",
+              "inventory/09-rollout-migrations",
+              "inventory/10-pos-and-scanners",
+              "inventory/11-sales-expenses-and-insights",
+              "inventory/INVENTORY_DOCUMENTATION",
+              "inventory/inventory_additional_feature_doc",
+              "Inventory-spec"
+            ]
+          },
+          {
+            "group": "Invoicing",
+            "pages": [
+              "invoicing/01-technical-architecture",
+              "invoicing/02-api-reference",
+              "invoicing/03-data-model",
+              "invoicing/04-user-guide",
+              "invoicing/05-diagrams",
+              "invoicing/06-service-inventory",
+              "invoicing/07-zra-transmission-modes",
+              "invoicing/08-mining-export-invoices"
+            ]
+          },
+          {
+            "group": "Payroll",
+            "pages": [
+              "payroll/01-technical-architecture",
+              "payroll/02-api-reference",
+              "payroll/03-data-model",
+              "payroll/04-user-guide",
+              "payroll/05-diagrams",
+              "payroll/06-service-inventory"
+            ]
+          },
+          {
+            "group": "Compliance and tasks",
+            "pages": [
+              "platform/tasks/overview",
+              "platform/tasks/spec",
+              "platform/tasks/linking",
+              "platform/tasks/progress-and-readiness",
+              "liability-assessments"
+            ]
+          },
+          {
+            "group": "Backoffice",
+            "pages": [
+              "backoffice/index",
+              "backoffice/architecture",
+              "backoffice/specification",
+              "backoffice/admin",
+              "backoffice/authentication-system",
+              "backoffice/cases-system-overview",
+              "backoffice/case-number-generation",
+              "backoffice/case-numbers-quick-start"
+            ]
+          },
+          {
+            "group": "Backoffice modules",
+            "pages": [
+              "backoffice/modules/directory",
+              "backoffice/modules/documents",
+              "backoffice/modules/finance",
+              "backoffice/modules/operations"
+            ]
+          },
+          {
+            "group": "Backoffice auth",
+            "pages": [
+              "backoffice/backoffice-auth/index",
+              "backoffice/backoffice-auth/architecture",
+              "backoffice/backoffice-auth/authentication-flow",
+              "backoffice/backoffice-auth/authorization",
+              "backoffice/backoffice-auth/environment-setup",
+              "backoffice/backoffice-auth/development-guide",
+              "backoffice/backoffice-auth/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Platform modules",
+        "groups": [
+          {
+            "group": "Documents",
+            "pages": [
+              "modules/documents/index",
+              "modules/documents/backend",
+              "modules/documents/api",
+              "modules/documents/data-model",
+              "modules/documents/s3-storage",
+              "modules/documents/security-permissions",
+              "modules/documents/runbook"
+            ]
+          },
+          {
+            "group": "Notifications",
+            "pages": [
+              "modules/notifications/index",
+              "modules/notifications/api",
+              "modules/notifications/data-model",
+              "modules/notifications/events-catalog",
+              "modules/notifications/routing",
+              "modules/notifications/adapters",
+              "modules/notifications/scheduler",
+              "modules/notifications/workers",
+              "modules/notifications/webhooks",
+              "modules/notifications/ui",
+              "modules/notifications/provider-setup",
+              "modules/notifications/security-permissions",
+              "modules/notifications/runbook"
+            ]
+          },
+          {
+            "group": "Payments",
+            "pages": [
+              "modules/payments/index",
+              "modules/payments/architecture",
+              "modules/payments/api",
+              "modules/payments/data-model",
+              "modules/payments/fee-calculators",
+              "modules/payments/webhooks",
+              "modules/payments/configuration",
+              "modules/payments/testing",
+              "modules/payments/runbook"
+            ]
+          },
+          {
+            "group": "Subscriptions",
+            "pages": [
+              "modules/subscriptions/index",
+              "modules/subscriptions/architecture",
+              "modules/subscriptions/api",
+              "modules/subscriptions/data-model",
+              "modules/subscriptions/enforcement",
+              "modules/subscriptions/configuration",
+              "modules/subscriptions/frontend",
+              "modules/subscriptions/webhooks",
+              "modules/subscriptions/runbook"
+            ]
+          },
+          {
+            "group": "Tasks",
+            "pages": [
+              "modules/tasks/index",
+              "modules/tasks/api",
+              "modules/tasks/data-model",
+              "modules/tasks/ui-flows",
+              "modules/tasks/jobs-notifications",
+              "modules/tasks/security-permissions",
+              "modules/tasks/runbook"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Regulators",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["regulators/pacra/overview", "regulators/template-system"]
+          },
+          {
+            "group": "PACRA",
+            "pages": [
+              "regulators/pacra/spec",
+              "regulators/pacra/workspace",
+              "regulators/pacra/tasks-page",
+              "regulators/pacra/authorization-requirements",
+              "regulators/pacra/step1-filing-detail",
+              "regulators/pacra/step2-service-requests",
+              "regulators/pacra/step4-timeline",
+              "regulators/pacra/step5-request-submission"
+            ]
+          },
+          {
+            "group": "PACRA services",
+            "pages": [
+              "regulators/pacra/company-registration/spec",
+              "regulators/pacra/name-clearance/spec",
+              "regulators/pacra/name-services/spec"
+            ]
+          },
+          {
+            "group": "ZRA",
+            "pages": [
+              "regulators/zra/paye/spec",
+              "regulators/zra/tot",
+              "regulators/zra/withholding-tax"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Payments",
+            "pages": [
+              "guides/PAYMENT_SYSTEM_QUICK_START",
+              "guides/implementing-mock-payment-gateway",
+              "guides/PAYMENT_FLOW_TESTING",
+              "guides/TEST_MOCK_PAYMENT_FLOW",
+              "guides/PAYMENT_INTEGRATION_COMPLETE",
+              "guides/PAYMENT_UI_INTEGRATION_SUMMARY",
+              "guides/mock-payment-gateway-implementation-summary",
+              "guides/PAYMENT_SYSTEM_IMPLEMENTATION_PLAN",
+              "guides/payment-system-improvements-roadmap"
+            ]
+          },
+          {
+            "group": "Regulator work",
+            "pages": [
+              "guides/adding-new-service-request",
+              "form3-prefill-feature-developer-implementation-guide"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Internal",
+        "groups": [
+          {
+            "group": "Codebase scans",
+            "pages": [
+              "platform/tasks/scan",
+              "regulators/pacra/scan",
+              "regulators/pacra/business-name-registration/scan",
+              "regulators/pacra/company-registration/scan",
+              "regulators/pacra/name-services/scan",
+              "regulators/pacra/step1-filing-detail-scan",
+              "regulators/pacra/step2-service-requests-scan",
+              "regulators/pacra/step4-timeline-scan",
+              "regulators/pacra/step5-request-submission-scan",
+              "regulators/zra/scan",
+              "regulators/zra/paye/scan",
+              "regulators/zra/service-requests/scan",
+              "regulators/zra/tax-types/scan"
+            ]
+          },
+          {
+            "group": "Design specs",
+            "pages": [
+              "superpowers/specs/2026-05-26-invoice-status-lifecycle-design",
+              "superpowers/specs/2026-06-05-zra-reference-data-sync-design",
+              "superpowers/specs/2026-06-08-zra-customer-sync-design",
+              "superpowers/specs/2026-06-09-zra-result-codes-design",
+              "superpowers/specs/2026-06-10-zra-customer-sync-queue-design",
+              "superpowers/specs/2026-06-11-zra-item-sync-design"
+            ]
+          },
+          {
+            "group": "Implementation plans",
+            "pages": [
+              "superpowers/plans/2026-05-26-invoice-status-lifecycle",
+              "superpowers/plans/2026-06-05-zra-reference-data-sync",
+              "superpowers/plans/2026-06-08-zra-customer-sync",
+              "superpowers/plans/2026-06-09-zra-result-codes",
+              "superpowers/plans/2026-06-10-zra-customer-sync-queue",
+              "superpowers/plans/2026-06-11-zra-item-sync"
+            ]
+          },
+          {
+            "group": "Working notes",
+            "pages": [
+              "backoffice/implementation-plan",
+              "backoffice/specification-v1",
+              "invoicing/discussion",
+              "guides/pacra-form-prefill-implementation"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
