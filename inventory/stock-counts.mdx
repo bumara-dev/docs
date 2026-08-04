@@ -1,0 +1,169 @@
+---
+title: "Stock counts"
+description: "Counting what is physically there, reviewing the variances, and correcting your records."
+---
+
+A stock count compares what you physically have against what Bumara says you have, and corrects
+the difference. It is the discipline that keeps your inventory records worth trusting.
+
+## Types of count
+
+| Type | Covers | Frequency |
+| --- | --- | --- |
+| **Full** | Every item at a location | Quarterly or annually |
+| **Partial** | A chosen subset of items | As needed |
+| **Cycle** | A rotating subset, so everything is covered over time | Weekly or monthly |
+
+Cycle counting is usually the better discipline. Counting a few items each week catches problems
+early and avoids the disruption of shutting down for a full count.
+
+## Running a count
+
+<Steps>
+  <Step title="Create the count">
+    Inventory → Counts → **New count**. Select the location and the type.
+  </Step>
+  <Step title="Choose the items">
+    A full count includes everything at that location automatically. A partial or cycle count needs
+    you to select the items.
+  </Step>
+  <Step title="Start the count">
+    Bumara takes a snapshot of the current system quantities. From this moment, the count is
+    measured against that snapshot.
+  </Step>
+  <Step title="Count physically">
+    Go and count. Enter quantities as you go, by typing or by scanning.
+  </Step>
+  <Step title="Complete the count">
+    Every item must have a counted quantity. Variances are calculated.
+  </Step>
+  <Step title="Review the variances">
+    Before posting anything. See below.
+  </Step>
+  <Step title="Post the count">
+    Balances are corrected to what you counted, and variance movements are recorded.
+  </Step>
+</Steps>
+
+## Entering counts
+
+### By scanning
+
+Scan an item's barcode and its counted quantity increases by one. Scan five units, get five.
+
+Rapid scans are batched, so scanning quickly gives the right total. The row you scanned is
+highlighted briefly and the grid scrolls to it, so you can see what registered.
+
+Only items with a barcode can be scanned. See [Scanning](/inventory/scanning).
+
+### By typing
+
+Type quantities directly into the grid. Tab or Enter moves to the next row. Entries save
+automatically as you go, and there is a save button if you want to force it.
+
+## Reviewing variances
+
+This is the part that matters. Do it before posting.
+
+| Variance | Means | Usual causes |
+| --- | --- | --- |
+| **Positive** | You have more than the system thought | Goods received but not entered, a previous count error, an unrecorded return |
+| **Negative** | You have less | Theft, breakage, unrecorded sales, an unrecorded transfer |
+| **Zero** | Records match reality | Nothing to do |
+
+<Steps>
+  <Step title="Sort by variance size">
+    Largest first, by value rather than by quantity.
+  </Step>
+  <Step title="Recount anything large">
+    Big variances are recount candidates before they are investigation candidates. Miscounts are
+    more common than theft.
+  </Step>
+  <Step title="Look for pattern">
+    Everything in one category short? Everything in one aisle over? A pattern points at a process
+    problem rather than an item problem.
+  </Step>
+  <Step title="Check for pending operations">
+    An unposted transfer or a draft adjustment explains a variance without any mystery.
+  </Step>
+  <Step title="Investigate what is left">
+    Genuine unexplained losses need attention beyond the count.
+  </Step>
+</Steps>
+
+<Warning>
+  Posting a count writes off every variance in it. Do not post a count with large unexplained
+  differences — you are recording a loss without understanding it, and the underlying cause carries
+  on.
+</Warning>
+
+## Count statuses
+
+| Status | Meaning | You can |
+| --- | --- | --- |
+| **Draft** | Created, not started | Choose items, delete it |
+| **In progress** | Snapshot taken, counting under way | Enter and change quantities |
+| **Completed** | All items counted, variances calculated | Review and edit before posting |
+| **Posted** | Balances corrected | Void only |
+| **Void** | Reversed | Nothing — it is a permanent record |
+
+## What posting does
+
+<Steps>
+  <Step title="Variance movements are created">
+    One per item with a non-zero variance. Zero variances produce no movement.
+  </Step>
+  <Step title="Balances are set to the counted quantity">
+    Exactly what you counted becomes the new balance.
+  </Step>
+  <Step title="The count is sealed">
+    It cannot be edited afterwards, only voided.
+  </Step>
+</Steps>
+
+## Practical advice
+
+<AccordionGroup>
+  <Accordion title="Count when nothing is moving">
+    Before opening or after closing. Counting during trading gives you a number that was never true
+    at any single moment.
+  </Accordion>
+  <Accordion title="One count per location at a time">
+    Two counts running at the same location produce conflicting snapshots. Bumara allows it but
+    warns you — take the warning.
+  </Accordion>
+  <Accordion title="Count in a fixed physical order">
+    Shelf by shelf, aisle by aisle. Wandering means missing things and counting others twice.
+  </Accordion>
+  <Accordion title="Two people for a full count">
+    One counts, one records. Materially fewer errors than one person doing both.
+  </Accordion>
+  <Accordion title="Post promptly">
+    A count posted a week later has been overtaken by a week of trading, and the variances no
+    longer mean what they meant on the day.
+  </Accordion>
+</AccordionGroup>
+
+## How often
+
+| Situation | Suggested |
+| --- | --- |
+| High-value or theft-prone items | Weekly cycle count |
+| Fast-moving items | Monthly cycle count |
+| General stock | Quarterly full count |
+| Slow-moving items | Annually |
+| After a loss or an incident | Immediately, on the affected items |
+
+## Voiding a count
+
+An administrator can void a posted count. This reverses the variance movements and returns balances
+to what they were before. The count stays visible, marked void.
+
+Void only when the count itself was wrong — counted at the wrong location, or entered against the
+wrong items. If the count was right but you subsequently discovered why the variance occurred, that
+is an adjustment, not a void.
+
+<Note>
+  Related: [Scanning](/inventory/scanning) for barcode entry during counts, and
+  [Adjustments](/inventory/adjustments).
+</Note>

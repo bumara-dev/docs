@@ -1,0 +1,142 @@
+---
+title: "Inventory overview"
+description: "Tracking stock in Bumara — items, locations, movements, counts, the till, and what your stock is worth."
+---
+
+Inventory tracks what you hold, where it is, and what it is worth. Every change to stock is
+recorded as a movement, so you can always explain how a quantity got to where it is.
+
+## The core idea
+
+Stock quantities are never edited directly. You cannot type a new number into a balance. Instead
+you record an **operation** — an adjustment, a transfer, a count, a sale — and the balance changes
+as a result.
+
+This means every quantity has a history. When a figure is wrong, you can see exactly which
+operation caused it and who did it.
+
+## What is here
+
+<CardGroup cols={2}>
+  <Card title="Items" icon="box" href="/inventory/items">
+    What you stock — names, codes, units, reorder levels and barcodes.
+  </Card>
+  <Card title="Adjustments" icon="plus-minus" href="/inventory/adjustments">
+    Increase or decrease stock with a documented reason.
+  </Card>
+  <Card title="Transfers" icon="truck" href="/inventory/transfers">
+    Move stock between locations.
+  </Card>
+  <Card title="Stock counts" icon="clipboard-list" href="/inventory/stock-counts">
+    Count what is physically there and post the difference.
+  </Card>
+  <Card title="Point of sale" icon="cash-register" href="/inventory/point-of-sale">
+    Sell over the counter and deduct stock as you go.
+  </Card>
+  <Card title="Scanning" icon="barcode" href="/inventory/scanning">
+    Barcode and camera scanning for sales and counts.
+  </Card>
+  <Card title="Sales and expenses" icon="receipt" href="/inventory/sales-and-expenses">
+    Lay-by sales, operating expenses and money out of the till.
+  </Card>
+  <Card title="Insights" icon="chart-pie" href="/inventory/insights">
+    Stock value, low stock, movements and trends.
+  </Card>
+</CardGroup>
+
+## The four core operations
+
+| Operation | Use it when | Effect |
+| --- | --- | --- |
+| **Adjustment** | Stock changed for a reason outside normal trading | Increases or decreases at one location |
+| **Transfer** | Stock moves between your own locations | Decreases at source, increases at destination |
+| **Count** | You have physically counted and the system disagrees | Corrects the balance to what you counted |
+| **Cash sale** | You sold over the counter | Decreases stock and records the sale |
+
+## Draft, then post
+
+Every operation follows the same pattern:
+
+<Steps>
+  <Step title="Create it as a draft">
+    Add your lines. No stock has moved. You can edit or delete freely.
+  </Step>
+  <Step title="Check it">
+    Right items, right quantities, right location.
+  </Step>
+  <Step title="Post it">
+    Stock movements are written and balances update. This is the moment it becomes real.
+  </Step>
+  <Step title="It is now permanent">
+    A posted operation cannot be edited. If it is wrong, void it — which creates reversing
+    movements and leaves both records visible.
+  </Step>
+</Steps>
+
+<Warning>
+  Posting is the point of no return. A posted operation can be voided but never edited, and the
+  void is itself a permanent record. Check drafts before posting.
+</Warning>
+
+## Negative stock
+
+By default Bumara blocks any operation that would take a balance below zero. If you try to sell or
+transfer more than you have, the operation is refused and tells you which item is short.
+
+This is usually right. A negative balance means your records have lost touch with reality, and
+carrying on makes it worse.
+
+An administrator can override the block where genuinely necessary — typically when goods have
+physically been received but not yet entered. Overrides require a reason and are recorded.
+
+## Locations
+
+Stock is held at locations — a main store, a shop, a warehouse, a vehicle. Every quantity is
+per item **and** per location.
+
+Your first location becomes the default. Users can be assigned to specific locations, and their
+dashboards then show only the stock they are responsible for.
+
+## Units of measure
+
+Bumara includes standard units — each, kilogram, litre, box and others. You can add your own, and
+define conversions between them, such as one box equals twelve each.
+
+Set the right unit on each item at the start. Changing it later, once movements exist against it,
+is disruptive.
+
+## What links to invoicing
+
+Products in [Invoicing](/invoicing/products-and-prices) can link to inventory items by their code.
+When linked, selling the product moves the stock.
+
+Keep the codes consistent between the two, and the link works without further thought.
+
+## Low stock
+
+Each item can carry a reorder level. When a balance falls to or below it, Bumara flags it as low
+stock and can notify you.
+
+Set reorder levels on the items that matter — the ones you cannot trade without. Setting them on
+everything produces noise you will start ignoring.
+
+## Where to start
+
+<Steps>
+  <Step title="Set up your locations and units">
+    See [Setting up inventory](/inventory/setting-up).
+  </Step>
+  <Step title="Create your items">
+    Names, codes, units, reorder levels. See [Items](/inventory/items).
+  </Step>
+  <Step title="Enter your opening balances">
+    An adjustment with the reason "opening balance", recording what you currently hold.
+  </Step>
+  <Step title="Start trading">
+    Sales, adjustments and transfers as you go.
+  </Step>
+  <Step title="Count regularly">
+    Monthly or quarterly, so your records stay honest. See
+    [Stock counts](/inventory/stock-counts).
+  </Step>
+</Steps>

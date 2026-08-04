@@ -1,0 +1,173 @@
+---
+title: "Organisation settings"
+description: "Your business details in Bumara, what depends on them, and how to change them safely."
+---
+
+Your organisation settings are the foundation everything else is built on. Entity type drives which
+obligations you carry. Financial year end drives your annual due dates. Legal name appears on every
+regulator submission.
+
+## What is held here
+
+<AccordionGroup>
+  <Accordion title="Identity">
+    | Field | Used for |
+    | --- | --- |
+    | **Legal name** | Regulator submissions. Must match your PACRA certificate |
+    | **Trading name** | Invoices and customer-facing documents |
+    | **Entity type** | Which obligations and services apply to you |
+    | **Registration number** | Your PACRA number |
+    | **TPIN** | Every ZRA obligation, and invoicing |
+    | **Financial year end** | Annual return due dates |
+  </Accordion>
+  <Accordion title="Contact">
+    | Field | Used for |
+    | --- | --- |
+    | **Registered address** | Official correspondence and regulator submissions |
+    | **Trading address** | Invoices, if different |
+    | **Phone** | Contact on documents |
+    | **Email** | Official correspondence |
+    | **Website** | Optional, appears on documents |
+  </Accordion>
+  <Accordion title="Branding">
+    | Field | Used for |
+    | --- | --- |
+    | **Logo** | Invoices, payslips and other PDFs |
+    | **Colours** | PDF document styling |
+  </Accordion>
+  <Accordion title="Regional">
+    | Field | Used for |
+    | --- | --- |
+    | **Currency** | Usually ZMW |
+    | **Time zone** | Timestamps and scheduled operations |
+    | **Date format** | How dates are displayed |
+  </Accordion>
+</AccordionGroup>
+
+## The two fields that matter most
+
+### Entity type
+
+Company, business name, partnership, trust or NGO.
+
+This decides which obligations Bumara creates and which services you are offered. A company files
+annual returns; a business name does not. Company-only PACRA services are hidden from a business
+name.
+
+<Warning>
+  Changing entity type after setup does not reshape existing filings. It only affects what is
+  created afterwards. If it was wrong at setup, the obligations created from it were wrong too —
+  raise it through support rather than simply changing the field.
+</Warning>
+
+### Financial year end
+
+Entered as a day and month. Annual return due dates are calculated from it.
+
+Filings that already exist keep the due dates they were created with. Only future filings use a
+changed year end.
+
+## Changing your details
+
+<Steps>
+  <Step title="Open Settings, then Organisation">
+    Only Owners and Admins can change these.
+  </Step>
+  <Step title="Make the change">
+    Fields are validated as you type.
+  </Step>
+  <Step title="Save">
+    The change is recorded in your audit trail with your name and the time.
+  </Step>
+  <Step title="Check what it affected">
+    See the table below.
+  </Step>
+</Steps>
+
+## What each change affects
+
+| Change | Affects | Does not affect |
+| --- | --- | --- |
+| Legal name | Future submissions | Invoices already issued |
+| Trading name | Future invoices | Invoices already issued |
+| Address | Future documents | Documents already generated |
+| TPIN | Future filings and invoices | Filings already submitted |
+| Financial year end | Future annual filings | Filings already created |
+| Entity type | Future obligations and services | Existing obligations |
+| Logo or colours | Future PDFs | PDFs already generated |
+
+The pattern is consistent: changes apply forward. Historical documents keep the details they were
+issued with, because that is what the recipient holds.
+
+## Changing your legal name
+
+If your business legally changes its name, the order matters:
+
+<Steps>
+  <Step title="Clear the new name with PACRA">
+    See [Name clearance](/regulators/pacra/name-clearance).
+  </Step>
+  <Step title="File the change of name with PACRA">
+    A service request. You will receive an amended certificate.
+  </Step>
+  <Step title="Update your organisation settings">
+    Only once the change is legally effective.
+  </Step>
+  <Step title="Notify the other regulators">
+    ZRA, NAPSA and NHIMA all need to know.
+  </Step>
+  <Step title="Tell your customers and vendors">
+    Particularly anyone paying you by bank transfer.
+  </Step>
+</Steps>
+
+<Warning>
+  Do not change the legal name in Bumara before the change is registered with PACRA. Submissions
+  made under a name PACRA does not recognise will be rejected.
+</Warning>
+
+## Support
+
+The support option in Settings is for questions that are not about a specific filing — how a
+feature works, a billing query, a problem with your account.
+
+Questions about a specific filing or service request should be raised as a message on that record,
+so the context travels with them. See
+[Messages and timeline](/compliance/messages-and-timeline).
+
+## The audit trail
+
+Every change to your organisation settings is recorded: what changed, from what to what, who did it
+and when.
+
+This matters more than it sounds. When a regulator queries why a submission carried a particular
+address, the audit trail answers it.
+
+## Closing your account
+
+If you stop using Bumara:
+
+<Steps>
+  <Step title="Export your data first">
+    Invoices, payroll records, documents. Do this before anything else.
+  </Step>
+  <Step title="Complete or cancel anything in flight">
+    Filings and service requests in progress.
+  </Step>
+  <Step title="Settle any outstanding fees">
+    Regulator fees and subscription charges.
+  </Step>
+  <Step title="Contact support to close the account">
+    Retention of your data after closure follows your agreement.
+  </Step>
+</Steps>
+
+<Warning>
+  Closing your Bumara account does not end your regulatory obligations. Your filings remain due,
+  and the regulators will continue to expect them. Make arrangements for how they will be met.
+</Warning>
+
+<Note>
+  Related: [Team and roles](/account/team-and-roles) and
+  [Plan and billing](/account/plan-and-billing).
+</Note>

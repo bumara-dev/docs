@@ -1,0 +1,176 @@
+---
+title: "Monthly inputs"
+description: "Entering absence, overtime, advances and ad-hoc deductions before your cutoff day."
+---
+
+Monthly inputs are the figures that change each period. Everything else — salary, fixed allowances,
+loan instalments — is already on the employee record. Inputs are what varies.
+
+They must be in by your **cutoff day**.
+
+## What you enter
+
+| Field | Meaning |
+| --- | --- |
+| **Days absent** | Working days missed — unpaid leave or unauthorised absence |
+| **Overtime hours** | Regular overtime worked |
+| **Holiday overtime** | Holiday or weekend overtime, paid at the higher multiplier |
+| **Leave days pay** | Leave days being paid out |
+| **Advance** | A salary advance taken this period |
+| **Other deductions** | Any ad-hoc deduction for this period |
+
+Anything not entered is treated as zero. An employee with no inputs is paid their normal salary
+and allowances.
+
+## Entering them
+
+<Steps>
+  <Step title="Open Payroll, then Monthly inputs">
+    Select the period you are entering for.
+  </Step>
+  <Step title="Enter figures against each employee">
+    Only for employees who have something to record. Leave the rest blank.
+  </Step>
+  <Step title="Check as you go">
+    Days absent cannot exceed working days in the month. Overtime hours should be plausible.
+  </Step>
+  <Step title="Save">
+    Inputs are saved against the period and used when the run is processed.
+  </Step>
+</Steps>
+
+## Bulk entry
+
+For a larger workforce, use the CSV template.
+
+<Steps>
+  <Step title="Download the template">
+    It comes pre-populated with your active employees.
+  </Step>
+  <Step title="Fill in the figures">
+    One row per employee. Leave blank anything with nothing to record.
+  </Step>
+  <Step title="Check it before uploading">
+    Look for figures in the wrong column — overtime hours entered as days absent is a costly
+    mistake in either direction.
+  </Step>
+  <Step title="Upload">
+    Payroll → Monthly inputs → **Bulk upload**.
+  </Step>
+  <Step title="Review what was imported">
+    Spot-check against your source before processing.
+  </Step>
+</Steps>
+
+## The cutoff day
+
+Your cutoff is set in [payroll settings](/payroll/setting-up), commonly the 20th.
+
+Inputs received after cutoff mean re-running payroll, which is disruptive. Have a policy and hold
+to it:
+
+<Steps>
+  <Step title="Remind managers a few days before cutoff">
+    Attendance and overtime come from them, and they will not remember unprompted.
+  </Step>
+  <Step title="Chase on the day">
+    Silence usually means nobody has looked.
+  </Step>
+  <Step title="Close at cutoff">
+    Late inputs go into next month unless there is a genuine exception.
+  </Step>
+  <Step title="Handle exceptions deliberately">
+    An advance the employee genuinely needs is an exception. Someone forgetting to send overtime
+    hours is not.
+  </Step>
+</Steps>
+
+## Where the figures come from
+
+| Input | Source |
+| --- | --- |
+| Days absent | Attendance records or the department manager |
+| Overtime hours | Approved timesheets — approved, not claimed |
+| Holiday overtime | The same, flagged as holiday or weekend |
+| Leave days pay | Your leave records |
+| Advance | The approved advance request |
+| Other deductions | Whoever authorised the deduction |
+
+<Warning>
+  Overtime should come from approved timesheets, not from what employees tell you. Unapproved
+  overtime paid because it was claimed is money you cannot recover.
+</Warning>
+
+## How inputs affect pay
+
+| Input | Effect |
+| --- | --- |
+| Days absent | Reduces basic pay by the daily rate for each day |
+| Overtime hours | Adds hours × hourly rate × 1.5 (or your configured multiplier) |
+| Holiday overtime | Adds hours × hourly rate × 2.0 (or your configured multiplier) |
+| Leave days pay | Adds the leave pay allowance |
+| Advance | Deducts the advance amount |
+| Other deductions | Deducts the amount, subject to the deduction cap |
+
+The daily and hourly rates come from the employee's salary and your configured working days per
+month.
+
+## Checking before you process
+
+<AccordionGroup>
+  <Accordion title="Anyone with unusually high overtime">
+    Check it against approved timesheets. A misplaced decimal or a duplicated entry is easier to
+    catch now than after payment.
+  </Accordion>
+  <Accordion title="Anyone with high absence">
+    Is it unpaid absence or paid leave? Paid leave should not be entered as days absent — that
+    deducts pay the employee is entitled to.
+  </Accordion>
+  <Accordion title="Advances">
+    Every advance should have been approved. Check the total against your approvals.
+  </Accordion>
+  <Accordion title="Employees with no inputs at all">
+    Is that right? A whole department with nothing recorded usually means their manager did not
+    submit.
+  </Accordion>
+  <Accordion title="Leavers">
+    Their final month's figures should reflect their actual leaving date.
+  </Accordion>
+</AccordionGroup>
+
+## After the cutoff
+
+<Steps>
+  <Step title="Preview the payroll">
+    Nothing is saved. See [Running payroll](/payroll/running-payroll).
+  </Step>
+  <Step title="Check the figures per employee">
+    Anything that looks wrong is usually an input error.
+  </Step>
+  <Step title="Correct inputs and preview again">
+    Repeat until the preview is right.
+  </Step>
+  <Step title="Process">
+    Only once the preview is correct.
+  </Step>
+</Steps>
+
+## Late input after processing
+
+If an input arrives after processing:
+
+| Situation | What to do |
+| --- | --- |
+| Not yet approved | Correct the input and re-run |
+| Approved but not yet paid | Reverse the approval, correct, re-run |
+| Already paid | Adjust in the following month rather than unwinding a paid run |
+
+<Warning>
+  Once employees have been paid, correcting in the following month is almost always better than
+  reversing. Reversing a paid run affects payslips, statutory returns and bank reconciliation
+  simultaneously.
+</Warning>
+
+<Note>
+  Next: [Running payroll](/payroll/running-payroll).
+</Note>

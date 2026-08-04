@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Bumara",
-  "description": "Documentation for the Bumara compliance, payroll, invoicing, and inventory platform.",
+  "description": "Help centre for Bumara — compliance, invoicing, payroll and inventory for Zambian businesses.",
   "colors": {
     "primary": "#007f7f",
     "light": "#00b6b6",
@@ -18,223 +18,60 @@
     "default": "system"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "GitHub",
-        "href": "https://github.com/bumara-dev/bumara"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Get started",
-      "href": "/SETUP"
-    }
-  },
-  "footer": {
-    "socials": {
-      "github": "https://github.com/bumara-dev/bumara"
+      "href": "/start/what-is-bumara"
     }
   },
   "search": {
-    "prompt": "Search the Bumara docs"
+    "prompt": "Search the Bumara help centre"
   },
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Getting started",
         "groups": [
           {
-            "group": "Get started",
-            "pages": ["index", "SETUP", "API-SETUP", "ONBOARDING"]
-          },
-          {
-            "group": "Architecture",
+            "group": "Start here",
             "pages": [
-              "ARCHITECTURE/index",
-              "multi-worker-architecture",
-              "ARCHITECTURE/DATABASE_SCHEMA",
-              "ARCHITECTURE/service-request-system",
-              "ARCHITECTURE/service-request-handlers",
-              "ARCHITECTURE/service-request-patterns-comparison",
-              "ARCHITECTURE/regulator-payment-system",
-              "ARCHITECTURE/payment-gateway-simulation",
-              "ARCHITECTURE/NAPSA_INTEGRATION"
-            ]
-          },
-          {
-            "group": "Decisions",
-            "pages": ["adr/0001-documents-s3-presigned-urls"]
-          },
-          {
-            "group": "Product",
-            "pages": ["PRODUCT/prd", "PRODUCT/personas", "general/ERP_TOOLS_DOCUMENTATION"]
-          }
-        ]
-      },
-      {
-        "tab": "Apps",
-        "groups": [
-          {
-            "group": "Inventory",
-            "pages": [
-              "inventory/index",
-              "inventory/01-overview",
-              "inventory/02-architecture",
-              "inventory/03-data-model",
-              "inventory/04-api-spec",
-              "inventory/05-workflows",
-              "inventory/06-ui-ux",
-              "inventory/07-events-notifications",
-              "inventory/08-testing",
-              "inventory/09-rollout-migrations",
-              "inventory/10-pos-and-scanners",
-              "inventory/11-sales-expenses-and-insights",
-              "inventory/INVENTORY_DOCUMENTATION",
-              "inventory/inventory_additional_feature_doc",
-              "Inventory-spec"
-            ]
-          },
-          {
-            "group": "Invoicing",
-            "pages": [
-              "invoicing/01-technical-architecture",
-              "invoicing/02-api-reference",
-              "invoicing/03-data-model",
-              "invoicing/04-user-guide",
-              "invoicing/05-diagrams",
-              "invoicing/06-service-inventory",
-              "invoicing/07-zra-transmission-modes",
-              "invoicing/08-mining-export-invoices"
-            ]
-          },
-          {
-            "group": "Payroll",
-            "pages": [
-              "payroll/01-technical-architecture",
-              "payroll/02-api-reference",
-              "payroll/03-data-model",
-              "payroll/04-user-guide",
-              "payroll/05-diagrams",
-              "payroll/06-service-inventory"
-            ]
-          },
-          {
-            "group": "Compliance and tasks",
-            "pages": [
-              "platform/tasks/overview",
-              "platform/tasks/spec",
-              "platform/tasks/linking",
-              "platform/tasks/progress-and-readiness",
-              "liability-assessments"
-            ]
-          },
-          {
-            "group": "Backoffice",
-            "pages": [
-              "backoffice/index",
-              "backoffice/architecture",
-              "backoffice/specification",
-              "backoffice/admin",
-              "backoffice/authentication-system",
-              "backoffice/cases-system-overview",
-              "backoffice/case-number-generation",
-              "backoffice/case-numbers-quick-start"
-            ]
-          },
-          {
-            "group": "Backoffice modules",
-            "pages": [
-              "backoffice/modules/directory",
-              "backoffice/modules/documents",
-              "backoffice/modules/finance",
-              "backoffice/modules/operations"
-            ]
-          },
-          {
-            "group": "Backoffice auth",
-            "pages": [
-              "backoffice/backoffice-auth/index",
-              "backoffice/backoffice-auth/architecture",
-              "backoffice/backoffice-auth/authentication-flow",
-              "backoffice/backoffice-auth/authorization",
-              "backoffice/backoffice-auth/environment-setup",
-              "backoffice/backoffice-auth/development-guide",
-              "backoffice/backoffice-auth/troubleshooting"
+              "index",
+              "start/what-is-bumara",
+              "start/create-your-account",
+              "start/set-up-your-business",
+              "start/compliance-health-check",
+              "start/invite-your-team",
+              "start/find-your-way-around"
             ]
           }
         ]
       },
       {
-        "tab": "Platform modules",
+        "tab": "Compliance",
         "groups": [
           {
-            "group": "Documents",
+            "group": "Staying compliant",
             "pages": [
-              "modules/documents/index",
-              "modules/documents/backend",
-              "modules/documents/api",
-              "modules/documents/data-model",
-              "modules/documents/s3-storage",
-              "modules/documents/security-permissions",
-              "modules/documents/runbook"
+              "compliance/overview",
+              "compliance/obligations-and-filings",
+              "compliance/working-a-task",
+              "compliance/documents-and-evidence"
             ]
           },
           {
-            "group": "Notifications",
+            "group": "Getting things filed",
             "pages": [
-              "modules/notifications/index",
-              "modules/notifications/api",
-              "modules/notifications/data-model",
-              "modules/notifications/events-catalog",
-              "modules/notifications/routing",
-              "modules/notifications/adapters",
-              "modules/notifications/scheduler",
-              "modules/notifications/workers",
-              "modules/notifications/webhooks",
-              "modules/notifications/ui",
-              "modules/notifications/provider-setup",
-              "modules/notifications/security-permissions",
-              "modules/notifications/runbook"
+              "compliance/request-a-service",
+              "compliance/submitting-to-a-regulator",
+              "compliance/paying-fees",
+              "compliance/authorised-representative"
             ]
           },
           {
-            "group": "Payments",
+            "group": "Working with the Bumara team",
             "pages": [
-              "modules/payments/index",
-              "modules/payments/architecture",
-              "modules/payments/api",
-              "modules/payments/data-model",
-              "modules/payments/fee-calculators",
-              "modules/payments/webhooks",
-              "modules/payments/configuration",
-              "modules/payments/testing",
-              "modules/payments/runbook"
-            ]
-          },
-          {
-            "group": "Subscriptions",
-            "pages": [
-              "modules/subscriptions/index",
-              "modules/subscriptions/architecture",
-              "modules/subscriptions/api",
-              "modules/subscriptions/data-model",
-              "modules/subscriptions/enforcement",
-              "modules/subscriptions/configuration",
-              "modules/subscriptions/frontend",
-              "modules/subscriptions/webhooks",
-              "modules/subscriptions/runbook"
-            ]
-          },
-          {
-            "group": "Tasks",
-            "pages": [
-              "modules/tasks/index",
-              "modules/tasks/api",
-              "modules/tasks/data-model",
-              "modules/tasks/ui-flows",
-              "modules/tasks/jobs-notifications",
-              "modules/tasks/security-permissions",
-              "modules/tasks/runbook"
+              "compliance/messages-and-timeline",
+              "compliance/findings-and-recommendations"
             ]
           }
         ]
@@ -244,114 +81,152 @@
         "groups": [
           {
             "group": "Overview",
-            "pages": ["regulators/pacra/overview", "regulators/template-system"]
+            "pages": ["regulators/overview"]
           },
           {
             "group": "PACRA",
             "pages": [
-              "regulators/pacra/spec",
-              "regulators/pacra/workspace",
-              "regulators/pacra/tasks-page",
-              "regulators/pacra/authorization-requirements",
-              "regulators/pacra/step1-filing-detail",
-              "regulators/pacra/step2-service-requests",
-              "regulators/pacra/step4-timeline",
-              "regulators/pacra/step5-request-submission"
-            ]
-          },
-          {
-            "group": "PACRA services",
-            "pages": [
-              "regulators/pacra/company-registration/spec",
-              "regulators/pacra/name-clearance/spec",
-              "regulators/pacra/name-services/spec"
+              "regulators/pacra/overview",
+              "regulators/pacra/name-clearance",
+              "regulators/pacra/company-registration",
+              "regulators/pacra/business-name-registration",
+              "regulators/pacra/annual-returns"
             ]
           },
           {
             "group": "ZRA",
             "pages": [
-              "regulators/zra/paye/spec",
-              "regulators/zra/tot",
+              "regulators/zra/overview",
+              "regulators/zra/paye",
+              "regulators/zra/turnover-tax",
               "regulators/zra/withholding-tax"
             ]
+          },
+          {
+            "group": "NAPSA and NHIMA",
+            "pages": ["regulators/napsa-and-nhima"]
           }
         ]
       },
       {
-        "tab": "Guides",
+        "tab": "Invoicing",
         "groups": [
           {
-            "group": "Payments",
+            "group": "Setting up",
             "pages": [
-              "guides/PAYMENT_SYSTEM_QUICK_START",
-              "guides/implementing-mock-payment-gateway",
-              "guides/PAYMENT_FLOW_TESTING",
-              "guides/TEST_MOCK_PAYMENT_FLOW",
-              "guides/PAYMENT_INTEGRATION_COMPLETE",
-              "guides/PAYMENT_UI_INTEGRATION_SUMMARY",
-              "guides/mock-payment-gateway-implementation-summary",
-              "guides/PAYMENT_SYSTEM_IMPLEMENTATION_PLAN",
-              "guides/payment-system-improvements-roadmap"
+              "invoicing/overview",
+              "invoicing/setting-up",
+              "invoicing/customers-and-vendors",
+              "invoicing/products-and-prices"
             ]
           },
           {
-            "group": "Regulator work",
+            "group": "Getting paid",
             "pages": [
-              "guides/adding-new-service-request",
-              "guides/pacra-form-prefill-implementation"
+              "invoicing/create-and-send-an-invoice",
+              "invoicing/quotes-and-orders",
+              "invoicing/recording-payments",
+              "invoicing/credit-and-debit-notes",
+              "invoicing/recurring-invoices"
+            ]
+          },
+          {
+            "group": "Purchases and compliance",
+            "pages": [
+              "invoicing/purchases",
+              "invoicing/smart-invoice",
+              "invoicing/reports-and-statements"
             ]
           }
         ]
       },
       {
-        "tab": "Internal",
+        "tab": "Payroll",
         "groups": [
           {
-            "group": "Codebase scans",
+            "group": "Setting up",
             "pages": [
-              "platform/tasks/scan",
-              "regulators/pacra/scan",
-              "regulators/pacra/business-name-registration/scan",
-              "regulators/pacra/company-registration/scan",
-              "regulators/pacra/name-services/scan",
-              "regulators/pacra/step1-filing-detail-scan",
-              "regulators/pacra/step2-service-requests-scan",
-              "regulators/pacra/step4-timeline-scan",
-              "regulators/pacra/step5-request-submission-scan",
-              "regulators/zra/scan",
-              "regulators/zra/paye/scan",
-              "regulators/zra/service-requests/scan",
-              "regulators/zra/tax-types/scan"
+              "payroll/overview",
+              "payroll/setting-up",
+              "payroll/employees",
+              "payroll/pay-elements"
             ]
           },
           {
-            "group": "Design specs",
+            "group": "The monthly cycle",
             "pages": [
-              "superpowers/specs/2026-05-26-invoice-status-lifecycle-design",
-              "superpowers/specs/2026-06-05-zra-reference-data-sync-design",
-              "superpowers/specs/2026-06-08-zra-customer-sync-design",
-              "superpowers/specs/2026-06-09-zra-result-codes-design",
-              "superpowers/specs/2026-06-10-zra-customer-sync-queue-design",
-              "superpowers/specs/2026-06-11-zra-item-sync-design"
+              "payroll/monthly-inputs",
+              "payroll/running-payroll",
+              "payroll/payslips"
             ]
           },
           {
-            "group": "Implementation plans",
+            "group": "Loans and returns",
+            "pages": ["payroll/loans", "payroll/statutory-returns"]
+          }
+        ]
+      },
+      {
+        "tab": "Inventory",
+        "groups": [
+          {
+            "group": "Setting up",
             "pages": [
-              "superpowers/plans/2026-05-26-invoice-status-lifecycle",
-              "superpowers/plans/2026-06-05-zra-reference-data-sync",
-              "superpowers/plans/2026-06-08-zra-customer-sync",
-              "superpowers/plans/2026-06-09-zra-result-codes",
-              "superpowers/plans/2026-06-10-zra-customer-sync-queue",
-              "superpowers/plans/2026-06-11-zra-item-sync"
+              "inventory/overview",
+              "inventory/setting-up",
+              "inventory/items"
             ]
           },
           {
-            "group": "Working notes",
+            "group": "Moving stock",
             "pages": [
-              "backoffice/implementation-plan",
-              "backoffice/specification-v1",
-              "invoicing/discussion"
+              "inventory/adjustments",
+              "inventory/transfers",
+              "inventory/stock-counts"
+            ]
+          },
+          {
+            "group": "Selling and reporting",
+            "pages": [
+              "inventory/point-of-sale",
+              "inventory/scanning",
+              "inventory/sales-and-expenses",
+              "inventory/insights"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Your account",
+        "groups": [
+          {
+            "group": "Settings",
+            "pages": [
+              "account/organisation-settings",
+              "account/team-and-roles",
+              "account/notifications",
+              "account/document-vault"
+            ]
+          },
+          {
+            "group": "Plan and security",
+            "pages": [
+              "account/plan-and-billing",
+              "account/security-and-privacy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help",
+        "groups": [
+          {
+            "group": "Reference",
+            "pages": [
+              "help/glossary",
+              "help/statuses",
+              "help/troubleshooting",
+              "help/faq"
             ]
           }
         ]

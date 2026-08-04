@@ -1,0 +1,158 @@
+---
+title: "Credit and debit notes"
+description: "Correcting invoices after they have been sent — refunds, returns, adjustments and vendor claims."
+---
+
+Once an invoice is sent it cannot be edited. Corrections happen by adding a document, not by
+changing the original. A **credit note** reduces what a customer owes you. A **debit note** reduces
+what you owe a vendor.
+
+## Why corrections work this way
+
+The customer has a copy of the invoice. Quietly changing your version means your records and
+theirs disagree, and neither of you knows which is right. Worse, an invoice sequence with edited
+documents in it is precisely what a ZRA audit questions.
+
+Adding a correcting document keeps both sides honest: the original stands, the correction is
+visible, and the net position is clear.
+
+## Credit notes
+
+Issue one when a customer owes less than you invoiced.
+
+| Situation | Credit note for |
+| --- | --- |
+| Goods returned | The value of the returned items |
+| Service not delivered as agreed | The portion not delivered |
+| Overcharged in error | The difference |
+| Discount agreed after invoicing | The discount amount |
+| Damaged or faulty goods | The affected value |
+| Invoice raised entirely in error | The full amount |
+
+### Creating one
+
+<Steps>
+  <Step title="Open the invoice being corrected">
+    Starting from the invoice carries the customer and lines across, which is faster and less
+    error-prone than starting blank.
+  </Step>
+  <Step title="Choose Create credit note">
+    Or start fresh from Sales → Credit notes if it does not relate to one specific invoice.
+  </Step>
+  <Step title="Adjust the lines">
+    Remove lines that are not being credited. Reduce quantities where only part is being returned.
+  </Step>
+  <Step title="Give the reason">
+    "Two units returned, damaged in transit" is useful in a year's time. "Adjustment" is not.
+  </Step>
+  <Step title="Check the tax">
+    Tax is credited proportionally. Confirm the tax figure before saving — this is what flows into
+    your tax summary.
+  </Step>
+  <Step title="Save and send">
+    The customer should receive it. It is their evidence too.
+  </Step>
+</Steps>
+
+### The effect
+
+| Situation | Result |
+| --- | --- |
+| Credit is less than the outstanding balance | The balance reduces |
+| Credit equals the outstanding balance | The invoice becomes settled |
+| Credit exceeds the balance, or the invoice was paid | A credit sits on the customer's account |
+| Customer has a credit balance | Apply it to a future invoice, or refund it |
+
+<Warning>
+  If the original invoice was transmitted to ZRA Smart Invoice, the credit note must also be
+  transmitted. An untransmitted credit note leaves ZRA holding a sale you have since reversed.
+  See [Smart Invoice](/invoicing/smart-invoice).
+</Warning>
+
+## Debit notes
+
+The purchase-side equivalent: you owe a vendor less than they billed you.
+
+| Situation | Debit note for |
+| --- | --- |
+| Goods returned to the vendor | The returned value |
+| Short delivery — billed for ten, received eight | The two not received |
+| Damaged goods | The affected value |
+| Overcharged against the agreed price | The difference |
+| Duplicate bill received | The full amount of the duplicate |
+
+### Creating one
+
+<Steps>
+  <Step title="Open the purchase invoice">
+    From Purchases → Purchase invoices.
+  </Step>
+  <Step title="Choose Create debit note">
+    The vendor and lines carry across.
+  </Step>
+  <Step title="Adjust the lines and quantities">
+    To what you are actually claiming.
+  </Step>
+  <Step title="Give the reason">
+    Specific and factual. The vendor will read it.
+  </Step>
+  <Step title="Send it to the vendor">
+    They must agree it before your accounts and theirs will reconcile.
+  </Step>
+</Steps>
+
+<Note>
+  A debit note is a claim, not a settled fact. Until the vendor accepts it, they still believe you
+  owe the full amount. Follow it up rather than assuming silence means agreement.
+</Note>
+
+## Void or credit?
+
+| Use | When |
+| --- | --- |
+| **Void** | The invoice should never have existed — a duplicate, or the wrong customer entirely |
+| **Credit note** | The invoice was legitimate but the amount needs reducing |
+
+Void makes the invoice disappear from what is owed. A credit note leaves both documents standing
+with a net effect. When in doubt, use a credit note — it leaves a clearer trail.
+
+## Refunds
+
+A credit note reduces what is owed. It does not move money. If the customer has already paid and
+is owed money back, you also record the refund as a payment out.
+
+<Steps>
+  <Step title="Issue the credit note">
+    This establishes that the money is owed back.
+  </Step>
+  <Step title="Make the refund">
+    Bank transfer, mobile money, cash — whatever you agreed.
+  </Step>
+  <Step title="Record it as a payment">
+    Against the credit, with the reference. See
+    [Recording payments](/invoicing/recording-payments).
+  </Step>
+</Steps>
+
+## Effect on your reports
+
+Credit notes reduce revenue in the period they are issued, not the period of the original invoice.
+Your revenue report for a month with heavy returns will show that. That is correct behaviour, not
+a fault.
+
+Tax is adjusted in the same way, which flows through to your
+[turnover tax](/regulators/zra/turnover-tax) figures.
+
+## Practical habits
+
+- **Issue promptly.** A credit agreed in March and issued in June distorts both months.
+- **Always give a reason.** Someone will ask.
+- **Link to the original.** Create from the invoice rather than from blank.
+- **Send it.** A credit note the customer never received does not resolve their query.
+- **Watch for patterns.** Repeated credits for the same reason point to a problem upstream —
+  in the product, the delivery, or the pricing.
+
+<Note>
+  Related: [Create and send an invoice](/invoicing/create-and-send-an-invoice) for correcting an
+  invoice before it is sent.
+</Note>

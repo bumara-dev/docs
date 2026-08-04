@@ -1,0 +1,150 @@
+---
+title: "Adjustments"
+description: "Increasing or decreasing stock with a documented reason — damage, loss, corrections and opening balances."
+---
+
+An adjustment changes stock at one location, up or down, with a reason. It is how stock enters or
+leaves your records outside of transfers, counts and sales.
+
+## When to use one
+
+| Reason | Use it for |
+| --- | --- |
+| **Opening balance** | Bringing existing stock into Bumara for the first time |
+| **Damage** | Goods damaged and no longer sellable |
+| **Loss** | Theft, breakage, disappearance |
+| **Found** | Stock discovered that was not on the system |
+| **Correction** | Fixing a known error in the records |
+| **Sale** | Recorded automatically by the till — you do not create these by hand |
+| **Other** | Anything else. Explain it in the notes |
+
+<Note>
+  If you have counted a location and found many differences, use a
+  [stock count](/inventory/stock-counts) rather than a series of adjustments. A count records what
+  you counted and posts the variances in one operation, which is a far clearer record.
+</Note>
+
+## Creating one
+
+<Steps>
+  <Step title="Open Inventory, then Adjustments">
+    Choose **New adjustment**.
+  </Step>
+  <Step title="Select the location">
+    Where the stock actually is. An adjustment affects one location only.
+  </Step>
+  <Step title="Choose the reason">
+    Be honest. "Loss" and "correction" mean different things, and knowing which is which is the
+    point of recording the reason.
+  </Step>
+  <Step title="Add your lines">
+    For each: the item, and the quantity.
+
+    **Positive** quantities increase stock. **Negative** quantities decrease it.
+  </Step>
+  <Step title="Add notes">
+    What actually happened. "Three cartons water-damaged, roof leak in store room, 14 March" is
+    useful. "Damage" is not.
+  </Step>
+  <Step title="Save as draft">
+    Nothing has moved yet.
+  </Step>
+  <Step title="Check it">
+    Right items, right quantities, right signs, right location.
+  </Step>
+  <Step title="Post it">
+    Stock movements are written and balances update.
+  </Step>
+</Steps>
+
+## Draft and posted
+
+| State | You can | Stock affected? |
+| --- | --- | --- |
+| **Draft** | Edit lines, add lines, delete the whole thing | No |
+| **Posted** | Void it only | Yes |
+| **Void** | Nothing — it is a permanent record | Reversed |
+
+<Warning>
+  Once posted, an adjustment cannot be edited. If it is wrong, void it — which creates reversing
+  movements — and post a correct one. Both remain visible, which is what makes the history reliable.
+</Warning>
+
+## Voiding
+
+<Steps>
+  <Step title="Open the posted adjustment">
+    From Inventory → Adjustments.
+  </Step>
+  <Step title="Choose Void">
+    Only an administrator can void. A reason is required.
+  </Step>
+  <Step title="Reversing movements are created">
+    Stock returns to what it was before. The original adjustment stays visible, marked void.
+  </Step>
+</Steps>
+
+## What Bumara checks
+
+| Check | Behaviour |
+| --- | --- |
+| At least one line | An empty adjustment is rejected |
+| No zero quantities | A line of zero is meaningless and is rejected |
+| Item is active | You cannot adjust an archived item |
+| Stock would not go negative | Blocked by default. An administrator can override with a reason |
+
+### Negative stock
+
+By default, an adjustment that would take a balance below zero is refused, naming the item that is
+short.
+
+This is usually the right answer. A negative balance means your records and reality have diverged,
+and posting anyway makes that worse.
+
+Where an override is genuinely needed — goods physically received but not yet entered — an
+administrator can override with a documented reason, which is recorded.
+
+## Opening balances
+
+Your first adjustment at each location is the opening balance. See
+[Setting up inventory](/inventory/setting-up).
+
+Use the reason "opening balance" so it is distinguishable from later corrections when you review
+your history.
+
+## What happens after posting
+
+| Effect | Detail |
+| --- | --- |
+| Movements written | One per line, permanent |
+| Balances updated | At that location |
+| Low stock checked | If a balance falls to or below its reorder level, you are notified |
+| Timeline recorded | Who posted it, when, and why |
+
+## Reviewing adjustments
+
+Adjustments deserve periodic review — they are the operation most open to abuse, since they can
+make stock disappear.
+
+| Watch for | What it may indicate |
+| --- | --- |
+| Frequent "loss" adjustments | Theft, or poor handling |
+| Repeated "correction" on the same items | A process problem upstream |
+| Large adjustments outside working hours | Worth asking about |
+| One person making most adjustments | Concentrate the review there |
+| Adjustments with vague notes | Enforce the standard |
+
+Filter by reason and by date from the adjustments list.
+
+## Good practice
+
+- **Post promptly.** An adjustment made a week after the event is guesswork.
+- **Write real notes.** Someone will read them in six months.
+- **Use the right reason.** Damage, loss and correction are genuinely different.
+- **Restrict who can post.** Not everyone needs the ability to make stock disappear.
+- **Review monthly.** Patterns are visible in aggregate, not in individual entries.
+
+<Note>
+  Related: [Transfers](/inventory/transfers) for moving stock between locations, and
+  [Stock counts](/inventory/stock-counts) for correcting after a physical count.
+</Note>

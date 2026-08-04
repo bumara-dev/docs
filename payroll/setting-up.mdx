@@ -1,0 +1,164 @@
+---
+title: "Setting up payroll"
+description: "The five setup steps to complete before your first pay run, plus registering with NAPSA and NHIMA."
+---
+
+The payroll dashboard shows a setup checklist the first time you open it. Work through it in order
+— each step depends on the one before.
+
+## Step 1 — Payroll settings
+
+Open **Payroll → Settings**.
+
+| Setting | What it does | Typical |
+| --- | --- | --- |
+| **Working days per month** | Divides salary to give the daily rate, used for absence deductions | 26 |
+| **Payment day** | When staff are paid | 25th |
+| **Cutoff day** | When monthly inputs must be submitted | 20th |
+| **Regular overtime multiplier** | Applied to normal overtime hours | 1.5× |
+| **Holiday overtime multiplier** | Applied to holiday and weekend overtime | 2.0× |
+| **Maximum deduction percentage** | Cap on total deductions as a share of gross | 50% |
+| **Leave policy** | How leave accrues and is paid | Per your contracts |
+| **Loan policy** | Maximum amount and maximum term | Per your policy |
+
+<Warning>
+  Working days per month drives every absence deduction. Setting it to 30 rather than 26 changes
+  the daily rate and therefore every deduction. Set it to what your contracts actually say.
+</Warning>
+
+The gap between cutoff and payment day is your processing window. Five days is workable; two is
+uncomfortable, particularly with PAYE due on the 10th.
+
+## Step 2 — Departments
+
+Create your departments — Finance, Operations, Sales, and so on. Every employee is assigned to one.
+
+Departments matter for two reasons: department managers only see their own department's staff, and
+your payroll cost reports break down by department.
+
+## Step 3 — Job positions
+
+Create the designations you employ: Accountant, Driver, Manager, Technician.
+
+Keep them meaningful rather than exhaustive. Positions are used for reporting and for the employee
+record — a list of forty near-identical titles helps nobody.
+
+## Step 4 — Allowances and deductions
+
+Bumara creates a standard set automatically:
+
+| Created for you | Type |
+| --- | --- |
+| Housing allowance | Allowance |
+| Transport allowance | Allowance |
+| Meal allowance | Allowance |
+| Leave pay | Allowance |
+| Advance | Deduction |
+
+Add your own for anything else you pay or deduct — fuel, communications, uniform, a social fund.
+
+See [Pay elements](/payroll/pay-elements) for how each is configured and taxed.
+
+## Step 5 — Employees
+
+Add your staff. For each you will need:
+
+| Category | Details |
+| --- | --- |
+| **Personal** | Name, date of birth, gender, marital status, NRC, passport |
+| **Contact** | Email, phone, address, emergency contact |
+| **Employment** | Department, position, branch, employment type, hire date, probation end |
+| **Pay** | Basic salary |
+| **Regulatory** | TPIN, NAPSA number, NHIMA number |
+| **Banking** | Bank, branch, account number, sort code, SWIFT |
+
+Bumara generates employee numbers automatically. All sensitive fields — NRC, TPIN, bank details —
+are encrypted.
+
+For more than a handful of staff, use the bulk import. See [Employees](/payroll/employees).
+
+## Registering with the regulators
+
+Before you can file returns, you must be registered as an employer.
+
+<Steps>
+  <Step title="NAPSA">
+    Enter your NAPSA employer number. If you do not have one, raise the employer registration
+    service request. See [NAPSA and NHIMA](/regulators/napsa-and-nhima).
+  </Step>
+  <Step title="NHIMA">
+    Enter your NHIMA employer number, or register as an employer.
+  </Step>
+  <Step title="ZRA">
+    Your TPIN is already in your organisation settings. Confirm PAYE is ticked on your ZRA
+    connection. See [ZRA overview](/regulators/zra/overview).
+  </Step>
+</Steps>
+
+<Warning>
+  Employing someone creates PAYE, NAPSA and NHIMA obligations from that month, whether or not you
+  have registered. Register before your first pay run, not after.
+</Warning>
+
+## Before your first live run
+
+<AccordionGroup>
+  <Accordion title="Settings">
+    - Working days matches your contracts
+    - Payment day and cutoff day set, with a workable gap between them
+    - Overtime multipliers match your policy
+    - Maximum deduction percentage set
+  </Accordion>
+  <Accordion title="Structure">
+    - Departments created
+    - Positions created
+    - Allowances and deductions configured, with the correct tax treatment
+  </Accordion>
+  <Accordion title="Employees">
+    - Every current employee added
+    - Every employee has a TPIN, NAPSA number and NHIMA number
+    - Bank details verified — check against a statement or a cancelled cheque
+    - Salaries correct against contracts
+    - Allowances and deductions assigned
+  </Accordion>
+  <Accordion title="Registration">
+    - NAPSA employer number entered
+    - NHIMA employer number entered
+    - ZRA connected with PAYE ticked
+  </Accordion>
+  <Accordion title="Test">
+    - Preview a pay run and check every figure
+    - Compare against your previous payroll, whatever you used before
+    - Generate a payslip and read it as an employee would
+    - Only then process
+  </Accordion>
+</AccordionGroup>
+
+## Your first month
+
+Do not trust the first run blindly. Run it in parallel with however you paid people before, and
+reconcile the two.
+
+<Steps>
+  <Step title="Preview the run">
+    Nothing is saved.
+  </Step>
+  <Step title="Compare against your previous method">
+    Employee by employee. Gross, each deduction, net.
+  </Step>
+  <Step title="Investigate every difference">
+    Differences are usually a missing allowance, a wrong salary, or a working-days setting that
+    does not match your contracts. Find the cause rather than adjusting the figure.
+  </Step>
+  <Step title="Correct the setup, not the output">
+    Fix the employee record or the pay element, then preview again. Never patch a number.
+  </Step>
+  <Step title="Process only when they agree">
+    Then keep the comparison as evidence that the transition was clean.
+  </Step>
+</Steps>
+
+<Note>
+  Next: [Employees](/payroll/employees) to add your staff, then
+  [Pay elements](/payroll/pay-elements).
+</Note>

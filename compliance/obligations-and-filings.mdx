@@ -1,0 +1,161 @@
+---
+title: "Obligations and filings"
+description: "Where your obligations come from, how due dates are calculated, and how to work a filing from start to finish."
+---
+
+An **obligation** is a recurring requirement. A **filing** is one period of it. You never create
+obligations by hand — Bumara works them out from what kind of business you are and which
+regulators you connected.
+
+## Where your obligations come from
+
+When you connect a regulator, Bumara looks at three things and creates the obligations that match:
+
+| Input | Effect |
+| --- | --- |
+| **Entity type** | A company files annual returns; a business name does not |
+| **Tax types you selected** | Ticking PAYE creates a monthly PAYE obligation; ticking turnover tax creates a monthly turnover tax obligation |
+| **Your plan** | Some regulators are only available on higher tiers |
+
+Each obligation records its regulator, its frequency, and the rule used to calculate due dates.
+
+## Reading the obligations list
+
+| Column | Meaning |
+| --- | --- |
+| **Name** | What it is — "PAYE Return", "Annual Return" |
+| **Regulator** | Who it is filed with |
+| **Frequency** | Monthly, quarterly, annually, or one-off |
+| **Next filing** | The next period and its due date |
+| **Status** | Active, or paused if it no longer applies to you |
+
+Open an obligation to see every filing it has ever produced, including past ones.
+
+## How due dates are calculated
+
+Bumara does not ask you for due dates. It applies the rule the regulator uses:
+
+| Rule | Used by | Example |
+| --- | --- | --- |
+| Period end plus a number of days | Most ZRA monthly returns | March period ends 31 March, due 14 April |
+| Financial year end plus months | PACRA annual returns | Year end 31 December, due within the statutory window that follows |
+| Fixed calendar date | Certain annual levies | The same date each year regardless of your year end |
+
+This is why your **financial year end** and **entity type** in
+[Set up your business](/start/set-up-your-business) matter so much. Get them wrong and every
+annual due date is wrong.
+
+<Warning>
+  Changing your financial year end later does not move filings that already exist — they keep the
+  due dates they were created with. Only filings created after the change use the new date.
+</Warning>
+
+## Common due dates
+
+| Obligation | Frequency | Due |
+| --- | --- | --- |
+| ZRA PAYE return | Monthly | 10th of the following month |
+| ZRA turnover tax | Monthly | 14 days after period end |
+| ZRA withholding tax | Monthly | 14 days after period end |
+| NAPSA contributions | Monthly | Monthly, per NAPSA's schedule |
+| NHIMA contributions | Monthly | Monthly, per NHIMA's schedule |
+| PACRA annual return | Annually | Within the statutory window after your financial year end |
+
+Always trust the due date shown on the filing itself over this table — it is calculated for your
+specific business.
+
+## Working a filing
+
+<Steps>
+  <Step title="Open the filing">
+    From Compliance → Filings, or from the regulator workspace. The header shows the period,
+    the due date, the current status and how many days remain.
+  </Step>
+  <Step title="Read the blockers panel">
+    At the top of every filing is a panel telling you either **Ready for submission** or exactly
+    what is still outstanding — which tasks, which documents, whether payment is needed.
+  </Step>
+  <Step title="Work through the checklist">
+    Each task links straight to the place you complete it. See [Working a task](/compliance/working-a-task).
+  </Step>
+  <Step title="Upload the required documents">
+    The documents panel lists what is required and what has been provided. Uploading a required
+    document usually completes its matching task automatically.
+  </Step>
+  <Step title="Enter the figures where asked">
+    Some filings have a figures section — PAYE totals, turnover for the month. These are often
+    pre-filled from your payroll or invoicing data for you to check.
+  </Step>
+  <Step title="Watch it turn ready">
+    When the last required item is done, the filing moves itself to **Ready for submission**.
+    You do not have to mark it ready.
+  </Step>
+  <Step title="Request submission">
+    Press **Request submission**. See [Submitting to a regulator](/compliance/submitting-to-a-regulator).
+  </Step>
+</Steps>
+
+## What is on a filing page
+
+| Section | Contents |
+| --- | --- |
+| **Header** | Period, due date, status, days remaining |
+| **Blockers** | What is stopping submission, or confirmation that nothing is |
+| **Progress** | Tasks done out of total, documents provided out of required |
+| **Tasks** | The checklist, in order |
+| **Figures** | The numbers being filed, where the obligation has them |
+| **Documents** | Required and supporting documents |
+| **Payment** | The fee, if one applies, and its status |
+| **Timeline** | Everything that has happened to this filing, with names and times |
+| **Messages** | Any tickets raised by the Bumara team about this filing |
+
+## Filing statuses
+
+| Status | Meaning | What you do |
+| --- | --- | --- |
+| **Pending data** | Created, nothing done yet | Start the checklist |
+| **In progress** | Work has begun | Finish the checklist |
+| **Ready for submission** | Everything required is complete | Request submission |
+| **Awaiting payment** | A fee is due before it can go | Pay the fee |
+| **Submission in progress** | With the Bumara team | Nothing — you will be notified |
+| **Submitted** | Filed with the regulator | Nothing — awaiting their response |
+| **Accepted** | The regulator confirmed it | Nothing. Acknowledgement is in your vault |
+| **Needs correction** | The regulator wants something changed | Read the reason, fix it, resubmit |
+| **Waived** | Not required for this period | Nothing |
+| **Cancelled** | No longer applicable | Nothing |
+
+## Nil returns
+
+If you had no activity in a period — no employees paid, no turnover — you usually still have to
+file. This is a **nil return**.
+
+<Steps>
+  <Step title="Open the filing as normal">
+    Do not ignore it. An unfiled nil return is still an unfiled return.
+  </Step>
+  <Step title="Mark it as a nil return">
+    In the figures section, choose the nil return option.
+  </Step>
+  <Step title="Give the reason">
+    No employees, below threshold, temporarily inactive, seasonal, staff on unpaid leave, or
+    other. The regulator expects a reason.
+  </Step>
+  <Step title="Submit as usual">
+    A nil return typically has a much shorter checklist and often becomes ready immediately.
+  </Step>
+</Steps>
+
+## Missed and late filings
+
+A filing that passes its due date is flagged as overdue and stays on your list. It does not
+disappear, and it does not stop being your responsibility.
+
+If you have missed several periods, do not work them one at a time in isolation — run a
+[compliance health check](/start/compliance-health-check) so the full picture and any accrued
+penalties are established first.
+
+<Note>
+  Reminders about upcoming and overdue filings are sent according to your preferences. Set them
+  up in [Reminders and notifications](/account/notifications) — this is the single most valuable
+  five minutes of setup in Bumara.
+</Note>

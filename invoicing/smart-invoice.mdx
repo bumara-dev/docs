@@ -1,0 +1,175 @@
+---
+title: "ZRA Smart Invoice"
+description: "Registering your device with ZRA, transmitting invoices, choosing when they go, and fixing failures."
+---
+
+ZRA Smart Invoice requires businesses within its scope to transmit sales invoices to ZRA
+electronically. Bumara handles the transmission — you set it up once, then invoice normally.
+
+## Setting it up
+
+<Steps>
+  <Step title="Open Settings, then ZRA Smart Invoice">
+    From the Invoicing sidebar.
+  </Step>
+  <Step title="Register your device">
+    Choose **Register device** and enter your VSDC serial number, as issued to you by ZRA.
+  </Step>
+  <Step title="Initialise it">
+    Choose **Initialise** on the new device.
+  </Step>
+  <Step title="Enter your identifiers">
+    | Field | Format |
+    | --- | --- |
+    | **TPIN** | Ten characters |
+    | **Branch ID** | Three characters |
+    | **Environment** | Test or live — use test until you have transmitted successfully |
+  </Step>
+  <Step title="Initialise with ZRA">
+    The device connects to ZRA and receives its credentials. Once it shows **Active**, you can
+    transmit.
+  </Step>
+</Steps>
+
+<Warning>
+  Test in the test environment first. Invoices transmitted to the live environment are real
+  submissions to ZRA and cannot simply be undone.
+</Warning>
+
+## Transmitting an invoice
+
+Once the device is active, every approved sales invoice can go to ZRA.
+
+<Steps>
+  <Step title="Create and approve the invoice">
+    As normal. See [Create and send an invoice](/invoicing/create-and-send-an-invoice).
+  </Step>
+  <Step title="Transmit">
+    Either automatically on approval, or by choosing **Transmit to ZRA** on the invoice.
+  </Step>
+  <Step title="Check the result">
+    A successful transmission returns a ZRA receipt number, signatures and a QR code, all recorded
+    against the invoice.
+  </Step>
+</Steps>
+
+## When invoices are sent
+
+You choose one of two modes for your organisation.
+
+### Real time
+
+The default. The invoice goes to ZRA the moment you approve it.
+
+| | |
+| --- | --- |
+| **Advantage** | Immediate confirmation. You know at once whether ZRA accepted it |
+| **Disadvantage** | Approving takes a second or two longer, and hangs if ZRA is down |
+| **Best for** | Lower invoice volumes, and anyone who wants certainty per invoice |
+
+### Scheduled
+
+Approval records the invoice as pending. Bumara sends it to ZRA in batches afterwards.
+
+| | |
+| --- | --- |
+| **Advantage** | Approval is instant. A ZRA outage does not block your invoicing |
+| **Disadvantage** | Confirmation arrives later, not at the moment of approval |
+| **Best for** | Higher volumes, and anyone invoicing where connectivity is unreliable |
+
+Under scheduled mode you also choose the cadence:
+
+| Cadence | Behaviour |
+| --- | --- |
+| **Interval** | Transmit every 5, 15, 30 or 60 minutes |
+| **Daily** | Transmit once a day at a time you choose, in Zambian time |
+
+### Changing mode
+
+Change it in Settings → ZRA Smart Invoice. It takes effect immediately, with no interruption to
+invoicing.
+
+<Note>
+  Whichever mode you choose, approval always succeeds. A ZRA problem never blocks you from
+  approving an invoice — it only delays the transmission.
+</Note>
+
+## Transmission statuses
+
+| Status | Meaning | What to do |
+| --- | --- | --- |
+| **Pending** | Queued, not yet sent | Wait |
+| **Transmitted** | ZRA accepted it | Nothing. The receipt number is on the invoice |
+| **Failed** | ZRA rejected it, or the connection failed | Read the reason and act |
+
+## When a transmission fails
+
+A failure does not undo the invoice. The invoice remains approved and valid; only the transmission
+failed.
+
+<Steps>
+  <Step title="Open the invoice">
+    The failure and its reason are shown in the transmission panel.
+  </Step>
+  <Step title="Read the rejection reason">
+    ZRA rejections are usually specific — a missing customer TPIN, an invalid tax code, a figure
+    that does not reconcile.
+  </Step>
+  <Step title="Fix the underlying cause">
+    | Reason | Fix |
+    | --- | --- |
+    | Customer TPIN missing or invalid | Correct it on the customer record |
+    | Invalid tax code | Check the tax rate on the affected line |
+    | Device not initialised | Re-initialise in Settings |
+    | Connection failure | Usually temporary — retry |
+  </Step>
+  <Step title="Retry">
+    Use the **Retry** button on the invoice.
+  </Step>
+</Steps>
+
+Bumara retries failed transmissions automatically a limited number of times before stopping. Once
+it stops retrying, the invoice waits for you to fix the cause and retry manually — it will not
+resolve itself.
+
+<Warning>
+  Check your failed transmissions weekly. An invoice ZRA never received is, from their point of
+  view, a sale you never declared. Do not discover a month of failures at the end of the quarter.
+</Warning>
+
+## Credit notes
+
+If you credit an invoice that was transmitted, the credit note must be transmitted too. Otherwise
+ZRA still holds a sale you have since reversed.
+
+See [Credit and debit notes](/invoicing/credit-and-debit-notes).
+
+## Compliance reports
+
+Smart Invoice supports the reports ZRA expects:
+
+| Report | Purpose |
+| --- | --- |
+| **X report** | An interim reading without closing the period |
+| **Z report** | The end-of-day closing report |
+| **Daily report** | Summary of a day's transmissions |
+| **Monthly report** | Summary of a month's transmissions |
+
+Generate them from Settings → ZRA Smart Invoice.
+
+## Monitoring
+
+| Check | How often |
+| --- | --- |
+| Failed transmissions | Weekly |
+| Device status is Active | Monthly |
+| Transmitted count against invoices issued | Monthly |
+| Credit notes transmitted alongside their invoices | Monthly |
+
+If your transmitted count is lower than your invoice count, the difference is invoices ZRA does
+not have. Find and fix them.
+
+<Note>
+  Related: [Setting up invoicing](/invoicing/setting-up) and
+  [ZRA overview](/regulators/zra/overview).
+</Note>

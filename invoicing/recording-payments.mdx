@@ -1,0 +1,178 @@
+---
+title: "Recording payments"
+description: "Logging money received and paid, allocating it to invoices, and dealing with part payments and overpayments."
+---
+
+Recording payments is what keeps your outstanding figure honest. An invoice paid but not recorded
+shows as overdue, and you chase a customer who has already paid — which costs you more than the
+five minutes recording it would have taken.
+
+## Two ways to record a payment
+
+### From the invoice
+
+Fastest when you know which invoice the money is for.
+
+<Steps>
+  <Step title="Open the invoice">
+    From Sales → Invoices.
+  </Step>
+  <Step title="Choose Record payment">
+    The amount defaults to the full outstanding balance.
+  </Step>
+  <Step title="Enter the details">
+    | Field | Notes |
+    | --- | --- |
+    | **Amount** | Change it if this is a part payment |
+    | **Method** | Cash, bank transfer, mobile money, cheque or card |
+    | **Date** | When the money arrived, not when you are recording it |
+    | **Reference** | The bank reference, mobile money ID, cheque number or receipt number |
+  </Step>
+  <Step title="Submit">
+    The invoice status updates automatically to Partially paid or Paid.
+  </Step>
+</Steps>
+
+### From the Payments section
+
+Better when one payment covers several invoices, or you are working through a bank statement.
+
+<Steps>
+  <Step title="Open Payments and choose New payment">
+    From the Invoicing sidebar.
+  </Step>
+  <Step title="Select the customer or vendor">
+    Their outstanding documents are listed.
+  </Step>
+  <Step title="Enter the payment details">
+    Amount, method, date, reference.
+  </Step>
+  <Step title="Allocate it">
+    Tick the invoices this payment settles. You can split one payment across several, in full or
+    in part.
+  </Step>
+  <Step title="Save">
+    Every allocated invoice updates its status.
+  </Step>
+</Steps>
+
+## Always record the reference
+
+| Method | Reference to record |
+| --- | --- |
+| Bank transfer | The bank's transaction reference |
+| Mobile money | The transaction ID from the confirmation |
+| Cheque | The cheque number |
+| Cash | Your receipt number |
+| Card | The authorisation reference |
+
+<Warning>
+  A payment recorded without a reference cannot be traced back to your bank statement. When
+  reconciling — or when a customer disputes whether they paid — the reference is the only thing
+  that settles it. Record it every time.
+</Warning>
+
+## Part payments
+
+<Steps>
+  <Step title="Record what actually arrived">
+    Not the invoice total. Record K3,000 against a K10,000 invoice if that is what came in.
+  </Step>
+  <Step title="The invoice becomes Partially paid">
+    The remaining balance stays outstanding and continues to age.
+  </Step>
+  <Step title="Record subsequent payments the same way">
+    Each one reduces the balance further.
+  </Step>
+  <Step title="It becomes Paid when the balance reaches zero">
+    Automatically.
+  </Step>
+</Steps>
+
+Note what the customer promised for the remainder. A part payment usually comes with a commitment
+about the rest — record it so whoever chases next knows.
+
+## Overpayments
+
+If a customer pays more than the invoice:
+
+| Option | When |
+| --- | --- |
+| Allocate the excess to another outstanding invoice | They have other bills with you |
+| Leave it as a credit on their account | They will have future invoices |
+| Refund it | They have no further business with you |
+
+Do not simply record the invoice as paid and ignore the difference. The money is real and will be
+asked about.
+
+## Payments to vendors
+
+The same process in reverse. Record what you paid, against which vendor bill, with the reference.
+
+This is what makes your vendor statements and your cash position accurate — and if the payment is
+subject to [withholding tax](/regulators/zra/withholding-tax), recording it properly is what puts
+it on your monthly return.
+
+## Voiding a payment
+
+If you recorded a payment in error — wrong amount, wrong invoice, wrong customer:
+
+<Steps>
+  <Step title="Open the payment">
+    From Payments.
+  </Step>
+  <Step title="Choose Void">
+    Give a reason.
+  </Step>
+  <Step title="The allocation reverses">
+    Affected invoices return to their previous status.
+  </Step>
+  <Step title="Record it correctly">
+    The voided payment stays visible in the audit trail. It is not deleted.
+  </Step>
+</Steps>
+
+<Warning>
+  Voiding is not deleting. The original payment record remains, marked void, with the reason. This
+  is deliberate — a payment record that could simply vanish would be worthless as evidence.
+</Warning>
+
+## Reconciling against your bank
+
+A weekly discipline worth keeping:
+
+<Steps>
+  <Step title="Open your bank statement and your payments list">
+    For the same period.
+  </Step>
+  <Step title="Match by reference">
+    Each receipt on the statement should have a matching payment recorded.
+  </Step>
+  <Step title="Investigate anything on the statement but not in Bumara">
+    Usually a payment nobody recorded. Find which invoice it belongs to.
+  </Step>
+  <Step title="Investigate anything in Bumara but not on the statement">
+    Usually a cheque that has not cleared, or a payment recorded optimistically.
+  </Step>
+  <Step title="Fix the differences">
+    Record what is missing; void what should not be there.
+  </Step>
+</Steps>
+
+## Cheques
+
+Record a cheque as a payment when you receive it, but be aware it is not money until it clears.
+If a cheque bounces, void the payment — the invoice returns to outstanding, which is the truth.
+
+## Practical habits
+
+- **Record daily.** Not weekly, and certainly not at month end.
+- **Reference every payment.** Without exception.
+- **Use the date the money arrived.** Not the date you are entering it.
+- **Allocate immediately.** An unallocated payment helps nobody.
+- **Reconcile weekly.** Small differences found early are easy; three months of them are not.
+
+<Note>
+  Related: [Reports and statements](/invoicing/reports-and-statements) for the aging report and
+  chasing what is overdue.
+</Note>

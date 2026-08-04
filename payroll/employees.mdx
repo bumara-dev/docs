@@ -1,0 +1,195 @@
+---
+title: "Employees"
+description: "Adding staff, bulk importing, assigning pay elements, and handling joiners and leavers."
+---
+
+Every employee record holds what Bumara needs to pay them correctly and to report them correctly
+to ZRA, NAPSA and NHIMA. Incomplete records are the single most common cause of rejected statutory
+returns.
+
+## Adding an employee
+
+Open **Payroll → Employees → Add employee**.
+
+<AccordionGroup>
+  <Accordion title="Personal information">
+    - Full name, as it appears on their identification
+    - Date of birth
+    - Gender
+    - Marital status
+    - NRC number
+    - Passport number, for foreign nationals
+
+    Names must match identification exactly. A mismatch between your records and their NRC causes
+    problems with every regulator.
+  </Accordion>
+  <Accordion title="Contact details">
+    - Email address — where payslips are sent
+    - Phone and alternative phone
+    - Residential address
+    - Emergency contact: name, phone, relationship
+  </Accordion>
+  <Accordion title="Employment details">
+    - Department
+    - Designation or position
+    - Branch, if you operate from more than one place
+    - Employment type: full-time, part-time, contract or casual
+    - Hire date
+    - Probation end date
+    - Basic salary
+  </Accordion>
+  <Accordion title="Regulatory numbers">
+    - **TPIN** — required for PAYE reporting
+    - **NAPSA number** — required for pension contributions
+    - **NHIMA number** — required for health insurance contributions
+
+    All three are required for statutory returns. A missing number causes a rejection.
+  </Accordion>
+  <Accordion title="Banking">
+    - Bank name and branch
+    - Account number
+    - Sort code
+    - SWIFT code, where applicable
+
+    Verify the account number against a bank statement or a cancelled cheque. Paying salary into
+    the wrong account is difficult to recover.
+  </Accordion>
+</AccordionGroup>
+
+Bumara generates the employee number automatically, in sequence.
+
+<Note>
+  Sensitive fields — NRC, passport, TPIN, bank details — are encrypted, and only roles with
+  explicit permission can see them. See [Team and roles](/account/team-and-roles).
+</Note>
+
+## Bulk import
+
+For more than a handful of employees, import rather than typing.
+
+<Steps>
+  <Step title="Download the template">
+    Payroll → Employees → **Template download**. Use the current template — an old one may not
+    match the expected columns.
+  </Step>
+  <Step title="Fill it in">
+    One row per employee. Follow the format exactly, especially dates and identification numbers.
+  </Step>
+  <Step title="Check it before uploading">
+    Every employee has a TPIN, NAPSA number and NHIMA number. Salaries are correct. Bank account
+    numbers are right.
+  </Step>
+  <Step title="Upload">
+    Payroll → Employees → **Bulk upload**.
+  </Step>
+  <Step title="Review what was imported">
+    Check the count and spot-check several records against your source.
+  </Step>
+  <Step title="Fix anything that failed">
+    Rows are rejected for missing required fields or bad formats. Correct and re-upload only the
+    failed rows.
+  </Step>
+</Steps>
+
+## Assigning allowances and deductions
+
+<Steps>
+  <Step title="Open the employee">
+    From the employee list.
+  </Step>
+  <Step title="Go to the Allowances tab">
+    Choose **Add allowance**. Select the type, enter the amount, and set the effective dates.
+  </Step>
+  <Step title="Go to the Deductions tab">
+    Choose **Add deduction**. Select the type, enter the amount, and set the frequency.
+  </Step>
+  <Step title="Check the effective dates">
+    An allowance dated from next month will not appear in this month's run. This is the most common
+    cause of "why is this employee's pay wrong".
+  </Step>
+</Steps>
+
+See [Pay elements](/payroll/pay-elements) for how each type behaves.
+
+## New joiners
+
+<Steps>
+  <Step title="Add them before the cutoff day">
+    An employee added after cutoff will not be in that month's run.
+  </Step>
+  <Step title="Set the correct hire date">
+    It determines whether they are paid for a full month or part of one.
+  </Step>
+  <Step title="Collect their regulatory numbers">
+    TPIN, NAPSA and NHIMA. If they are new to employment, they must be registered with the schemes
+    before their first contribution. See [NAPSA and NHIMA](/regulators/napsa-and-nhima).
+  </Step>
+  <Step title="Verify their bank details">
+    Against a statement, not from a note.
+  </Step>
+  <Step title="Assign their allowances and deductions">
+    From their start date.
+  </Step>
+</Steps>
+
+## Leavers
+
+<Steps>
+  <Step title="Record the leaving date">
+    On the employee record.
+  </Step>
+  <Step title="Calculate their final pay">
+    Days worked in the final month, accrued leave, notice pay, and any outstanding loan balance.
+  </Step>
+  <Step title="Settle any loan">
+    An outstanding loan balance is usually recovered from the final payment. See
+    [Loans](/payroll/loans).
+  </Step>
+  <Step title="Include them in the final month's run">
+    They must appear on that month's PAYE, NAPSA and NHIMA returns.
+  </Step>
+  <Step title="Mark them inactive after that run">
+    Not before — marking them inactive too early removes them from the return they should be on.
+  </Step>
+  <Step title="Issue their final payslip and any certificate they need">
+    Employees frequently need a payslip or earnings statement for their next employer.
+  </Step>
+</Steps>
+
+<Warning>
+  Never delete a leaver's record. Their historical payslips and their inclusion on past statutory
+  returns must remain intact. Mark them inactive.
+</Warning>
+
+## Changing a salary
+
+<Steps>
+  <Step title="Open the employee and update the basic salary">
+    Set the effective date to when the change actually takes effect.
+  </Step>
+  <Step title="Consider whether allowances should change too">
+    A salary review often means revisiting housing and transport allowances as well.
+  </Step>
+  <Step title="Preview the next run">
+    Confirm the new figures before processing.
+  </Step>
+</Steps>
+
+Historic pay runs are unaffected. A salary increase does not retrospectively change last month's
+payslip.
+
+## Keeping records current
+
+| Check | How often |
+| --- | --- |
+| Everyone has TPIN, NAPSA and NHIMA numbers | Before every run |
+| Bank details are current | On change, and annually |
+| Salaries match contracts | At each review |
+| Leavers marked inactive | Monthly |
+| Emergency contacts current | Annually |
+
+An hour spent on record hygiene saves a rejected statutory return, which costs considerably more.
+
+<Note>
+  Next: [Pay elements](/payroll/pay-elements) and [Monthly inputs](/payroll/monthly-inputs).
+</Note>

@@ -1,0 +1,133 @@
+---
+title: "Compliance overview"
+description: "How obligations, filings, tasks and documents fit together — the model behind everything Bumara files for you."
+---
+
+Compliance in Bumara is built from four things. Understanding how they relate makes every
+regulator workspace obvious, because they all work the same way.
+
+## The four building blocks
+
+<CardGroup cols={2}>
+  <Card title="Obligation" icon="repeat">
+    A recurring thing you must do. "File a PAYE return every month." Created once, when you
+    connect a regulator, and it stays until your circumstances change.
+  </Card>
+  <Card title="Filing" icon="file-lines">
+    One period of an obligation. "PAYE return for March 2026." A new filing appears for each
+    period, with a due date calculated for you.
+  </Card>
+  <Card title="Task" icon="square-check">
+    One step inside a filing. "Enter payroll totals." "Upload the payroll summary." A filing is
+    not ready until its required tasks are done.
+  </Card>
+  <Card title="Document" icon="paperclip">
+    Evidence attached to a filing — a payroll summary, a bank statement, a certificate, an
+    acknowledgement from the regulator.
+  </Card>
+</CardGroup>
+
+Alongside these sits the **service request**: a one-off job rather than a recurring one.
+Registering a company, clearing a name, changing directors. It carries tasks and documents in
+exactly the same way as a filing, but it happens once.
+
+## How a filing moves
+
+<Steps>
+  <Step title="It appears">
+    When the period opens, Bumara creates the filing with its due date and generates the
+    checklist. Status: **Pending data**.
+  </Step>
+  <Step title="You work the checklist">
+    Enter figures, upload documents, confirm details. As soon as you complete the first task the
+    filing moves to **In progress**.
+  </Step>
+  <Step title="It becomes ready">
+    When every required task is done and every required document is uploaded, the filing moves
+    itself to **Ready for submission**. You do not have to mark it ready.
+  </Step>
+  <Step title="You pay any fee">
+    If the filing carries a regulator fee, it moves to **Awaiting payment** until the payment is
+    received and verified. See [Paying fees](/compliance/paying-fees).
+  </Step>
+  <Step title="You request submission">
+    You press **Request submission**. The filing moves to **Submission in progress** and enters
+    the Bumara team's queue.
+  </Step>
+  <Step title="Bumara files it">
+    The team submits to the regulator and records the acknowledgement. Status: **Submitted**.
+  </Step>
+  <Step title="The regulator accepts it">
+    When the regulator confirms, the filing reaches **Accepted** and the acknowledgement lands in
+    your document vault. Done.
+  </Step>
+</Steps>
+
+If the regulator wants something changed, the filing comes back as **Needs correction** with an
+explanation, and returns to In progress once you have dealt with it.
+
+## The compliance dashboard
+
+Your compliance overview shows:
+
+| Panel | What it tells you |
+| --- | --- |
+| **Active obligations** | How many recurring requirements you carry |
+| **Open filings** | How many periods are currently outstanding |
+| **Next due** | The nearest deadline, and how many days away |
+| **Task progress** | How much of your outstanding checklist work is done |
+| **Blocked items** | Anything that cannot move until something is resolved |
+
+## What blocks a submission
+
+Three gates, checked by Bumara at the moment you request submission:
+
+| Gate | Passes when |
+| --- | --- |
+| **Tasks** | Every required task is done or deliberately skipped, and nothing is blocked |
+| **Documents** | Every required document has been uploaded |
+| **Payment** | If a fee applies, it has been paid and verified. If no fee applies, this gate is skipped |
+
+If a gate fails, Bumara does not simply refuse — it lists exactly what is missing so you can
+finish it. See [Submitting to a regulator](/compliance/submitting-to-a-regulator).
+
+<Note>
+  Optional tasks do not block submission. You can mark them **Skipped** with a reason, and the
+  filing still becomes ready. Required tasks must be done.
+</Note>
+
+## Where your operational work feeds in
+
+This is the part that saves the most time:
+
+| You do this | And this fills in |
+| --- | --- |
+| Run a pay run in Payroll | PAYE, NAPSA and NHIMA figures for that month |
+| Issue and approve sales invoices | Turnover figures for turnover tax |
+| Upload a payroll summary once | The matching "upload payroll summary" task completes itself |
+| Record a payment against a fee | The payment gate on that filing clears |
+
+You are not re-keying numbers you already entered elsewhere. You are reviewing and confirming them.
+
+## Where to go next
+
+<CardGroup cols={2}>
+  <Card title="Obligations and filings" icon="calendar" href="/compliance/obligations-and-filings">
+    What your obligations are, how due dates are worked out, and how to read a filing.
+  </Card>
+  <Card title="Working a task" icon="list-check" href="/compliance/working-a-task">
+    The four kinds of task and how to complete each one.
+  </Card>
+  <Card title="Documents and evidence" icon="folder" href="/compliance/documents-and-evidence">
+    Uploading, attaching and finding the proof behind every filing.
+  </Card>
+  <Card title="Request a service" icon="hand" href="/compliance/request-a-service">
+    One-off jobs: registrations, name changes, restorations.
+  </Card>
+  <Card title="Submitting to a regulator" icon="paper-plane" href="/compliance/submitting-to-a-regulator">
+    How submission works, what blocks it, and what happens after you press the button.
+  </Card>
+  <Card title="Paying fees" icon="money-bill" href="/compliance/paying-fees">
+    Regulator fees, handling fees, how to pay and how payment is verified.
+  </Card>
+</CardGroup>

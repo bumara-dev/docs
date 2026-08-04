@@ -1,0 +1,153 @@
+---
+title: "Create and send an invoice"
+description: "The full flow from a blank invoice to a sent one — line items, totals, PDF, email and ZRA transmission."
+---
+
+This is the flow you will use most. It takes under a minute once your customers and catalogue are
+set up.
+
+## Creating the invoice
+
+<Steps>
+  <Step title="Open Sales, then Invoices">
+    Choose **Create invoice**.
+  </Step>
+  <Step title="Select the customer">
+    Start typing to search your directory. If they are not there yet, create them without leaving
+    the invoice. See [Customers and vendors](/invoicing/customers-and-vendors).
+  </Step>
+  <Step title="Check the dates">
+    The invoice date defaults to today. The due date is calculated from the customer's payment
+    terms, or your default. Change either if this invoice is different.
+  </Step>
+  <Step title="Add your line items">
+    Select products from your catalogue, or type a description directly for a one-off item.
+
+    For each line: quantity, unit price and tax rate. The line total calculates itself.
+  </Step>
+  <Step title="Apply a discount if there is one">
+    As a percentage or a fixed amount, at line level or across the invoice.
+  </Step>
+  <Step title="Check the totals">
+    Subtotal, discount, tax and grand total are calculated as you go. Read them before continuing.
+  </Step>
+  <Step title="Add a note or reference">
+    A customer purchase order number, a project reference, anything that helps the customer match
+    your invoice to their records. This measurably speeds up payment.
+  </Step>
+  <Step title="Create the invoice">
+    It is saved as a **draft** — nothing has gone anywhere yet.
+  </Step>
+</Steps>
+
+## Reviewing the draft
+
+A draft can still be changed. Check these before sending:
+
+<AccordionGroup>
+  <Accordion title="The customer">
+    The right entity, and the right billing address. Sending an invoice to the wrong branch of a
+    group is a common and slow-to-resolve mistake.
+  </Accordion>
+  <Accordion title="The line descriptions">
+    Would the person approving payment understand what they are paying for? "Consultancy" is worse
+    than "Consultancy — system review, March 2026".
+  </Accordion>
+  <Accordion title="The quantities and prices">
+    Especially anything typed by hand rather than pulled from the catalogue.
+  </Accordion>
+  <Accordion title="The tax">
+    Correct rate on every line. Check the tax total against what you expect.
+  </Accordion>
+  <Accordion title="The due date">
+    Realistic, and consistent with what you agreed with the customer.
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+  This is the last easy moment. Once an invoice is sent it cannot be edited — you correct it with
+  a credit note. Read the draft properly.
+</Warning>
+
+## Sending it
+
+From the invoice detail page you have four actions:
+
+| Action | What it does |
+| --- | --- |
+| **Send** | Marks the invoice as sent |
+| **Download PDF** | Produces a PDF for your own records or to send yourself |
+| **Email PDF** | Emails the invoice to the customer as an attachment |
+| **Transmit to ZRA** | Sends it to ZRA Smart Invoice, if configured |
+
+### Emailing directly
+
+<Steps>
+  <Step title="Choose Email PDF">
+    The customer's email address is filled in from their record.
+  </Step>
+  <Step title="Check the address">
+    Send to whoever actually processes payments.
+  </Step>
+  <Step title="Adjust the message if needed">
+    A short covering note. Reference the purchase order number if there is one.
+  </Step>
+  <Step title="Send">
+    The status moves to **Sent**, and the send is recorded on the invoice.
+  </Step>
+</Steps>
+
+### Sending it yourself
+
+Download the PDF and attach it to your own email, or send it by WhatsApp. Then mark the invoice
+as **Sent** manually so your records and your aging report stay accurate.
+
+## Transmitting to ZRA
+
+If ZRA Smart Invoice applies to you, transmit as you issue. See
+[Smart Invoice](/invoicing/smart-invoice) for setup, transmission modes and what to do about
+failures.
+
+## After sending
+
+| What happens | What you do |
+| --- | --- |
+| Status becomes **Sent** | Nothing |
+| Customer opens the emailed invoice | Status becomes **Viewed** |
+| Due date passes without payment | Status becomes **Overdue** — chase it |
+| Payment arrives | Record it. See [Recording payments](/invoicing/recording-payments) |
+| Partial payment arrives | Status becomes **Partially paid** |
+| Fully paid | Status becomes **Paid** |
+
+## Correcting a sent invoice
+
+You cannot edit it. Choose based on what is wrong:
+
+| Problem | Fix |
+| --- | --- |
+| Overcharged, or goods returned | Issue a [credit note](/invoicing/credit-and-debit-notes) for the difference |
+| Entirely wrong — wrong customer, duplicate | Void it and issue a correct one |
+| Undercharged | Issue an additional invoice for the difference |
+| Wrong reference or description only | Reissue with a note explaining it supersedes the original |
+
+<Warning>
+  Do not void an invoice that has already been transmitted to ZRA without also handling the ZRA
+  side. A voided invoice that ZRA still holds as valid creates a discrepancy between your records
+  and theirs.
+</Warning>
+
+## Getting paid faster
+
+Small things that measurably work:
+
+- **Invoice the day the work is done.** Not at month end.
+- **Include their reference.** Purchase order numbers get invoices through approval faster.
+- **Send to the right address.** Accounts payable, not your day-to-day contact.
+- **Be specific in descriptions.** Vague lines get queried, and queries mean delay.
+- **State the terms on the invoice.** "Payment due within 30 days" removes ambiguity.
+- **Chase at 7 days past due.** Not at 60.
+
+<Note>
+  Related: [Quotes and orders](/invoicing/quotes-and-orders) if you quote before invoicing, and
+  [Recurring invoices](/invoicing/recurring-invoices) for anything you bill every month.
+</Note>

@@ -1,0 +1,157 @@
+---
+title: "Setting up invoicing"
+description: "Company details, bank details, tax rates, numbering and PDF branding — the setup to do before your first invoice."
+---
+
+Twenty minutes here saves you from reissuing invoices later. Everything you configure flows into
+every document you produce.
+
+## Company details
+
+Open **Invoicing → Settings → General**.
+
+| Field | Why it matters |
+| --- | --- |
+| **Legal name** | Appears on every invoice. Must match your PACRA certificate |
+| **Trading name** | What customers recognise, if different |
+| **TPIN** | Required on invoices and for ZRA Smart Invoice |
+| **Registration number** | Your PACRA number |
+| **Address** | Your trading address as it should appear |
+| **Phone and email** | How customers reach you about a bill |
+| **Logo** | Appears on PDFs. Upload a clean version with a transparent background |
+
+## Bank details
+
+These appear on invoices so customers know where to pay. Getting them wrong is the single most
+expensive typo in invoicing.
+
+| Field | Notes |
+| --- | --- |
+| Bank name | The full name |
+| Branch | Branch name and code |
+| Account name | Exactly as the bank holds it |
+| Account number | Check it twice |
+| Sort code | Where applicable |
+| SWIFT code | For international payments |
+
+You can also add mobile money details if you accept payment that way.
+
+<Warning>
+  Check the account number character by character against a bank statement, not from memory. An
+  invoice with the wrong account number sends your customer's money somewhere else, and you will
+  not find out until you chase the payment.
+</Warning>
+
+## Tax rates
+
+Configure the rates you actually charge.
+
+| Rate | Typical use |
+| --- | --- |
+| **Standard rated VAT — 16%** | If you are VAT registered |
+| **Turnover tax — 4%** | Where applied at point of sale |
+| **Zero rated — 0%** | Exports and specified zero-rated supplies |
+| **Exempt** | Supplies outside the scope of VAT |
+
+Set a default rate so it applies automatically to new lines. You can still change it per line.
+
+<Note>
+  If you are not VAT registered, do not configure or charge VAT. Charging VAT you are not
+  registered to collect is a serious problem, not a rounding error.
+</Note>
+
+## Invoice numbering
+
+| Setting | What it does |
+| --- | --- |
+| **Prefix** | Text before the number — for example `INV-` |
+| **Starting number** | Where the sequence begins |
+| **Padding** | How many digits — `INV-0001` rather than `INV-1` |
+
+Separate sequences run for invoices, quotes, credit notes and purchase documents.
+
+<Warning>
+  Do not change your numbering mid-year. Gaps and restarts in an invoice sequence are exactly what
+  a ZRA audit questions. Set it once, at the start.
+</Warning>
+
+## Default terms
+
+| Setting | Effect |
+| --- | --- |
+| **Payment terms** | The default due date — for example 30 days from issue |
+| **Currency** | Usually ZMW |
+| **Footer text** | Appears at the bottom of every document |
+| **Terms and conditions** | Your standard terms, printed on the invoice |
+
+Setting realistic payment terms matters. Terms of 30 days when you actually expect payment in 7
+means your aging report tells you nothing useful.
+
+## PDF template and branding
+
+Open **Invoicing → Settings → Invoice Template**.
+
+<Steps>
+  <Step title="Choose a template style">
+    Three are available:
+
+    | Style | Character |
+    | --- | --- |
+    | **Classic** | Traditional, formal, dense |
+    | **Modern** | Clean, spacious, contemporary |
+    | **Minimal** | Stripped back, plain |
+  </Step>
+  <Step title="Choose what appears">
+    Toggle the logo, tax columns, shipping address and payment instructions on or off.
+  </Step>
+  <Step title="Set your colours">
+    A primary and an accent colour, applied across all documents. Use your actual brand colours,
+    and keep them dark enough to read when printed in black and white.
+  </Step>
+  <Step title="Add default footer and terms">
+    Standard text for every document.
+  </Step>
+  <Step title="Preview and save">
+    Generate a test PDF and look at it properly. Print one. Check the logo is not stretched, the
+    colours are legible, and the bank details are correct.
+  </Step>
+</Steps>
+
+Changes apply to future PDFs. Documents already generated keep the design they were issued with.
+
+## ZRA Smart Invoice
+
+If you are required to transmit invoices to ZRA, set this up before you start invoicing — not
+after you have issued fifty invoices that need retrospective transmission.
+
+See [Smart Invoice](/invoicing/smart-invoice) for the full setup.
+
+## Setup checklist
+
+<AccordionGroup>
+  <Accordion title="Before your first invoice">
+    - Legal name and TPIN entered
+    - Bank details verified against a statement
+    - Tax rates configured, with a default
+    - Numbering set and never to be changed
+    - Payment terms set to what you actually expect
+    - Logo uploaded and a test PDF printed
+  </Accordion>
+  <Accordion title="Before you invoice at volume">
+    - Customers loaded — see [Customers and vendors](/invoicing/customers-and-vendors)
+    - Products and services in the catalogue — see [Products and prices](/invoicing/products-and-prices)
+    - ZRA Smart Invoice registered and active, if it applies to you
+    - Recurring invoices set up for anything you bill every month
+  </Accordion>
+  <Accordion title="Test before you go live">
+    - Create an invoice to a test customer
+    - Generate the PDF and print it
+    - Email it to yourself and open it on a phone
+    - Record a payment against it and check the status changes
+    - Void or delete the test
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Next: [Customers and vendors](/invoicing/customers-and-vendors).
+</Note>

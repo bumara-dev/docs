@@ -1,0 +1,157 @@
+---
+title: "Scanning"
+description: "Barcode and camera scanning for the till and stock counts — how each works and when to use which."
+---
+
+Bumara has two scanners, both using your device's camera. They are used in the same two places:
+the till and stock counts.
+
+| | Barcode scanner | Visual scanner |
+| --- | --- | --- |
+| **How it identifies** | Reads the barcode | Recognises the product from a photo |
+| **Item needs** | A barcode recorded on it | A reference photo uploaded |
+| **Speed** | Near-instant, continuous | A second or two per item |
+| **Works without labels** | No | Yes |
+| **Works offline** | Yes | Yes |
+| **Best for** | Barcoded retail goods | Loose goods, produce, unlabelled items |
+
+Use barcode scanning wherever you can. It is faster and more certain. The visual scanner exists for
+what cannot be barcoded.
+
+## Barcode scanning
+
+### Setting up
+
+<Steps>
+  <Step title="Record a barcode against each item">
+    Open the item and enter the barcode. Each must be unique within your business. See
+    [Items](/inventory/items).
+  </Step>
+  <Step title="Use the manufacturer's barcode where there is one">
+    Scan the product and record what comes up.
+  </Step>
+  <Step title="Print your own for unlabelled goods">
+    Generate codes, print labels, apply them.
+  </Step>
+</Steps>
+
+### Using it
+
+<Steps>
+  <Step title="Open the scanner">
+    From the till or from a count entry screen.
+  </Step>
+  <Step title="Allow camera access">
+    Your browser will ask the first time.
+  </Step>
+  <Step title="Point at the barcode">
+    Decoding is continuous — you do not press anything. It reads upside-down barcodes too.
+  </Step>
+  <Step title="Listen for the result">
+    A two-tone beep and the item name spoken aloud means a match. A buzz means no match.
+  </Step>
+  <Step title="Carry on">
+    A brief pause prevents the same barcode registering twice by accident.
+  </Step>
+</Steps>
+
+### When nothing matches
+
+| Cause | Fix |
+| --- | --- |
+| No barcode recorded on the item | Add it to the item |
+| Wrong barcode recorded | Correct it |
+| Item archived | Reactivate it |
+| Damaged or dirty label | Clean it, or search by name instead |
+| Poor light | More light, or hold steadier |
+
+## Visual scanning
+
+The visual scanner identifies a product from a photograph. It runs entirely on your device — no
+image is sent anywhere.
+
+### Setting up
+
+<Steps>
+  <Step title="Upload a reference photo for each item">
+    On the item record. See [Items](/inventory/items).
+  </Step>
+  <Step title="Take good photos">
+    Plain background, good light, the product filling the frame, from the angle staff normally see
+    it.
+  </Step>
+  <Step title="Prioritise the items you handle most">
+    You do not need a photo for everything. Start with what you sell often and cannot barcode.
+  </Step>
+</Steps>
+
+### Using it
+
+<Steps>
+  <Step title="Open the visual scanner">
+    From the till or a count screen.
+  </Step>
+  <Step title="Wait for it to load on first use">
+    The recognition model loads once. Subsequent uses are immediate.
+  </Step>
+  <Step title="Point at the product and capture">
+    Unlike the barcode scanner, you press a button.
+  </Step>
+  <Step title="Check the match">
+    A confidence percentage is shown with the identified item. The name is spoken aloud.
+  </Step>
+  <Step title="Retake if it is wrong">
+    Better light, plainer background, closer.
+  </Step>
+</Steps>
+
+### Improving accuracy
+
+| Problem | Fix |
+| --- | --- |
+| Nothing recognised | Upload a reference photo for that item |
+| Wrong item identified | Upload a better reference photo for both items |
+| Consistently low confidence | Improve the reference photo — light and background |
+| Similar products confused | Photograph the distinguishing feature, such as the label |
+
+The scanner deliberately refuses to match photographs of people, empty surfaces and non-products,
+so pointing it at nothing gives no result rather than a wrong one.
+
+## Camera problems
+
+| Message | Cause | Fix |
+| --- | --- | --- |
+| No camera found | The device has no camera, or it is unavailable | Use a device with a camera |
+| Camera permission denied | You declined access | Allow camera access in your browser settings and reload |
+| Browser not supported | An older browser | Use a current browser |
+| Model failed to load | A connection problem on first load | Retry with a working connection |
+
+## In the till
+
+Both scanners appear as buttons on the item search. Barcode scanning adds items continuously — scan
+five products in a row and all five are in the cart. See
+[Point of sale](/inventory/point-of-sale).
+
+## In stock counts
+
+Scanning during a count **increases** the counted quantity by one each time. Scan an item five
+times and its count is five.
+
+Rapid scans are batched together, so scanning quickly still gives the right total. The row is
+highlighted for a moment and the grid scrolls to it so you can see what registered.
+
+Only items with a barcode can be scanned during a count. Everything else is typed. See
+[Stock counts](/inventory/stock-counts).
+
+## Practical advice
+
+- **Barcode what you can.** The time saved compounds every day.
+- **One reference photo per item, taken well.** Better than several taken poorly.
+- **Watch the highlight, not just the beep.** Confirms the right item registered.
+- **Keep labels clean.** A worn barcode is a slow barcode.
+- **Have a fallback.** Staff should know how to search by name when scanning fails.
+- **Charge the device.** Continuous camera use drains a battery quickly during a full count.
+
+<Note>
+  Related: [Items](/inventory/items) for recording barcodes and photos.
+</Note>

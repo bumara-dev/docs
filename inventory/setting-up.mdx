@@ -1,0 +1,170 @@
+---
+title: "Setting up inventory"
+description: "Locations, units of measure and opening balances — the setup to complete before you start tracking stock."
+---
+
+Inventory setup is short but consequential. Locations and units are difficult to change once
+movements exist against them.
+
+## Step 1 — Create your locations
+
+A location is anywhere you hold stock: a shop, a warehouse, a store room, a delivery vehicle.
+
+<Steps>
+  <Step title="Open Inventory, then Locations">
+    Choose **New location**.
+  </Step>
+  <Step title="Name it as your staff refer to it">
+    "Main Store", "Cairo Road Shop", "Warehouse". Names people already use are names people
+    remember.
+  </Step>
+  <Step title="Add the address">
+    Where it physically is.
+  </Step>
+  <Step title="Save">
+    Your first location automatically becomes the default.
+  </Step>
+</Steps>
+
+### How many locations?
+
+| Create separate locations when | Keep it as one when |
+| --- | --- |
+| Stock is physically in different places | It is all in one building |
+| Different people are responsible for each | The same person handles everything |
+| You need to know what is where | You only need a total |
+| Stock genuinely moves between them | Nothing ever moves |
+
+Start with fewer. Splitting later is straightforward; merging is not.
+
+## Step 2 — Units of measure
+
+Bumara includes standard units: each, kilogram, litre, box, and others. Most businesses need
+nothing more.
+
+### Adding your own
+
+<Steps>
+  <Step title="Open Inventory, then Settings, then Units">
+    Choose **New unit**.
+  </Step>
+  <Step title="Give it a code and a name">
+    A short code such as `CTN`, and a full name such as `Carton`.
+  </Step>
+  <Step title="Save">
+    Codes must be unique.
+  </Step>
+</Steps>
+
+### Conversions
+
+If you buy in boxes and sell in singles, define the conversion — one box equals twelve each.
+
+<Steps>
+  <Step title="Open Units, then Conversions">
+    Choose **New conversion**.
+  </Step>
+  <Step title="Define the relationship">
+    From unit, to unit, and the factor between them.
+  </Step>
+  <Step title="Save">
+    You can now record operations in either unit.
+  </Step>
+</Steps>
+
+<Warning>
+  Choose each item's unit carefully at the start. Changing an item's unit once movements exist
+  against it makes historical quantities ambiguous — 50 of something is meaningless if the unit
+  changed halfway through.
+</Warning>
+
+## Step 3 — Create your items
+
+See [Items](/inventory/items) for the full detail. At minimum each item needs a name, a code, a
+unit and, ideally, a reorder level.
+
+## Step 4 — Enter your opening balances
+
+This is how your existing stock gets into Bumara.
+
+<Steps>
+  <Step title="Count what you actually have">
+    Physically, item by item, location by location. Do not work from a spreadsheet that may itself
+    be wrong.
+  </Step>
+  <Step title="Create an adjustment">
+    Inventory → Adjustments → **New adjustment**. Select the location.
+  </Step>
+  <Step title="Set the reason to Opening balance">
+    This distinguishes it from later corrections, which matters when you review your history.
+  </Step>
+  <Step title="Add a line per item">
+    Item, quantity, unit. Positive quantities, since you are bringing stock in.
+  </Step>
+  <Step title="Check it against your count sheet">
+    Line by line. This is your starting point — an error here follows you around.
+  </Step>
+  <Step title="Post it">
+    Stock balances are created.
+  </Step>
+  <Step title="Repeat for each location">
+    One opening balance adjustment per location.
+  </Step>
+</Steps>
+
+<Warning>
+  Do your opening count on a day when nothing is moving — before opening, or after closing. Counting
+  while stock is being sold or received produces a balance that was never true.
+</Warning>
+
+## Step 5 — Set reorder levels
+
+For each item you cannot trade without, set the level at which you want to be warned.
+
+A reasonable starting point is enough stock to cover your normal usage over the time it takes your
+supplier to deliver, plus a margin.
+
+Set them on the items that matter. Setting them everywhere produces alerts you will learn to ignore.
+
+## Step 6 — Assign users to locations
+
+If you operate from more than one location, assign staff to the ones they work at. They then see
+that location's stock rather than everything.
+
+See [Team and roles](/account/team-and-roles).
+
+## Step 7 — Link to invoicing
+
+If you sell stocked items through [Invoicing](/invoicing/products-and-prices), match the product
+codes to the inventory item codes. Selling then moves the stock automatically.
+
+Do this consistently from the start — retro-matching a catalogue of a few hundred products is
+tedious.
+
+## Setup checklist
+
+<AccordionGroup>
+  <Accordion title="Before your opening balance">
+    - Locations created, with the right default
+    - Units configured, with any conversions you need
+    - Items created with correct units
+    - Reorder levels set on critical items
+  </Accordion>
+  <Accordion title="The opening count">
+    - Counted physically, not from a spreadsheet
+    - Counted when nothing was moving
+    - Recorded as an adjustment with reason "opening balance"
+    - Checked against the count sheet before posting
+    - One per location
+  </Accordion>
+  <Accordion title="Before going live">
+    - Staff assigned to locations
+    - Product codes matched to item codes
+    - Someone trained on adjustments, transfers and counts
+    - Low stock notifications configured — see [Reminders](/account/notifications)
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Next: [Items](/inventory/items).
+</Note>

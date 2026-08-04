@@ -1,0 +1,186 @@
+---
+title: "Team and roles"
+description: "Every role in Bumara, exactly what each can see and do, and how to choose the right one."
+---
+
+Roles control what each person can open and change. Getting them right is how you keep salaries,
+bank details and identification numbers seen only by the people who need them.
+
+## The roles
+
+| Role | For | Scope |
+| --- | --- | --- |
+| **Owner** | The business owner | Everything, including billing and plan changes |
+| **Admin** | Operations or office manager | Everything except billing and plan changes |
+| **Finance** | Accountant or bookkeeper | Money, filings and reports |
+| **HR / Payroll** | HR manager or payroll officer | Employees and pay runs |
+| **Department manager** | Team lead | Their own department only |
+| **Employee** | Any member of staff | Their own records only |
+| **Viewer** | Auditor, adviser, board member | Read-only |
+
+## What each role can do
+
+<AccordionGroup>
+  <Accordion title="Owner">
+    Everything. Uniquely can:
+    - Change the subscription plan
+    - Manage billing and payment methods
+    - Remove other Owners
+    - Close the organisation
+
+    Have at least two Owners. A single Owner who is unreachable leaves nobody able to change the
+    plan or manage billing.
+  </Accordion>
+  <Accordion title="Admin">
+    Everything an Owner can, except billing, plan changes and removing Owners.
+
+    - All compliance work, including requesting submissions
+    - All invoicing
+    - All payroll, including sensitive employee data
+    - All inventory
+    - Invite and manage team members
+    - Change organisation settings
+  </Accordion>
+  <Accordion title="Finance">
+    - Full invoicing: invoices, quotes, payments, customers, vendors
+    - File statutory returns
+    - View salaries and payslips
+    - View employee bank details
+    - **Cannot** see NRC, passport or TPIN
+    - **Cannot** run a pay run
+    - View all reports
+  </Accordion>
+  <Accordion title="HR / Payroll">
+    - Full employee records, including NRC, passport, TPIN and bank details
+    - Run and approve pay runs
+    - Manage loans, allowances and deductions
+    - Generate and distribute payslips
+    - **Cannot** file statutory returns
+
+    The separation from Finance is deliberate: the person who runs the pay run is not the person
+    who files the returns.
+  </Accordion>
+  <Accordion title="Department manager">
+    - View employees in their own department only
+    - View payslips for their own department
+    - Submit monthly inputs for their team
+    - **Cannot** see NRC, passport, TPIN or bank details
+    - **Cannot** export data
+    - **Cannot** run payroll
+  </Accordion>
+  <Accordion title="Employee">
+    - View their own payslips
+    - View and update their own contact details
+    - Nothing about anyone else
+  </Accordion>
+  <Accordion title="Viewer">
+    Read-only across what they are granted. Cannot create, edit, approve or submit anything.
+
+    Right for auditors, board members and advisers who need visibility without the ability to
+    change anything.
+  </Accordion>
+</AccordionGroup>
+
+## Sensitive data — the reference table
+
+Check this before assigning any role:
+
+| Data | Owner | Admin | Finance | HR / Payroll | Dept manager | Employee | Viewer |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Names and departments | Yes | Yes | Yes | Yes | Own dept | Own | Yes |
+| NRC, passport, TPIN | Yes | Yes | **No** | Yes | **No** | **No** | **No** |
+| Bank account details | Yes | Yes | Yes | Yes | **No** | **No** | **No** |
+| Salaries and payslips | Yes | Yes | Yes | Yes | Own dept | Own | Yes |
+| Export employee data | Yes | Yes | Yes | Yes | **No** | **No** | **No** |
+| Run a pay run | Yes | Yes | **No** | Yes | **No** | **No** | **No** |
+| File statutory returns | Yes | Yes | Yes | **No** | **No** | **No** | **No** |
+| Request submissions | Yes | Yes | Yes | **No** | **No** | **No** | **No** |
+| Change billing | Yes | **No** | **No** | **No** | **No** | **No** | **No** |
+
+## Choosing a role
+
+Ask two questions:
+
+1. **What do they need to do this month?** Not what they might one day need.
+2. **What should they not see?** Salaries and identification are the ones that matter.
+
+| If they | Give them |
+| --- | --- |
+| Own the business | Owner |
+| Manage the office and everything in it | Admin |
+| Post invoices and reconcile payments | Finance |
+| Manage staff and run payroll | HR / Payroll |
+| Lead a team and submit their attendance | Department manager |
+| Just need their own payslips | Employee |
+| Audit or advise without changing anything | Viewer |
+
+<Note>
+  When in doubt, choose the narrower role. Widening access takes ten seconds when someone asks.
+  Narrowing it after they have seen something is not possible.
+</Note>
+
+## Location assignments
+
+If you operate from more than one location, assign staff to the ones they work at. Inventory
+figures and dashboards then show only their locations.
+
+An unassigned user in a multi-location business may see nothing at all in inventory — which is
+usually the intended behaviour, not a fault.
+
+## Changing a role
+
+<Steps>
+  <Step title="Open Settings, then Team">
+    Find the person.
+  </Step>
+  <Step title="Choose Change role">
+    Effective immediately.
+  </Step>
+  <Step title="Tell them">
+    Bumara does not notify people about role changes. Someone who suddenly cannot see a page they
+    used yesterday will report it as a fault.
+  </Step>
+</Steps>
+
+## Removing someone
+
+Remove leavers the same day.
+
+Their work is not deleted — invoices they raised, payroll they ran, documents they uploaded all
+remain, and the timeline still records that they did it. Your audit trail must survive staff
+turnover.
+
+<Warning>
+  Removing someone from your team does **not** revoke their authorisation to act for you with a
+  regulator. If they were your authorised representative, replace that separately. See
+  [Authorised representative](/compliance/authorised-representative).
+</Warning>
+
+## Separation of duties
+
+For a business of any size, keep these apart:
+
+| Keep separate | Why |
+| --- | --- |
+| Running payroll and approving it | No single person both calculates and authorises pay |
+| Running payroll and filing returns | Bumara enforces this by role |
+| Recording payments and reconciling the bank | The classic control against misappropriation |
+| Making stock adjustments and counting stock | The person who can make stock disappear should not verify it |
+
+In a very small business one person often does everything. If so, the compensating control is that
+the owner reviews — the audit trail is what makes that review possible.
+
+## Reviewing access
+
+| Check | How often |
+| --- | --- |
+| Everyone in the list still works here | Monthly |
+| Roles match what people actually do | Quarterly |
+| At least two Owners | Ongoing |
+| External consultants still engaged | At each engagement end |
+| Nobody has more access than they need | Quarterly |
+
+<Note>
+  Related: [Invite your team](/start/invite-your-team) and
+  [Security and privacy](/account/security-and-privacy).
+</Note>

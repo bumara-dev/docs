@@ -1,0 +1,132 @@
+---
+title: "Invite your team"
+description: "Bring colleagues into Bumara and give each of them the right level of access."
+---
+
+Bumara is designed to be worked by several people. The bookkeeper posts invoices, the HR manager
+runs payroll, the owner approves and submits. Each person gets their own login, and every action
+is recorded against the person who took it.
+
+## Before you invite anyone
+
+Decide two things:
+
+1. **What each person needs to do.** Not what they might one day need — what they do this month.
+2. **What they must not see.** Salaries, bank details and NRC numbers are the sensitive ones.
+   These are controlled by role, not by asking people to be careful.
+
+Your plan limits how many people you can invite. See [Plan and billing](/account/plan-and-billing).
+
+## Sending an invitation
+
+<Steps>
+  <Step title="Open Settings, then Team">
+    Only Owners and Admins can see this page.
+  </Step>
+  <Step title="Choose Invite member">
+    Enter the person's work email address. Use the address they actually check — the invitation
+    and all future reminders go there.
+  </Step>
+  <Step title="Choose their role">
+    The role decides what they can open and what they can change. Roles are described below.
+  </Step>
+  <Step title="Send">
+    They receive an email with a link. If they already have a Bumara login, accepting attaches
+    it to your organisation. If not, the link walks them through creating one.
+  </Step>
+  <Step title="Confirm they arrived">
+    Pending invitations are listed on the Team page. Once accepted, the person moves into the
+    members list.
+  </Step>
+</Steps>
+
+## The roles
+
+| Role | Typically | Can do |
+| --- | --- | --- |
+| **Owner** | The business owner | Everything, including billing, plan changes and removing members |
+| **Admin** | Operations or office manager | Everything except billing and plan changes |
+| **Finance** | Accountant or bookkeeper | Invoicing, payments, statutory returns, reports. Sees bank details but not NRC or TPIN |
+| **HR / Payroll** | HR manager or payroll officer | Employees, pay runs, payslips, loans. Sees all employee data including sensitive fields |
+| **Department manager** | Team lead | Their own department's employees and payslips only |
+| **Employee** | Any staff member | Their own payslips and personal details only |
+| **Viewer** | Auditor, adviser, board member | Read-only across what they are granted; changes nothing |
+
+<Note>
+  Roles overlap deliberately. A small business often has one person as Owner doing everything;
+  a larger one separates payroll from finance so no single person both runs the pay run and
+  releases the payment.
+</Note>
+
+## Who can see sensitive data
+
+This is the table to check before inviting anyone:
+
+| Data | HR / Payroll | Finance | Dept manager | Employee |
+| --- | --- | --- | --- | --- |
+| Employee names and departments | Yes | Yes | Own department | Own record |
+| NRC, passport, TPIN | Yes | No | No | No |
+| Bank account details | Yes | Yes | No | No |
+| Salaries and payslips | Yes | Yes | Own department | Own record |
+| Export employee data | Yes | Yes | No | No |
+| Run a pay run | Yes | No | No | No |
+| File statutory returns | No | Yes | No | No |
+
+Note the deliberate split at the bottom: the person who runs payroll is not the person who files
+the returns. That separation is standard practice and Bumara enforces it by role.
+
+## Changing someone's role
+
+<Steps>
+  <Step title="Open Settings, then Team">
+    Find the person in the members list.
+  </Step>
+  <Step title="Choose Change role">
+    Pick the new role. The change takes effect immediately.
+  </Step>
+  <Step title="Tell them">
+    Bumara does not email people about role changes. If they suddenly cannot see something they
+    could see yesterday, they will assume it is a fault.
+  </Step>
+</Steps>
+
+## Removing someone
+
+When a colleague leaves, remove them the same day.
+
+<Steps>
+  <Step title="Open Settings, then Team">
+    Find them in the members list.
+  </Step>
+  <Step title="Choose Remove">
+    Their access to your organisation ends immediately. Their personal Bumara login continues to
+    exist and may belong to other organisations — that is not affected.
+  </Step>
+</Steps>
+
+Removing someone does **not** delete their work. Invoices they raised, payroll they ran and
+documents they uploaded all stay, and the timeline still records that they did it. This is
+intentional — your audit trail must survive staff turnover.
+
+<Warning>
+  If the person who left was your authorised representative with a regulator, replace the
+  authorisation as well. An authorisation naming someone who has left will block submissions.
+  See [Authorised representative](/compliance/authorised-representative).
+</Warning>
+
+## Working with an external consultant
+
+If you use an accountant or compliance consultant:
+
+- Invite them with the **Finance** or **Viewer** role rather than sharing a login.
+- Remove them when the engagement ends.
+- Their actions appear in the timeline under their own name, which is what you want if a
+  regulator ever asks who filed something.
+
+Consultants working across several clients can hold one login attached to several organisations
+and switch between them. Data never crosses between organisations.
+
+<Note>
+  Full detail on permissions, including what each role sees in every part of Bumara, is in
+  [Team and roles](/account/team-and-roles).
+</Note>

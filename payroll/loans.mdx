@@ -1,0 +1,162 @@
+---
+title: "Staff loans"
+description: "Creating loans, automatic repayment from payroll, and handling early settlement and leavers."
+---
+
+Staff loans are recovered automatically from payroll. You set the loan up once, and each pay run
+deducts the instalment until it is repaid.
+
+## Before you lend
+
+<AccordionGroup>
+  <Accordion title="Have a written policy">
+    Who is eligible, the maximum amount, the maximum term, whether interest is charged, and what
+    happens if the employee leaves. Without a policy, every request becomes a negotiation.
+  </Accordion>
+  <Accordion title="Set your limits in payroll settings">
+    Maximum amount and maximum term. Bumara enforces them, which saves you from making exceptions
+    under pressure.
+  </Accordion>
+  <Accordion title="Check the deduction cap">
+    Total deductions cannot exceed your configured maximum percentage of gross, commonly 50%. An
+    employee already carrying deductions may not have room for the instalment you are contemplating.
+  </Accordion>
+  <Accordion title="Put it in writing">
+    A signed loan agreement covering the amount, the term, the instalment, any interest, and what
+    happens on leaving. A verbal agreement is unenforceable and unpleasant to unwind.
+  </Accordion>
+</AccordionGroup>
+
+## Creating a loan
+
+<Steps>
+  <Step title="Open Payroll, then Loans, then Create loan">
+    From the Payroll sidebar.
+  </Step>
+  <Step title="Enter the details">
+    | Field | Notes |
+    | --- | --- |
+    | **Employee** | Who is borrowing |
+    | **Principal amount** | The amount lent |
+    | **Interest rate** | Annual percentage. Zero if interest-free |
+    | **Number of instalments** | How many months of repayment |
+    | **Start date** | When the first repayment is deducted |
+    | **End date** | When the final repayment falls |
+  </Step>
+  <Step title="Check the calculated instalment">
+    Bumara works it out from the principal, interest and number of instalments. Confirm the
+    employee can afford it alongside their existing deductions.
+  </Step>
+  <Step title="Save">
+    The loan is created as **Pending**.
+  </Step>
+  <Step title="Activate it">
+    Once the money has been paid to the employee, move it to **Active**. Instalments now deduct
+    from every pay run.
+  </Step>
+</Steps>
+
+## The loan lifecycle
+
+| Status | Meaning |
+| --- | --- |
+| **Pending** | Created, not yet disbursed. No deductions |
+| **Active** | Disbursed. Instalments deduct each pay run |
+| **Completed** | Fully repaid. Set automatically when the balance reaches zero |
+| **Defaulted** | Not being repaid — typically after a leaver with a balance |
+| **Cancelled** | Withdrawn before disbursement |
+
+## Automatic repayment
+
+Once active, the instalment is deducted in every pay run within the loan's date range. You do not
+enter it in monthly inputs.
+
+| Situation | What happens |
+| --- | --- |
+| Normal month | The instalment deducts, and the balance reduces |
+| The deduction cap is reached | The instalment is reduced; the shortfall carries forward |
+| The employee is unpaid this month | No deduction. The term extends |
+| The balance reaches zero | The loan completes and deductions stop |
+
+## Viewing a loan
+
+The loan detail page shows:
+
+| Panel | Contents |
+| --- | --- |
+| **Summary** | Principal, interest, total repayable, instalment amount |
+| **Progress** | Instalments paid out of total |
+| **Balance** | What remains outstanding |
+| **History** | Every repayment, with the pay run it came from |
+| **Dates** | Start, expected end, and actual end if complete |
+
+## Early settlement
+
+If an employee wants to clear the balance:
+
+<Steps>
+  <Step title="Check the outstanding balance">
+    On the loan detail page.
+  </Step>
+  <Step title="Confirm how interest is treated">
+    Whether early settlement reduces the interest depends on your policy and the loan agreement.
+  </Step>
+  <Step title="Take the payment">
+    Or deduct the balance in full from a single pay run, if the deduction cap allows.
+  </Step>
+  <Step title="Record the settlement">
+    The loan moves to **Completed**.
+  </Step>
+</Steps>
+
+## When an employee leaves
+
+<Steps>
+  <Step title="Check the outstanding balance">
+    Before calculating their final pay.
+  </Step>
+  <Step title="Recover what you can from the final payment">
+    Subject to the deduction cap and to employment law on final deductions.
+  </Step>
+  <Step title="Agree repayment for any remainder">
+    In writing, before they leave. Recovering money from a former employee without a written
+    agreement is difficult.
+  </Step>
+  <Step title="Mark the loan appropriately">
+    Completed if fully recovered; defaulted if not.
+  </Step>
+</Steps>
+
+<Warning>
+  This is the single biggest risk in staff lending. Once someone has left, your leverage is gone.
+  Address the outstanding balance as part of the exit conversation, not afterwards.
+</Warning>
+
+## Reporting
+
+The loan report shows every loan, its status, its outstanding balance and its repayment progress.
+
+| Watch for | Meaning |
+| --- | --- |
+| Total outstanding across all loans | Your overall exposure |
+| Loans where instalments are being capped | Employees over-committed on deductions |
+| Loans nearing their end date with a balance | The term will overrun |
+| Defaulted loans | Money you may not recover |
+
+## Advances versus loans
+
+| | Salary advance | Staff loan |
+| --- | --- | --- |
+| **Amount** | Small, usually part of a month's pay | Larger |
+| **Repayment** | One deduction, next pay run | Over several months |
+| **Interest** | None | Optional |
+| **Set up as** | An input in monthly inputs | A loan record |
+| **Written agreement** | Usually not | Always |
+
+Use advances for short-term needs and loans for anything larger. Repeated advances by the same
+employee usually indicate something a loan would handle better.
+
+<Note>
+  Related: [Pay elements](/payroll/pay-elements) for the deduction cap, and
+  [Monthly inputs](/payroll/monthly-inputs) for advances.
+</Note>

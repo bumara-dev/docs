@@ -1,0 +1,164 @@
+---
+title: "Transfers"
+description: "Moving stock between your locations, with or without an in-transit stage."
+---
+
+A transfer moves stock from one of your locations to another. Nothing is created or destroyed — the
+quantity leaves the source and arrives at the destination.
+
+## When to use one
+
+- Restocking a shop from a warehouse
+- Moving goods between branches
+- Loading a delivery vehicle
+- Returning unsold stock to a central store
+
+If stock is genuinely leaving your business — sold, written off, returned to a supplier — that is
+an [adjustment](/inventory/adjustments), not a transfer.
+
+## Two ways to transfer
+
+### Complete in one step
+
+Use this when the move is immediate — carrying stock between rooms, or between two shops on the
+same trip.
+
+Stock leaves the source and arrives at the destination in a single action.
+
+### Ship, then receive
+
+Use this when the goods are in transit for a meaningful period — a lorry between towns, an
+overnight delivery.
+
+<Steps>
+  <Step title="Ship">
+    Stock is deducted from the source. It is now in transit.
+  </Step>
+  <Step title="The goods travel">
+    They are neither at the source nor at the destination. The transfer sits **In transit**.
+  </Step>
+  <Step title="Receive">
+    Stock is added at the destination when it physically arrives.
+  </Step>
+</Steps>
+
+The in-transit stage is worth using whenever goods spend real time on the road. It tells you what
+has left but not yet arrived — which is exactly what you need to know when something goes missing.
+
+## Creating a transfer
+
+<Steps>
+  <Step title="Open Inventory, then Transfers">
+    Choose **New transfer**.
+  </Step>
+  <Step title="Select the source and destination">
+    They must be different locations.
+  </Step>
+  <Step title="Add your lines">
+    Item, quantity and unit for each.
+  </Step>
+  <Step title="Add a reference">
+    A delivery note number, a vehicle registration, a driver's name — whatever helps you trace it.
+  </Step>
+  <Step title="Save as draft">
+    Nothing has moved yet.
+  </Step>
+  <Step title="Check it against what is physically going">
+    Right items, right quantities.
+  </Step>
+  <Step title="Ship or complete">
+    **Ship** if the goods will be in transit. **Complete** if the move is immediate.
+  </Step>
+</Steps>
+
+## Receiving
+
+<Steps>
+  <Step title="Open the transfer">
+    From Inventory → Transfers, filtered to In transit.
+  </Step>
+  <Step title="Check what actually arrived">
+    Against the transfer lines. Count it — do not assume.
+  </Step>
+  <Step title="Receive">
+    Stock is added at the destination.
+  </Step>
+  <Step title="Deal with any shortfall separately">
+    See below.
+  </Step>
+</Steps>
+
+## Transfer statuses
+
+| Status | Meaning | Stock position |
+| --- | --- | --- |
+| **Draft** | Being prepared | Unchanged |
+| **In transit** | Shipped, not yet received | Deducted from source |
+| **Received** | Complete | Added at destination |
+| **Void** | Reversed | Returned to where it was |
+
+## If something is missing on arrival
+
+This is the situation the in-transit stage exists for.
+
+<Steps>
+  <Step title="Receive what actually arrived">
+    Do not record a quantity you did not receive.
+  </Step>
+  <Step title="Investigate the difference">
+    Was it short-loaded, mis-counted at the source, or lost in transit?
+  </Step>
+  <Step title="Record the shortfall as an adjustment">
+    At whichever location the loss actually occurred, with the reason **loss** and a note
+    explaining it.
+  </Step>
+  <Step title="Follow it up">
+    A pattern of shortfalls on a particular route or with a particular driver is worth knowing about.
+  </Step>
+</Steps>
+
+## Voiding
+
+| Situation | Effect of voiding |
+| --- | --- |
+| **In transit** | Stock returns to the source |
+| **Received** | Movements at both locations are reversed |
+
+Only an administrator can void, and a reason is required. The original transfer stays visible.
+
+<Warning>
+  Voiding a received transfer reverses stock at both ends. If some of the goods have already been
+  sold from the destination, this will produce a negative balance. Adjust rather than void in that
+  situation.
+</Warning>
+
+## What Bumara checks
+
+| Check | Behaviour |
+| --- | --- |
+| Source and destination differ | A transfer to the same location is rejected |
+| At least one line | An empty transfer is rejected |
+| Source has enough stock | Blocked if shipping would go negative |
+| Items are active | Archived items cannot be transferred |
+
+## Good practice
+
+- **Ship and receive separately** when goods are genuinely in transit. The visibility is the point.
+- **Count on arrival.** Every time. This is where discrepancies are caught cheaply.
+- **Reference the physical paperwork.** Delivery note number, vehicle, driver.
+- **Review what is in transit weekly.** A transfer shipped three weeks ago and never received means
+  either the stock or the record has gone astray.
+- **Receive promptly.** Stock sitting in transit is stock nobody can sell.
+
+## Reviewing transfers
+
+| Watch for | What it may indicate |
+| --- | --- |
+| Long-standing in-transit transfers | Never received, or lost |
+| Frequent shortfalls on a route | Loss in transit worth investigating |
+| Transfers voided soon after posting | Errors at the point of entry |
+| Stock constantly moving between the same two locations | Ordering or allocation is happening at the wrong place |
+
+<Note>
+  Related: [Adjustments](/inventory/adjustments) and [Stock counts](/inventory/stock-counts).
+</Note>

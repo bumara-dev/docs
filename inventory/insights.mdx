@@ -1,0 +1,162 @@
+---
+title: "Insights and reports"
+description: "Stock value, low stock, movement history and profit — what the inventory dashboard tells you and what to do about it."
+---
+
+The inventory dashboard answers the questions you actually have: what is my stock worth, what is
+about to run out, and where did that quantity come from.
+
+## The dashboard
+
+| Figure | Meaning | What it should prompt |
+| --- | --- | --- |
+| **Total stock value** | On-hand quantity multiplied by cost, across your scope | Is too much cash tied up in stock? |
+| **Low stock items** | Items at or below their reorder level | Order these now |
+| **Total items** | How many distinct items you hold | Is the range wider than you can manage? |
+| **Active locations** | How many places hold stock | — |
+| **Recent movements** | The latest stock changes | A quick check that things look normal |
+| **Stock value trend** | Value over time | Rising faster than sales means over-ordering |
+| **Stock distribution** | Value split across locations | Is stock where the customers are? |
+
+## What you see depends on your locations
+
+The dashboard is scoped to the locations you are assigned to. A shop manager sees their own shop; an
+owner sees everything.
+
+If a figure looks lower than expected, check which locations you are assigned to before assuming a
+fault. See [Team and roles](/account/team-and-roles).
+
+## Stock value
+
+Stock value is on-hand quantity multiplied by cost price.
+
+<Warning>
+  If your item cost prices are wrong, your stock value is wrong. It is common to set up items with a
+  placeholder cost and never revisit it. Review costs when supplier prices change.
+</Warning>
+
+| Value is | Consider |
+| --- | --- |
+| Rising faster than sales | Over-ordering, or slow-moving stock accumulating |
+| Falling while sales are steady | Under-ordering — you will hit shortages |
+| Concentrated in a few items | Is that where demand actually is? |
+| Concentrated at one location | Is stock where your customers are? |
+
+## Low stock
+
+An item is flagged when its balance reaches or falls below its reorder level.
+
+<Steps>
+  <Step title="Review the low stock list">
+    Daily if you trade fast, weekly otherwise.
+  </Step>
+  <Step title="Check whether it is genuinely low">
+    Or whether goods have arrived and were not entered.
+  </Step>
+  <Step title="Order or transfer">
+    From a supplier, or from another of your locations that has surplus.
+  </Step>
+  <Step title="Review the reorder level itself">
+    An item constantly on the list has a level set too high, or a supply problem.
+  </Step>
+</Steps>
+
+Configure low stock notifications in [Reminders](/account/notifications).
+
+## Movement history
+
+The most useful diagnostic in inventory. Every stock change is recorded permanently and can be
+traced.
+
+<Steps>
+  <Step title="Open the item">
+    From Inventory → Items.
+  </Step>
+  <Step title="Open its Movements panel">
+    Every operation that has affected this item, newest first.
+  </Step>
+  <Step title="Read the entries">
+    Each shows the date, the type of operation, the quantity, the location, the reason and who did
+    it.
+  </Step>
+  <Step title="Trace back to the cause">
+    Work backwards from the current balance until the numbers stop making sense. That is where the
+    problem is.
+  </Step>
+</Steps>
+
+Movements are never edited or deleted. Corrections appear as new movements, so the history always
+reconciles to the current balance.
+
+## Profit view
+
+Nets your sales against your costs and expenses, per location.
+
+| Component | From |
+| --- | --- |
+| Revenue | Cash sales and completed lay-bys |
+| Cost of goods | Item cost prices on what was sold |
+| Gross profit | Revenue less cost of goods |
+| Expenses | Operating costs recorded against the location |
+| Net profit | Gross profit less expenses |
+
+Accuracy depends entirely on your cost prices being right. Stale costs make the margin figure
+fiction.
+
+## Reports
+
+| Report | Shows | Use for |
+| --- | --- | --- |
+| **Stock on hand** | Current quantities by item and location | Knowing what you have |
+| **Stock value** | Value by item, category and location | Financial reporting |
+| **Low stock** | Items at or below reorder level | Purchasing |
+| **Movements** | All stock changes in a period | Investigation and audit |
+| **Cash sales** | Counter sales in a period | Daily reconciliation |
+| **Expenses** | Operating costs by category | Cost control |
+| **Profit** | Revenue against costs per location | Performance |
+
+Most export to CSV or PDF.
+
+## A working routine
+
+<AccordionGroup>
+  <Accordion title="Daily">
+    - Reconcile the till
+    - Check the low stock list
+    - Record cash-outs as they happen
+  </Accordion>
+  <Accordion title="Weekly">
+    - Cycle count a subset of items
+    - Review lay-bys past their due date
+    - Review transfers still in transit
+    - Order against the low stock list
+  </Accordion>
+  <Accordion title="Monthly">
+    - Review the adjustments list, particularly losses
+    - Review stock value against last month
+    - Review expenses by category
+    - Check item cost prices against supplier invoices
+    - Review the profit view per location
+  </Accordion>
+  <Accordion title="Quarterly">
+    - Full stock count
+    - Review reorder levels against actual usage
+    - Identify slow-moving stock and decide what to do about it
+    - Archive items no longer stocked
+  </Accordion>
+</AccordionGroup>
+
+## Numbers worth watching
+
+| Measure | Tells you |
+| --- | --- |
+| **Stock turnover** | How quickly stock sells. Low means cash is sitting on shelves |
+| **Stock value against monthly sales** | How many months of stock you hold |
+| **Loss adjustments as a share of sales** | Shrinkage. Rising means investigate |
+| **Count variance rate** | How well records track reality. Rising means a process problem |
+| **Items below reorder level** | Whether purchasing is keeping up |
+
+<Note>
+  Related: [Stock counts](/inventory/stock-counts) and
+  [Sales and expenses](/inventory/sales-and-expenses).
+</Note>

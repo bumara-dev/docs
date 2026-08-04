@@ -1,0 +1,135 @@
+---
+title: "Customers and vendors"
+description: "Building your customer and vendor directories, and using statements to manage what is owed."
+---
+
+Your customer directory is who you sell to. Your vendor directory is who you buy from. Both are
+worth building properly — a good directory turns invoicing from data entry into a few clicks.
+
+## Adding a customer
+
+<Steps>
+  <Step title="Open Sales, then Customers">
+    Choose **New customer**.
+  </Step>
+  <Step title="Enter their identity">
+    | Field | Notes |
+    | --- | --- |
+    | **Name** | The legal name they trade under — this appears on the invoice |
+    | **Type** | Business or individual |
+    | **TPIN** | Required if you transmit to ZRA Smart Invoice, and for business customers generally |
+    | **Registration number** | For business customers |
+  </Step>
+  <Step title="Enter contact details">
+    Primary contact name, email, phone. The email is where invoices are sent, so use the one that
+    actually pays bills — often accounts@, not the person you deal with day to day.
+  </Step>
+  <Step title="Enter addresses">
+    Billing address, and a shipping address if it differs. Both can appear on the invoice.
+  </Step>
+  <Step title="Set payment terms">
+    Their default due date. This overrides your global default for this customer.
+  </Step>
+  <Step title="Set a credit limit if you want one">
+    Optional. Useful for customers with a habit of stretching.
+  </Step>
+  <Step title="Save">
+    They are now selectable on any invoice, quote or credit note.
+  </Step>
+</Steps>
+
+<Note>
+  For business customers, collect the TPIN when you open the account, not when you first need it.
+  Chasing a TPIN to transmit an invoice to ZRA is a conversation nobody enjoys.
+</Note>
+
+## Adding a vendor
+
+Vendors work the same way, with two additions that matter:
+
+| Field | Why |
+| --- | --- |
+| **Bank details** | So you can pay them without asking every time |
+| **TPIN** | Required if payments to them are subject to [withholding tax](/regulators/zra/withholding-tax) |
+
+## Keeping the directory clean
+
+A directory with three entries for the same customer produces three statements, none of which is
+right.
+
+| Habit | Why |
+| --- | --- |
+| Search before adding | Prevents duplicates |
+| Use the legal name | Not the nickname you use in conversation |
+| One record per legal entity | Not one per contact person at that entity |
+| Update rather than duplicate | When a customer moves, edit the record |
+| Archive rather than delete | Deleting breaks the link to historical invoices |
+
+## Customer statements
+
+A statement lists every transaction with one customer and shows what is outstanding. It is the
+single most effective collection tool you have.
+
+<Steps>
+  <Step title="Open the customer">
+    From Sales → Customers.
+  </Step>
+  <Step title="Choose Statement">
+    Set the period you want covered.
+  </Step>
+  <Step title="Review it">
+    Invoices, credit notes, payments and the running balance, with aging.
+  </Step>
+  <Step title="Send it">
+    Download as PDF, or email directly to the customer.
+  </Step>
+</Steps>
+
+Sending statements monthly to every customer with a balance is more effective than chasing
+individual invoices. It is also harder to argue with — the customer sees the whole position.
+
+## Aging
+
+Aging groups what a customer owes by how late it is:
+
+| Bucket | Meaning | Typical action |
+| --- | --- | --- |
+| **Current** | Not yet due | Nothing |
+| **1–30 days** | Recently overdue | A polite reminder |
+| **31–60 days** | Genuinely late | A phone call, not an email |
+| **61–90 days** | Seriously late | Stop supplying, escalate |
+| **90+ days** | At risk | Formal demand; consider whether it is collectable |
+
+The [aging report](/invoicing/reports-and-statements) shows this across all customers at once.
+
+## Vendor statements
+
+The same in reverse: every transaction with one vendor, and what you owe. Use these to reconcile
+against the vendor's own statement before paying — it is the reliable way to catch a bill you were
+invoiced twice for, or a credit note the vendor never applied.
+
+## Customer and vendor history
+
+Open any customer or vendor to see:
+
+| Panel | Shows |
+| --- | --- |
+| **Summary** | Total invoiced, total paid, outstanding balance |
+| **Transactions** | Every invoice, credit note and payment |
+| **Aging** | What is outstanding, by bucket |
+| **Contacts** | Everyone you deal with there |
+| **Documents** | Anything attached to this relationship |
+
+## Practical habits
+
+- **Set terms per customer.** A customer who always pays in 45 days should have 45-day terms, so
+  your aging report reflects reality.
+- **Send statements on a fixed day.** The first working day of each month, without exception.
+- **Act at 30 days, not 90.** Debt recovery rates fall sharply with age.
+- **Record what you promised.** If a customer commits to paying on a date, note it on the invoice
+  so the next person chasing knows.
+
+<Note>
+  Related: [Recording payments](/invoicing/recording-payments) and
+  [Reports and statements](/invoicing/reports-and-statements).
+</Note>

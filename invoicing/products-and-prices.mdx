@@ -1,0 +1,136 @@
+---
+title: "Products and prices"
+description: "Building a catalogue of what you sell so invoicing is fast, consistent and correctly taxed."
+---
+
+Your catalogue holds everything you sell — goods and services alike. Building it turns invoicing
+from typing descriptions into selecting items, and it makes your revenue reports meaningful.
+
+## Why bother
+
+| Without a catalogue | With one |
+| --- | --- |
+| Descriptions typed differently every time | Consistent wording on every invoice |
+| Prices remembered or looked up | Applied automatically |
+| Tax rate chosen per line, sometimes wrongly | Correct rate applied every time |
+| Revenue reports show nothing useful | Revenue by product or service |
+| Cannot link to stock | Stock deducted as you invoice |
+
+## Adding a product or service
+
+<Steps>
+  <Step title="Open Products and choose New product">
+    From the Invoicing sidebar.
+  </Step>
+  <Step title="Enter the basics">
+    | Field | Notes |
+    | --- | --- |
+    | **Name** | What appears on the invoice. Write it as the customer should read it |
+    | **SKU or code** | Your internal reference. Required if it links to inventory |
+    | **Description** | Longer detail, shown under the name on the invoice |
+    | **Type** | Product (physical goods) or service |
+  </Step>
+  <Step title="Set the price">
+    Your standard selling price. It can be overridden on any individual invoice line.
+  </Step>
+  <Step title="Set the tax rate">
+    Which of your configured rates applies. Get this right at the product level and every future
+    invoice is correct without thought.
+  </Step>
+  <Step title="Set the unit">
+    Each, hour, kilogram, box, day. Appears on the invoice line.
+  </Step>
+  <Step title="Link to inventory if it is a stocked item">
+    Match the SKU to the inventory item so selling it moves stock. See
+    [Inventory overview](/inventory/overview).
+  </Step>
+  <Step title="Save">
+    It is now selectable on invoices, quotes and purchase documents.
+  </Step>
+</Steps>
+
+## Pricing
+
+| Field | Use |
+| --- | --- |
+| **Selling price** | What you charge |
+| **Cost price** | What it costs you — used for margin reporting |
+| **Tax rate** | Applied automatically to lines using this product |
+| **Tax inclusive or exclusive** | Whether the price shown already contains tax |
+
+<Warning>
+  Be consistent about tax-inclusive versus tax-exclusive pricing across your whole catalogue.
+  Mixing the two produces invoices where some lines behave differently from others, and totals that
+  customers query.
+</Warning>
+
+## Changing prices
+
+Editing a product's price changes it for **future** invoices only. Invoices already issued keep the
+price they were issued at — as they must, since the customer has a copy.
+
+If you are increasing prices:
+
+<Steps>
+  <Step title="Tell customers first">
+    Particularly those on recurring invoices.
+  </Step>
+  <Step title="Update the catalogue">
+    Change the price on the product.
+  </Step>
+  <Step title="Check your recurring invoices">
+    They pick up the new price at their next run. See
+    [Recurring invoices](/invoicing/recurring-invoices).
+  </Step>
+  <Step title="Check open quotes">
+    A quote already sent at the old price should be honoured. Do not silently reprice it.
+  </Step>
+</Steps>
+
+## Organising the catalogue
+
+As it grows, structure helps:
+
+- **Categories** — group by type of work or product family
+- **SKU conventions** — a consistent code structure makes searching fast
+- **Archive rather than delete** — archiving keeps historical invoices intact; deleting breaks them
+
+<Warning>
+  Never delete a product that appears on issued invoices. Archive it. Deleting removes the link
+  and leaves historical documents referencing something that no longer exists.
+</Warning>
+
+## Services versus products
+
+| | Service | Product |
+| --- | --- | --- |
+| Physical stock | No | Usually yes |
+| Links to inventory | No | Yes, if stocked |
+| Typical unit | Hour, day, month, job | Each, kilogram, box |
+| Cost price | Optional | Useful for margin |
+
+Consultancy, delivery charges, installation, monthly retainers — all services. Set them up
+properly rather than typing them freehand each time.
+
+## One-off lines
+
+You do not have to catalogue everything. On any invoice you can type a description, quantity, price
+and tax rate directly without creating a product.
+
+Use this for genuinely one-off items. If you find yourself typing the same description for the
+third time, put it in the catalogue.
+
+## Tax rates on lines
+
+The product's rate is applied by default and can be changed per line. Change it when:
+
+- You are exporting, and the supply is zero-rated
+- The specific supply is exempt
+- The customer's circumstances change the treatment
+
+If you are changing the rate on most lines, the product's default rate is wrong. Fix it at source.
+
+<Note>
+  Related: [Setting up invoicing](/invoicing/setting-up) for configuring the tax rates themselves,
+  and [Create and send an invoice](/invoicing/create-and-send-an-invoice) for using the catalogue.
+</Note>

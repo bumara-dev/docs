@@ -1,0 +1,164 @@
+---
+title: "PAYE returns"
+description: "Filing your monthly Pay As You Earn return with ZRA, using figures from your payroll run."
+---
+
+PAYE is the tax you deduct from your employees' pay and remit to ZRA on their behalf. You file a
+return every month showing what each employee earned and what was deducted.
+
+If you run payroll in Bumara, most of this is already done.
+
+## When it is due
+
+**The 10th of the following month.** March's PAYE is due by 10 April.
+
+This is one of the tightest deadlines in the Zambian compliance calendar — ten days from the end
+of the period. Your payroll must be finished well before it.
+
+## The recommended monthly sequence
+
+<Steps>
+  <Step title="Run payroll before your cutoff day">
+    Monthly inputs in, payroll previewed, payroll processed. See
+    [Running payroll](/payroll/running-payroll).
+  </Step>
+  <Step title="Open the PAYE filing">
+    ZRA workspace → **Filings** → the PAYE return for that month.
+  </Step>
+  <Step title="Pre-fill from your payroll run">
+    Choose the pre-fill option. Bumara populates the employee data from the completed pay run.
+  </Step>
+  <Step title="Review every employee's figures">
+    Described below. This is the part that matters.
+  </Step>
+  <Step title="Upload the payroll summary">
+    Generated from your pay run. Uploading it completes the matching task automatically.
+  </Step>
+  <Step title="Confirm and request submission">
+    By the 10th, not on the 10th.
+  </Step>
+</Steps>
+
+## The checklist
+
+A PAYE filing carries four required tasks:
+
+| Task | What it means |
+| --- | --- |
+| **Enter payroll totals** | The month's figures, pre-filled from your pay run |
+| **Validate employee counts** | Confirm the number of employees is right |
+| **Upload payroll summary** | Attach the summary document |
+| **Review and confirm** | Formally confirm the return before submission |
+
+Two documents are involved: the **payroll summary** (required) and an **employee list**
+(optional, useful where the return is complex).
+
+## What is reported per employee
+
+| Field | Meaning |
+| --- | --- |
+| **TPIN** | The employee's own taxpayer identification number |
+| **Gross emoluments** | Total earnings for the month — salary, allowances, overtime |
+| **Chargeable emoluments** | The portion that is actually taxable |
+| **Total tax credit** | Credits applied to the employee |
+| **PAYE deducted** | The tax withheld and being remitted |
+
+## Reviewing the figures
+
+Pre-filling saves the typing, not the responsibility. Check these before confirming:
+
+<AccordionGroup>
+  <Accordion title="Employee count">
+    Does it match who you actually paid? Leavers who were paid part-month should be included.
+    Joiners mid-month should be included. Someone on unpaid leave who was paid nothing may not be.
+  </Accordion>
+  <Accordion title="Missing TPINs">
+    Every employee needs their own TPIN on the return. A missing one will cause a rejection. Add
+    it to the employee's record in Payroll, then re-run the pre-fill.
+  </Accordion>
+  <Accordion title="Unusual gross figures">
+    A large jump usually means a bonus, a back-payment or a leaver's final settlement. Confirm it
+    is intentional rather than an input error in monthly inputs.
+  </Accordion>
+  <Accordion title="Chargeable versus gross">
+    These differ where an employee has non-taxable elements. If chargeable equals gross for
+    everyone and you expected otherwise, check your allowance configuration in
+    [Pay elements](/payroll/pay-elements).
+  </Accordion>
+  <Accordion title="Total PAYE against your bank">
+    The total being remitted should match what you are about to pay ZRA. Reconcile these before
+    submitting, not afterwards.
+  </Accordion>
+</AccordionGroup>
+
+## How PAYE is calculated
+
+Bumara applies ZRA's progressive tax bands to each employee's chargeable emoluments during the
+pay run. The bands are maintained centrally and updated when ZRA changes them.
+
+The calculation happens in payroll, not in the return. The return reports what payroll calculated.
+If a figure is wrong, correct it in payroll and re-run — do not edit the return in isolation, or
+your payroll records and your ZRA filings will disagree.
+
+<Warning>
+  Editing the return without correcting payroll creates a mismatch between what you told ZRA and
+  what your own records show. That discrepancy is exactly what a ZRA audit looks for.
+</Warning>
+
+## Nil returns
+
+If you had no employees or paid nobody in the month:
+
+<Steps>
+  <Step title="Open the filing and mark it as a nil return">
+    In the figures section.
+  </Step>
+  <Step title="Choose the reason">
+    No employees, below threshold, temporarily inactive, seasonal, unpaid leave, or other.
+  </Step>
+  <Step title="Submit">
+    A nil return becomes ready immediately — there are no employee figures to enter.
+  </Step>
+</Steps>
+
+## Paying the PAYE
+
+Filing the return and paying the tax are separate acts. Filing on the 10th and paying late still
+attracts interest on the unpaid amount.
+
+The total PAYE from your return is what you remit to ZRA. Record the payment reference against the
+filing so your evidence trail is complete.
+
+## Return statuses
+
+| Status | Meaning |
+| --- | --- |
+| **Draft** | Being prepared |
+| **Pending** | Submitted to ZRA, awaiting processing |
+| **Processing** | ZRA is working on it |
+| **Accepted** | Confirmed by ZRA |
+| **Rejected** | Returned — the reason is recorded |
+| **Late** | Filed after the due date |
+| **Amended** | A corrected version of a previously filed return |
+
+## If a return is rejected
+
+| Common reason | Fix |
+| --- | --- |
+| Employee TPIN missing or invalid | Correct it in the employee record, re-run the pre-fill |
+| Employee count inconsistent with the figures | Check for someone included with zero pay, or omitted |
+| Totals do not reconcile | Re-check the pay run rather than adjusting the return |
+| Filed for the wrong period | Cancel and file against the correct period |
+
+Reopen the affected task, correct it, and request submission again.
+
+## Amending a filed return
+
+If you discover an error after filing, you file an amended return rather than editing the original.
+Raise this through the messages panel on the filing — the Bumara team will guide the amendment,
+because ZRA's amendment process differs by circumstance.
+
+<Note>
+  Related: [Running payroll](/payroll/running-payroll) and
+  [Statutory returns](/payroll/statutory-returns).
+</Note>

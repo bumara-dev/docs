@@ -1,0 +1,159 @@
+---
+title: "Point of sale"
+description: "Selling over the counter — building a cart, taking payment, printing a receipt, and how stock is deducted."
+---
+
+The till handles counter sales. Build a cart, take payment, print a receipt — and stock is deducted
+automatically as part of completing the sale.
+
+## Making a sale
+
+<Steps>
+  <Step title="Select the location">
+    Which shop or store you are selling from. Stock is deducted from here.
+  </Step>
+  <Step title="Add items to the cart">
+    Three ways:
+
+    | Method | Use when |
+    | --- | --- |
+    | **Search** | Type the item name or code |
+    | **Barcode scan** | The item has a barcode. Fastest by far |
+    | **Visual scan** | No barcode, but a reference photo exists |
+
+    See [Scanning](/inventory/scanning).
+  </Step>
+  <Step title="Adjust quantities and prices">
+    Quantities default to one. Prices come from the item, and can be overridden per line where your
+    policy allows.
+  </Step>
+  <Step title="Apply a discount if there is one">
+    Either a percentage of the cart total, or a fixed amount off.
+  </Step>
+  <Step title="Select the payment method">
+    Cash, card or mobile money.
+  </Step>
+  <Step title="For cash, enter the amount tendered">
+    The change due is calculated and displayed.
+  </Step>
+  <Step title="Complete the sale">
+    Stock is deducted and the sale is recorded.
+  </Step>
+  <Step title="Print the receipt">
+    Optional, and formatted for a standard thermal printer.
+  </Step>
+</Steps>
+
+## Items with no stock
+
+Items with zero on-hand quantity are hidden from the till by default, so staff cannot sell what is
+not there.
+
+If an item that should be available is not showing:
+
+| Cause | Fix |
+| --- | --- |
+| Stock genuinely at zero | Receive or transfer stock in |
+| Goods received but not entered | Post the receiving adjustment |
+| Stock is at a different location | Transfer it, or switch the till location |
+| Item is archived | Reactivate it |
+
+## Tax
+
+Prices at the till are **tax inclusive** — the price shown already contains the tax.
+
+| Code | Meaning | Rate |
+| --- | --- | --- |
+| **A** | Standard rated VAT | 16% |
+| **TOT** | Turnover tax | 4% |
+| — | Exempt or zero rated | 0% |
+
+The tax portion is extracted from the inclusive price and shown separately on the receipt, which is
+what customers and ZRA expect to see.
+
+## Discounts
+
+A single discount applies to the whole cart, as either a percentage or a fixed amount.
+
+<Warning>
+  Decide who is allowed to discount and by how much, and make it a policy rather than a judgement
+  call at the counter. Discounts applied at the till are the easiest margin leak to miss, because
+  each one individually looks small.
+</Warning>
+
+## The receipt
+
+Formatted for an 80mm thermal printer, and includes:
+
+- Your business name and the location
+- Date and time
+- Each line: item, quantity, unit price, line total
+- Subtotal, discount, tax breakdown, grand total
+- Payment method, and change given for cash
+
+## How stock is deducted
+
+A cash sale is recorded as a stock adjustment with the reason **sale**, created and posted
+immediately. This means counter sales go through exactly the same audited path as every other stock
+movement — they appear in the item's movement history alongside adjustments, transfers and counts.
+
+<Note>
+  If a sale fails to complete, it leaves a draft adjustment behind rather than silently
+  disappearing. If you suspect a sale did not register, check the adjustments list for an unposted
+  draft.
+</Note>
+
+## Sales history
+
+Open **Inventory → Sales → Cash sales** to see every transaction.
+
+| Filter | Use |
+| --- | --- |
+| **Date range** | A day's takings, or a period |
+| **Location** | One shop's performance |
+
+Export the list to CSV or PDF for reconciliation or reporting.
+
+## End of day
+
+<Steps>
+  <Step title="Run the day's sales list">
+    Filtered to today and to your location.
+  </Step>
+  <Step title="Count the cash in the till">
+    Physically.
+  </Step>
+  <Step title="Reconcile">
+    Cash sales, less any cash-outs, plus the opening float, should equal what is in the drawer.
+  </Step>
+  <Step title="Investigate differences">
+    A shortfall usually means a sale rung up wrongly, change given incorrectly, or a cash-out not
+    recorded.
+  </Step>
+  <Step title="Record cash-outs">
+    Any money taken from the till — float, petty cash, a refund. See
+    [Sales and expenses](/inventory/sales-and-expenses).
+  </Step>
+</Steps>
+
+## Refunds
+
+The till does not process refunds directly. Record one as a stock adjustment bringing the goods
+back in, with a note, and a cash-out for the money returned.
+
+For goods sold on an invoice rather than at the till, issue a
+[credit note](/invoicing/credit-and-debit-notes) instead.
+
+## Good practice
+
+- **Scan rather than search.** Faster, and it eliminates picking the wrong item.
+- **Confirm the total before taking money.** Reading it aloud catches errors.
+- **Give receipts.** Every sale, without being asked.
+- **Reconcile the till daily.** Small differences found daily are manageable; a month of them is not.
+- **Record cash-outs immediately.** Not at the end of the day from memory.
+- **Set a discount policy.** And enforce it.
+
+<Note>
+  Related: [Scanning](/inventory/scanning) and
+  [Sales and expenses](/inventory/sales-and-expenses).
+</Note>

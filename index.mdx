@@ -1,96 +1,74 @@
 ---
-title: "Bumara"
-description: "The compliance, payroll, invoicing, and inventory platform for Zambian businesses. Start here."
+title: "Bumara Help Centre"
+description: "Run your business and stay compliant with PACRA, ZRA, NAPSA and NHIMA — invoicing, payroll, inventory and filings in one place."
 mode: "wide"
 ---
 
-Bumara is a multi-tenant ERP and compliance platform. It keeps a business current with
-its regulators (PACRA, ZRA, NAPSA, NHIMA) while running the day to day operations that
-generate the filings: payroll, invoicing, inventory, and documents.
-
-These docs cover the whole system: how to get it running locally, how it is put
-together, and how each feature behaves.
-
-## Start here
+Bumara keeps your business current with its regulators while running the day-to-day work that
+creates the filings — invoicing, payroll, inventory and documents. This help centre walks you
+through every task you will do in Bumara, step by step.
 
 <CardGroup cols={2}>
-  <Card title="Local setup" icon="terminal" href="/SETUP">
-    Get the monorepo installed and every app running on your machine.
+  <Card title="New to Bumara?" icon="rocket" href="/start/what-is-bumara">
+    What Bumara does, who it is for, and what happens in your first week.
   </Card>
-  <Card title="Onboarding" icon="map" href="/ONBOARDING">
-    The first week for a new engineer, day by day.
-  </Card>
-  <Card title="Architecture" icon="sitemap" href="/ARCHITECTURE">
-    The tech stack, the multi-worker split, and the principles behind both.
-  </Card>
-  <Card title="API setup" icon="plug" href="/API-SETUP">
-    Hono workers, Neon Postgres, and auth wiring.
+  <Card title="Set up your business" icon="building" href="/start/set-up-your-business">
+    Your organisation details, regulators, and the compliance health check.
   </Card>
 </CardGroup>
 
-## Product surfaces
-
-Each surface is a zone in the single Next.js app, backed by its own Hono worker.
+## What do you want to do?
 
 <CardGroup cols={2}>
-  <Card title="Inventory" icon="boxes-stacked" href="/inventory">
-    Stock ledger, adjustments, transfers, counts, POS, and barcode scanning.
+  <Card title="Stay compliant" icon="shield-check" href="/compliance/overview">
+    See what you owe, complete the checklist, upload evidence and submit on time.
   </Card>
-  <Card title="Invoicing" icon="file-invoice" href="/invoicing/01-technical-architecture">
-    Invoice lifecycle, ZRA Smart Invoice sync, and customer records.
+  <Card title="Get paid" icon="file-invoice" href="/invoicing/overview">
+    Quotes, invoices, payments, statements, and ZRA Smart Invoice.
   </Card>
-  <Card title="Payroll" icon="money-check-dollar" href="/payroll/01-technical-architecture">
-    Employees, pay runs, statutory deductions, and payslips.
+  <Card title="Pay your people" icon="users" href="/payroll/overview">
+    Employees, monthly inputs, pay runs, payslips, PAYE, NAPSA and NHIMA.
   </Card>
-  <Card title="Compliance tasks" icon="list-check" href="/platform/tasks/overview">
-    Obligations, filing deadlines, readiness, and task linking.
-  </Card>
-  <Card title="Backoffice" icon="building-lock" href="/backoffice">
-    The internal operations console: cases, queues, tickets, and finance.
-  </Card>
-  <Card title="Liability assessments" icon="scale-balanced" href="/liability-assessments">
-    How statutory liabilities are computed and presented.
+  <Card title="Track your stock" icon="boxes-stacked" href="/inventory/overview">
+    Items, counts, transfers, the till, and what your stock is worth.
   </Card>
 </CardGroup>
 
-## Shared platform modules
-
-Cross-cutting services that every surface builds on.
-
-<CardGroup cols={2}>
-  <Card title="Documents" icon="folder-open" href="/modules/documents">
-    S3 storage, presigned URLs, immutability locking, and audit trail.
-  </Card>
-  <Card title="Notifications" icon="bell" href="/modules/notifications">
-    Event catalog, routing, channel adapters, scheduler, and webhooks.
-  </Card>
-  <Card title="Payments" icon="credit-card" href="/modules/payments">
-    Gateways, fee calculators, webhooks, and reconciliation.
-  </Card>
-  <Card title="Subscriptions" icon="repeat" href="/modules/subscriptions">
-    Plans, entitlement enforcement, and billing lifecycle.
-  </Card>
-  <Card title="Tasks" icon="clipboard-check" href="/modules/tasks">
-    The task engine behind compliance obligations.
-  </Card>
-</CardGroup>
-
-## Regulators
+## Working with a regulator
 
 <CardGroup cols={2}>
   <Card title="PACRA" icon="landmark" href="/regulators/pacra/overview">
-    Company and business name registration, name clearance, annual returns.
+    Name clearance, company and business name registration, annual returns.
   </Card>
-  <Card title="ZRA" icon="receipt" href="/regulators/zra/paye/spec">
-    PAYE, turnover tax, withholding tax, and Smart Invoice.
+  <Card title="ZRA" icon="receipt" href="/regulators/zra/overview">
+    PAYE, turnover tax, withholding tax and Smart Invoice.
   </Card>
-  <Card title="Template system" icon="table-cells" href="/regulators/template-system">
-    How obligation and service request templates are defined.
+  <Card title="NAPSA and NHIMA" icon="hand-holding-heart" href="/regulators/napsa-and-nhima">
+    Monthly pension and health insurance contributions for your employees.
+  </Card>
+  <Card title="All regulators" icon="list" href="/regulators/overview">
+    How connecting a regulator works, and what Bumara does on your behalf.
+  </Card>
+</CardGroup>
+
+## Your account
+
+<CardGroup cols={2}>
+  <Card title="Team and roles" icon="user-group" href="/account/team-and-roles">
+    Invite colleagues and control who can see salaries, bank details and filings.
+  </Card>
+  <Card title="Plan and billing" icon="credit-card" href="/account/plan-and-billing">
+    What each plan includes, add-ons, and how to upgrade.
+  </Card>
+  <Card title="Reminders" icon="bell" href="/account/notifications">
+    Choose what you are told about, and where — in-app, email or WhatsApp.
+  </Card>
+  <Card title="Document vault" icon="folder-open" href="/account/document-vault">
+    Every certificate, receipt and acknowledgement, filed against the right record.
   </Card>
 </CardGroup>
 
 <Note>
-  Working notes, codebase scans, and implementation plans live under the **Internal** tab.
-  They record how something was built or investigated at a point in time and are not
-  maintained as reference documentation.
+  Stuck on a word? The [glossary](/help/glossary) explains every term Bumara and the regulators use.
+  If something is not behaving as described, start with [troubleshooting](/help/troubleshooting).
 </Note>

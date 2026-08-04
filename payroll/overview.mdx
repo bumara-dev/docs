@@ -1,0 +1,141 @@
+---
+title: "Payroll overview"
+description: "Paying your people in Bumara — setup, the monthly cycle, payslips, loans and statutory returns."
+---
+
+Payroll handles everything about paying employees: their records, what they earn, what is deducted,
+what they take home, and what you owe ZRA, NAPSA and NHIMA as a result.
+
+Getting payroll right in Bumara means three of your monthly compliance filings are largely done
+before you open them.
+
+## What is here
+
+<CardGroup cols={2}>
+  <Card title="Employees" icon="users" href="/payroll/employees">
+    Personal details, employment terms, regulatory numbers and bank details.
+  </Card>
+  <Card title="Pay elements" icon="sliders" href="/payroll/pay-elements">
+    Allowances and deductions — what is added to and taken from pay.
+  </Card>
+  <Card title="Monthly inputs" icon="keyboard" href="/payroll/monthly-inputs">
+    Absence, overtime, advances and ad-hoc deductions for the period.
+  </Card>
+  <Card title="Running payroll" icon="play" href="/payroll/running-payroll">
+    Preview, process, approve, pay and reconcile.
+  </Card>
+  <Card title="Payslips" icon="file-lines" href="/payroll/payslips">
+    Generating and distributing payslips to your staff.
+  </Card>
+  <Card title="Loans" icon="hand-holding-dollar" href="/payroll/loans">
+    Staff loans with automatic repayment from pay.
+  </Card>
+  <Card title="Statutory returns" icon="landmark" href="/payroll/statutory-returns">
+    PAYE, NAPSA and NHIMA return files from your pay run.
+  </Card>
+</CardGroup>
+
+## The monthly cycle
+
+<Steps>
+  <Step title="Collect monthly inputs">
+    Absence, overtime, advances, ad-hoc deductions — everything that varies month to month.
+    Due by your **cutoff day**.
+  </Step>
+  <Step title="Preview">
+    See the calculated payroll without saving anything. Check gross, deductions and net for every
+    employee.
+  </Step>
+  <Step title="Process">
+    Run it properly. Payslips are generated and the run enters **Draft**.
+  </Step>
+  <Step title="Approve">
+    A second person authorises it for payment.
+  </Step>
+  <Step title="Pay">
+    Transfer the net pay to employees.
+  </Step>
+  <Step title="Distribute payslips">
+    Email individually or all at once.
+  </Step>
+  <Step title="File the statutory returns">
+    PAYE by the 10th, NAPSA and NHIMA per their schedules.
+  </Step>
+  <Step title="Reconcile and lock">
+    Match against your bank statement, then seal the period.
+  </Step>
+</Steps>
+
+## What gets calculated
+
+For every employee, every month:
+
+| Step | What happens |
+| --- | --- |
+| **Daily rate** | Salary divided by your configured working days |
+| **Basic pay** | Salary, adjusted for any absence |
+| **Allowances** | Housing, transport, meal, leave pay, and anything custom |
+| **Overtime** | Hours multiplied by rate multiplied by the applicable multiplier |
+| **Gross pay** | Everything above, added together |
+| **NHIMA** | 1% of basic salary |
+| **NAPSA** | 5% of gross, capped at the statutory ceiling |
+| **PAYE** | Progressive tax bands applied to chargeable emoluments |
+| **Employee deductions** | Advances, loan instalments, and anything custom |
+| **Net pay** | What the employee actually receives |
+
+Note the different bases: NHIMA on basic salary, NAPSA on gross. This is not an inconsistency in
+Bumara — it is how the two schemes are defined.
+
+## Pay run statuses
+
+| Status | Meaning | Who moves it on |
+| --- | --- | --- |
+| **Draft** | Calculated, under review | Payroll officer |
+| **Approved** | Authorised for payment | HR manager or finance |
+| **Processed** | Payslips finalised | Automatic |
+| **Paid** | Transfers made | Finance |
+| **Reconciled** | Matched to the bank statement | Finance |
+| **Locked** | Permanently sealed | Automatic |
+
+<Warning>
+  A processed pay run is difficult to reverse. Always preview first — previewing saves nothing and
+  costs nothing, and it is the only cheap place to catch an error.
+</Warning>
+
+## Who can see what
+
+| | HR / Payroll | Finance | Dept manager | Employee |
+| --- | --- | --- | --- | --- |
+| Names and departments | Yes | Yes | Own dept | Own only |
+| NRC, passport, TPIN | Yes | No | No | No |
+| Bank details | Yes | Yes | No | No |
+| Salaries and payslips | Yes | Yes | Own dept | Own only |
+| Export data | Yes | Yes | No | No |
+| Run payroll | Yes | No | No | No |
+| File statutory returns | No | Yes | No | No |
+
+The split at the bottom is deliberate: the person who runs the pay run is not the person who files
+the returns. See [Team and roles](/account/team-and-roles).
+
+## What feeds your compliance filings
+
+| Pay run produces | Which fills |
+| --- | --- |
+| Per-employee PAYE figures | Your [PAYE return](/regulators/zra/paye) |
+| NAPSA contributions | Your [NAPSA return](/regulators/napsa-and-nhima) |
+| NHIMA contributions | Your [NHIMA return](/regulators/napsa-and-nhima) |
+| Payroll summary document | The required upload on the PAYE filing |
+
+## Key dates
+
+| Date | What |
+| --- | --- |
+| **Cutoff day** | Monthly inputs must be in. You configure this — the 20th is common |
+| **Payment day** | When staff are paid. The 25th is common |
+| **10th of the following month** | PAYE return due |
+| **Monthly, per their schedules** | NAPSA and NHIMA returns due |
+
+<Note>
+  New to payroll in Bumara? Start with [Setting up payroll](/payroll/setting-up) — five steps to
+  complete before your first run.
+</Note>

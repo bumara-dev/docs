@@ -1,0 +1,180 @@
+---
+title: "Items"
+description: "Creating and organising the things you stock — codes, units, reorder levels, barcodes and reference photos."
+---
+
+An item is anything you hold in stock. Setting items up properly is what makes everything else —
+counting, selling, scanning, reporting — work smoothly.
+
+## Creating an item
+
+<Steps>
+  <Step title="Open Inventory, then Items">
+    Choose **New item**.
+  </Step>
+  <Step title="Enter the basics">
+    | Field | Notes |
+    | --- | --- |
+    | **Name** | What your staff call it. This appears everywhere |
+    | **Code or SKU** | Your unique reference. Must be unique across your business |
+    | **Description** | Longer detail — size, colour, specification |
+    | **Category** | For grouping and reporting |
+  </Step>
+  <Step title="Set the unit of measure">
+    How you count it — each, kilogram, litre, box. Choose carefully; changing it later makes
+    historical quantities ambiguous.
+  </Step>
+  <Step title="Set the reorder level">
+    The quantity at which you want to be warned. Set it on items you cannot trade without.
+  </Step>
+  <Step title="Add the barcode">
+    If the item has one. Required for barcode scanning. See [Scanning](/inventory/scanning).
+  </Step>
+  <Step title="Set the cost and selling prices">
+    Cost for valuation and margin; selling price for the till.
+  </Step>
+  <Step title="Save">
+    The item can now be used in operations.
+  </Step>
+</Steps>
+
+## Codes
+
+A unique code per item. Bumara rejects duplicates.
+
+A consistent structure makes searching fast. Something like a category prefix plus a sequence —
+`BEV-0001` for beverages, `STA-0001` for stationery — works better than free-form codes.
+
+If your products link to [Invoicing](/invoicing/products-and-prices), use the same code in both
+places so selling moves the stock.
+
+## Barcodes
+
+Each item can carry one barcode, unique within your business.
+
+| Source | Notes |
+| --- | --- |
+| Manufacturer barcode | Scan the product and record what comes up. Simplest for retail goods |
+| Your own labels | Print and apply your own. Necessary for unbarcoded goods |
+| No barcode | Use the visual scanner or search by name instead |
+
+Barcodes are what make the till and stock counts fast. If you handle any volume, they are worth the
+setup effort.
+
+## Reference photos
+
+Upload a photo of an item to enable the visual scanner, which identifies products from a camera
+image without needing a barcode.
+
+<Steps>
+  <Step title="Open the item">
+    From Inventory → Items.
+  </Step>
+  <Step title="Upload a photo">
+    In the attachments section.
+  </Step>
+  <Step title="Take it properly">
+    Good light, plain background, the product filling most of the frame, from the angle staff will
+    normally see it.
+  </Step>
+  <Step title="Save">
+    The visual scanner can now recognise it.
+  </Step>
+</Steps>
+
+A poor photo makes recognition unreliable. One good photo is worth more than five bad ones.
+
+## Reorder levels
+
+When a balance falls to or below the reorder level, the item is flagged as low stock and can
+trigger a notification.
+
+A workable starting point: normal usage over the time your supplier takes to deliver, plus a
+margin for variability.
+
+| Item | Weekly usage | Supplier lead time | Suggested level |
+| --- | --- | --- | --- |
+| Fast-moving, reliable supplier | 100 | 1 week | 150 |
+| Fast-moving, slow supplier | 100 | 3 weeks | 400 |
+| Slow-moving, critical | 5 | 2 weeks | 20 |
+
+Review levels after a few months against what actually happened.
+
+## Organising items
+
+| Approach | Benefit |
+| --- | --- |
+| **Categories** | Group related items; report by group |
+| **Code conventions** | Fast searching and sorting |
+| **Consistent naming** | Staff find things without guessing |
+| **Archive rather than delete** | Keeps historical movements intact |
+
+<Warning>
+  Never delete an item that has stock movements against it. Archive it. Deleting breaks the link
+  from historical adjustments, transfers and counts to the item they concerned.
+</Warning>
+
+## Archiving
+
+When you stop stocking something:
+
+<Steps>
+  <Step title="Run the balance down to zero">
+    Sell it, transfer it, or adjust it out with a reason.
+  </Step>
+  <Step title="Archive the item">
+    It disappears from selection lists but stays in your history.
+  </Step>
+  <Step title="Reactivate if you stock it again">
+    All its history is still there.
+  </Step>
+</Steps>
+
+An archived item cannot be used in new operations, which is the point.
+
+## Viewing an item
+
+| Panel | Shows |
+| --- | --- |
+| **Details** | Name, code, unit, category, prices, reorder level, barcode |
+| **Balances** | Quantity on hand, per location |
+| **Movements** | Every operation that has affected this item |
+| **Value** | Quantity multiplied by cost |
+| **Photos** | Reference images |
+
+The movements panel is the one to open when a balance looks wrong. It shows every change with its
+date, its reason and who made it.
+
+## Naming that works
+
+| Instead of | Use |
+| --- | --- |
+| `Sugar` | `Sugar — White, 1kg` |
+| `Paper` | `Paper — A4 80gsm, ream` |
+| `Cable` | `Cable — HDMI 2m` |
+
+Include the distinguishing detail in the name. Staff searching at the till do not open the
+description.
+
+## Bulk import
+
+For a large catalogue, import rather than typing.
+
+<Steps>
+  <Step title="Download the template">
+    From Inventory → Items.
+  </Step>
+  <Step title="Fill it in">
+    One row per item, with codes, units and reorder levels.
+  </Step>
+  <Step title="Check for duplicate codes">
+    The commonest reason an import partly fails.
+  </Step>
+  <Step title="Upload and review">
+    Check the count and spot-check several records.
+  </Step>
+</Steps>
+
+<Note>
+  Next: [Adjustments](/inventory/adjustments) for changing stock quantities.
+</Note>

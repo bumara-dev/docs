@@ -1,0 +1,158 @@
+---
+title: "Pay elements"
+description: "Allowances and deductions — what is added to and taken from pay, how each is taxed, and how they affect statutory contributions."
+---
+
+Pay elements are the parts that make up an employee's pay beyond basic salary. **Allowances** add
+to it. **Deductions** take from it. How each is configured affects gross pay, take-home pay, and
+what you owe ZRA, NAPSA and NHIMA.
+
+## Standard elements
+
+Bumara creates these automatically when you set up payroll:
+
+| Element | Type | Typical use |
+| --- | --- | --- |
+| **Housing allowance** | Allowance | Accommodation contribution |
+| **Transport allowance** | Allowance | Travel to and from work |
+| **Meal allowance** | Allowance | Meals during work |
+| **Leave pay** | Allowance | Paid leave days |
+| **Advance** | Deduction | Salary advance recovery |
+
+## Adding your own
+
+<Steps>
+  <Step title="Open Payroll, then Settings, then Allowances or Deductions">
+    Choose **Add**.
+  </Step>
+  <Step title="Name it clearly">
+    The name appears on every payslip. "Fuel allowance" is clear; "Allowance 3" is not.
+  </Step>
+  <Step title="Choose fixed or variable">
+    | Type | Behaviour |
+    | --- | --- |
+    | **Fixed** | The same amount every month |
+    | **Variable** | Entered per employee per month through monthly inputs |
+  </Step>
+  <Step title="Set the tax treatment">
+    Whether it is taxable. This is the setting that matters most — see below.
+  </Step>
+  <Step title="Set whether it counts towards statutory contributions">
+    Whether it forms part of the base for NAPSA, and whether it affects NHIMA.
+  </Step>
+  <Step title="Save">
+    It is now assignable to employees.
+  </Step>
+</Steps>
+
+## Tax treatment
+
+This determines whether the amount is included in chargeable emoluments for PAYE.
+
+| Treatment | Effect |
+| --- | --- |
+| **Taxable** | Included in chargeable emoluments. PAYE is calculated on it |
+| **Non-taxable** | Excluded from chargeable emoluments. No PAYE |
+
+<Warning>
+  Do not guess this. Whether an allowance is taxable is a question of Zambian tax law, not
+  preference. Treating a taxable allowance as non-taxable understates PAYE for every employee,
+  every month, and the correction is backdated with interest. Ask your accountant.
+</Warning>
+
+## The contribution bases
+
+The two schemes use different bases, and this is a frequent source of confusion:
+
+| Scheme | Rate | Calculated on |
+| --- | --- | --- |
+| **NAPSA** | 5% employee, 5% employer | **Gross** pay, capped at the statutory ceiling |
+| **NHIMA** | 1% employee, 1% employer | **Basic** salary |
+
+So an employee on K5,000 basic with K3,000 of allowances has NAPSA calculated on K8,000 (subject to
+the ceiling) but NHIMA calculated on K5,000.
+
+When you configure an allowance, you specify whether it forms part of the gross for NAPSA purposes.
+Get this wrong and your NAPSA contributions are wrong for everyone who receives that allowance.
+
+## Assigning to an employee
+
+<Steps>
+  <Step title="Open the employee">
+    From Payroll → Employees.
+  </Step>
+  <Step title="Go to the Allowances or Deductions tab">
+    Choose **Add**.
+  </Step>
+  <Step title="Select the type and enter the amount">
+    For fixed elements. Variable ones are entered monthly instead.
+  </Step>
+  <Step title="Set the effective dates">
+    From when it applies, and until when if it is temporary.
+  </Step>
+  <Step title="Save">
+    It appears in the next pay run within its effective dates.
+  </Step>
+</Steps>
+
+<Warning>
+  Effective dates catch people out constantly. An allowance dated from the 1st of next month will
+  not appear in this month's run, no matter when you entered it. If an employee's pay looks wrong,
+  check the effective dates first.
+</Warning>
+
+## Deductions
+
+| Kind | Example | Set up as |
+| --- | --- | --- |
+| **Recurring** | Union subscription, social fund | Fixed, assigned to the employee |
+| **One-off** | A single ad-hoc deduction | Entered through monthly inputs |
+| **Advance recovery** | Repayment of a salary advance | The standard Advance deduction |
+| **Loan instalment** | Repayment of a staff loan | Created automatically by the loan. See [Loans](/payroll/loans) |
+
+### The deduction cap
+
+Your payroll settings include a maximum deduction percentage, commonly 50% of gross.
+
+If an employee's total deductions would exceed the cap, Bumara limits them. This protects both the
+employee — who must have something to live on — and you, since excessive deductions may breach
+employment law.
+
+If a deduction was capped, the shortfall carries into the following month rather than disappearing.
+
+## Overtime
+
+Overtime is calculated during the pay run from hours entered in monthly inputs, using the
+multipliers in your payroll settings.
+
+| Type | Typical multiplier |
+| --- | --- |
+| Regular overtime | 1.5× |
+| Holiday or weekend overtime | 2.0× |
+
+The hourly rate is derived from the employee's salary and your configured working days.
+
+## Reviewing your elements
+
+| Check | How often |
+| --- | --- |
+| Tax treatment is correct on every element | Annually, and whenever tax rules change |
+| NAPSA base setting is correct | Annually |
+| Amounts still reflect your policy | At each salary review |
+| Elements with no employees assigned | Annually — archive them |
+| Effective dates on temporary elements | Monthly, before the run |
+
+## Common problems
+
+| Problem | Usual cause |
+| --- | --- |
+| Employee's pay is lower than expected | An allowance's effective date has not started |
+| Employee's pay is higher than expected | A temporary allowance's end date has passed but was never set |
+| PAYE looks too low | A taxable allowance is configured as non-taxable |
+| NAPSA looks too low | An allowance is excluded from the gross base when it should be included |
+| NHIMA does not match NAPSA proportionally | Correct — they use different bases |
+| A deduction did not fully apply | The deduction cap was reached |
+
+<Note>
+  Next: [Monthly inputs](/payroll/monthly-inputs) for the variable figures entered each period.
+</Note>

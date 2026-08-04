@@ -1,0 +1,206 @@
+---
+title: "Sales and expenses"
+description: "Lay-by sales, operating expenses and cash taken out of the till."
+---
+
+Beyond stock movements, the inventory zone records the money side of a shop floor: goods held
+against instalments, what you spend running the place, and what leaves the till.
+
+## Lay-by sales
+
+A lay-by holds goods for a customer who pays in instalments. The goods are set aside but remain
+yours until the balance is cleared.
+
+<Warning>
+  Stock is only deducted when the lay-by **completes**. An active lay-by does not reduce your
+  on-hand quantity — which means your available stock figure includes goods physically reserved for
+  a customer. Set them aside physically, and label them.
+</Warning>
+
+### Creating one
+
+<Steps>
+  <Step title="Open Inventory, then Sales, then Lay-by sales">
+    Choose **New lay-by**.
+  </Step>
+  <Step title="Select the location">
+    Where the goods are held.
+  </Step>
+  <Step title="Add the items">
+    Item, quantity, unit and sale price for each line.
+  </Step>
+  <Step title="Set a due date">
+    When the balance should be cleared. Have a policy for what happens if it is not.
+  </Step>
+  <Step title="Record the opening deposit">
+    What the customer is paying today. It can be zero, though a deposit is normally wise.
+  </Step>
+  <Step title="Save">
+    The lay-by is **Active**.
+  </Step>
+  <Step title="Set the goods aside physically">
+    And label them with the lay-by reference.
+  </Step>
+</Steps>
+
+### Recording instalments
+
+Open the lay-by and record each payment as it comes in, with the amount, the date and the method.
+The outstanding balance updates.
+
+### Completing
+
+<Steps>
+  <Step title="Confirm the balance is zero">
+    All instalments received.
+  </Step>
+  <Step title="Choose Complete">
+    Stock is deducted at this point.
+  </Step>
+  <Step title="Hand over the goods">
+    And give the customer a receipt.
+  </Step>
+</Steps>
+
+### Cancelling
+
+If the customer does not complete, cancel the lay-by. No stock movement occurs, since none ever
+happened. Return the goods to normal sale.
+
+What happens to instalments already paid is a matter of your policy — set it out clearly when the
+lay-by is created, in writing, so there is no argument later.
+
+### Lay-by statuses
+
+| Status | Meaning | Stock |
+| --- | --- | --- |
+| **Active** | Payments ongoing | Not yet deducted |
+| **Completed** | Fully paid and handed over | Deducted |
+| **Cancelled** | Abandoned | Never deducted |
+
+### Managing lay-bys
+
+- **Review actives weekly.** Chase anything past its due date.
+- **Set realistic due dates.** Ninety days is common.
+- **Label the goods.** A lay-by item accidentally sold to someone else is a genuinely bad afternoon.
+- **Have a written cancellation policy.** Especially about deposits.
+- **Remember they are not in your available stock.** When you check whether you can fulfil an order.
+
+## Expenses
+
+Operating costs recorded against a location — what it costs to run the place.
+
+Expenses never affect stock. They exist so your profit view can net them against sales.
+
+### Recording one
+
+<Steps>
+  <Step title="Open Inventory, then Expenses">
+    Choose **New expense**.
+  </Step>
+  <Step title="Select the location">
+    Which shop or store the cost belongs to.
+  </Step>
+  <Step title="Choose a category">
+    | Category | Covers |
+    | --- | --- |
+    | Supplies | Consumables and materials |
+    | Utilities | Electricity, water, internet |
+    | Transport | Fuel, deliveries, travel |
+    | Maintenance | Repairs and servicing |
+    | Marketing | Advertising and promotion |
+    | Salaries | Staff costs at this location |
+    | Rent | Premises |
+    | Other | Anything else |
+  </Step>
+  <Step title="Enter the amount, date and description">
+    Be specific in the description. "Generator repair — starter motor" beats "repairs".
+  </Step>
+  <Step title="Record the payment method">
+    Cash, mobile money, bank transfer or other.
+  </Step>
+  <Step title="Save">
+    It appears in your expense list and in your profit view.
+  </Step>
+</Steps>
+
+### Reviewing expenses
+
+Filter by location, category and date range. Look for:
+
+| Watch for | What it may mean |
+| --- | --- |
+| A category rising month on month | A cost drifting out of control |
+| Large one-off amounts | Should it have been treated as an asset rather than an expense? |
+| One location much higher than comparable ones | Worth understanding why |
+| Vague descriptions | Enforce the standard — you will need these at year end |
+
+<Note>
+  Keep the receipt for every expense. Upload it to your [document vault](/account/document-vault)
+  and reference it in the description. An expense without a receipt is difficult to defend.
+</Note>
+
+## Cash-outs
+
+Money taken out of the till, recorded separately from expenses because the reasons differ and some
+need authorisation.
+
+### Reasons
+
+| Reason | Use for |
+| --- | --- |
+| **Float** | Opening change put into the drawer |
+| **Petty cash** | Small operational payments from the till |
+| **Withdrawal** | Cash banked or taken to the office |
+| **Refund** | Money returned to a customer |
+| **Other** | Anything else — explain it |
+
+### Recording one
+
+<Steps>
+  <Step title="Open Inventory, then Cash-outs">
+    Choose **New cash-out**.
+  </Step>
+  <Step title="Choose the reason and enter the amount">
+    With the date.
+  </Step>
+  <Step title="Describe it">
+    What the money was actually for.
+  </Step>
+  <Step title="Record who authorised it">
+    For anything beyond routine float. This is the control that makes cash-outs trustworthy.
+  </Step>
+  <Step title="Save">
+    It appears in your till reconciliation.
+  </Step>
+</Steps>
+
+### Reconciling the till
+
+<Steps>
+  <Step title="Start with the opening float">
+    What was in the drawer at the start.
+  </Step>
+  <Step title="Add the day's cash sales">
+    From the sales list, cash only.
+  </Step>
+  <Step title="Subtract the day's cash-outs">
+    Everything taken out.
+  </Step>
+  <Step title="Compare with what is physically in the drawer">
+    Count it.
+  </Step>
+  <Step title="Investigate any difference">
+    Usually an unrecorded cash-out, change given wrongly, or a sale rung up incorrectly.
+  </Step>
+</Steps>
+
+<Warning>
+  Record cash-outs at the moment the money leaves the drawer, not at the end of the day from
+  memory. A daily reconciliation that never balances is worse than useless — staff stop taking it
+  seriously, and a real shortfall goes unnoticed.
+</Warning>
+
+<Note>
+  Related: [Point of sale](/inventory/point-of-sale) and [Insights](/inventory/insights).
+</Note>

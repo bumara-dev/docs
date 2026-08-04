@@ -1,0 +1,148 @@
+---
+title: "ZRA overview"
+description: "Working with the Zambia Revenue Authority in Bumara — tax types, TPIN, monthly returns and Smart Invoice."
+---
+
+The Zambia Revenue Authority handles your taxes. It is the regulator with the most frequent
+obligations — most are monthly — and the one where falling behind grows most expensive, because
+interest and penalties accrue.
+
+## What you handle here
+
+<CardGroup cols={2}>
+  <Card title="PAYE" icon="users" href="/regulators/zra/paye">
+    Monthly tax deducted from your employees' pay and remitted to ZRA.
+  </Card>
+  <Card title="Turnover tax" icon="percent" href="/regulators/zra/turnover-tax">
+    A simplified monthly regime for smaller businesses — a flat rate on gross turnover.
+  </Card>
+  <Card title="Withholding tax" icon="scissors" href="/regulators/zra/withholding-tax">
+    Tax you deduct when paying for certain services and remit on the supplier's behalf.
+  </Card>
+  <Card title="Smart Invoice" icon="receipt" href="/invoicing/smart-invoice">
+    Transmitting your sales invoices to ZRA as you issue them.
+  </Card>
+</CardGroup>
+
+## Your TPIN
+
+Your Taxpayer Identification Number is ten characters and is required for almost everything:
+invoicing, every return, employee records, and most other regulators' processes.
+
+If you do not have one, request it as a service — **TPIN application** — from the ZRA service
+catalogue. You will generally need your PACRA certificate first.
+
+Enter your TPIN in [Set up your business](/start/set-up-your-business). Bumara checks the format
+but cannot verify it against ZRA, so check it against your certificate character by character.
+
+## Connecting ZRA
+
+<Steps>
+  <Step title="Open the ZRA workspace and choose Connect">
+    From the sidebar under Regulators.
+  </Step>
+  <Step title="Confirm your TPIN">
+    Taken from your organisation settings.
+  </Step>
+  <Step title="Select your tax types">
+    This is the important step. Tick only what you are actually registered for:
+
+    | Tax type | Tick it if |
+    | --- | --- |
+    | **PAYE** | You have employees on a payroll |
+    | **Turnover tax** | Your annual turnover is between K12,000 and K5,000,000 and you are registered for it |
+    | **Income tax** | You are on the standard regime rather than turnover tax |
+    | **VAT** | You are VAT registered |
+    | **Withholding tax** | You pay for services subject to withholding |
+  </Step>
+  <Step title="Connect">
+    Bumara creates one obligation per tax type you selected, and generates the current period's
+    filing for each.
+  </Step>
+</Steps>
+
+<Warning>
+  Turnover tax and standard income tax are alternatives, not additions. If you are on turnover tax
+  you are not also filing standard income tax returns. Ticking both creates obligations you do not
+  owe and will spend months filing nil returns against.
+</Warning>
+
+## Due dates
+
+| Obligation | Due |
+| --- | --- |
+| PAYE return | 10th of the following month |
+| Turnover tax | 14 days after the period end |
+| Withholding tax | 14 days after the period end |
+| VAT | Per ZRA's schedule for your filing frequency |
+
+Worked examples for the 14-day rule:
+
+| Period | Period ends | Due |
+| --- | --- | --- |
+| January | 31 January | 14 February |
+| February | 28 February | 14 March |
+| March | 31 March | 14 April |
+
+## How your other Bumara data feeds ZRA returns
+
+This is where most of the time saving is:
+
+| You do | It fills |
+| --- | --- |
+| Run a pay run in [Payroll](/payroll/overview) | Every employee's PAYE figures for the month |
+| Approve sales invoices in [Invoicing](/invoicing/overview) | Your turnover figures for turnover tax |
+| Record payments to service providers | Withholding tax deducted |
+
+You review and confirm the figures rather than assembling them.
+
+## Nil returns
+
+If you had no activity in a month you still file — a **nil return**, with a reason:
+
+| Reason | When |
+| --- | --- |
+| No employees | You had nobody on the payroll |
+| Below threshold | Activity was below the filing threshold |
+| Temporarily inactive | The business paused |
+| Seasonal | Your trade is seasonal and this is an off month |
+| Unpaid leave | Staff were on unpaid leave |
+| Other | Anything else — explain it |
+
+A nil return has a much shorter checklist and often becomes ready immediately.
+
+<Warning>
+  An unfiled nil return is still an unfiled return, and attracts the same late-filing penalty as
+  one with figures. "We had no activity" is not a reason to skip the filing.
+</Warning>
+
+## Tax clearance certificate
+
+A valid tax clearance certificate is required for tenders, many contracts, and some licences.
+ZRA will not issue one while you have outstanding returns or unpaid tax.
+
+Request one from the ZRA service catalogue. If it is refused, a
+[compliance health check](/start/compliance-health-check) will tell you exactly what is blocking it.
+
+## If you have fallen behind
+
+ZRA arrears grow. Interest accrues on unpaid tax, penalties are assessed for late filing, and
+persistent non-compliance leads to audit flags and enforcement action.
+
+Run a [compliance health check](/start/compliance-health-check) before doing anything else. It
+establishes exactly what is outstanding across every tax type, with the penalties and interest
+already accrued, so you are working from facts rather than estimates.
+
+ZRA checks are always treated as urgent in a health check, because tax exposure grows fastest.
+
+## Your ZRA workspace
+
+| Page | Use it for |
+| --- | --- |
+| **Overview** | Your ZRA position at a glance |
+| **Obligations** | One per tax type you are registered for |
+| **Filings** | Each period's return |
+| **Service requests** | TPIN application, VAT registration, tax clearance, tax type changes |
+| **Tasks** | Everything outstanding with ZRA |
+| **Documents** | Returns, acknowledgements, certificates, receipts |
+| **Timeline** | Full history |

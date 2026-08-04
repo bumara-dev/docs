@@ -1,0 +1,203 @@
+---
+title: "Running payroll"
+description: "Preview, process, approve, pay and reconcile — the monthly pay run from start to lock."
+---
+
+The pay run is the moment everything comes together: employee records, pay elements, monthly
+inputs and statutory rates. Do it in the right order and it takes twenty minutes.
+
+## Before you start
+
+<AccordionGroup>
+  <Accordion title="All monthly inputs are in">
+    Past the cutoff day, with any late items dealt with deliberately. See
+    [Monthly inputs](/payroll/monthly-inputs).
+  </Accordion>
+  <Accordion title="New joiners are added">
+    With correct hire dates, regulatory numbers and bank details.
+  </Accordion>
+  <Accordion title="Leavers are handled">
+    Included in this run if they were paid this month; marked inactive only after it.
+  </Accordion>
+  <Accordion title="Salary changes are recorded">
+    With the correct effective dates.
+  </Accordion>
+  <Accordion title="Allowance and deduction dates are right">
+    New ones started, expired ones ended.
+  </Accordion>
+</AccordionGroup>
+
+## Step 1 — Preview
+
+Always preview. It costs nothing and saves everything.
+
+<Steps>
+  <Step title="Open Payroll and choose Preview payroll">
+    Select the period, for example 2026-05.
+  </Step>
+  <Step title="Review the totals">
+    Total gross, total deductions, total net, employee count. Compare against last month — a large
+    swing needs explaining before you proceed.
+  </Step>
+  <Step title="Review each employee">
+    Gross pay, each statutory deduction, loan instalments, other deductions, net pay.
+  </Step>
+  <Step title="Investigate anything unexpected">
+    See the checklist below.
+  </Step>
+  <Step title="Correct at source and preview again">
+    Fix the employee record, the pay element or the monthly input — never patch a number.
+  </Step>
+</Steps>
+
+Nothing is saved during preview. You can run it as many times as you like.
+
+### What to look at
+
+| Check | Usual cause if wrong |
+| --- | --- |
+| Employee count | A joiner missed, or a leaver not removed |
+| Anyone with zero net pay | Deductions have consumed the whole salary |
+| Anyone whose net jumped sharply | An input error, or an allowance that should have ended |
+| Anyone whose net dropped sharply | Absence entered wrongly, or a new deduction |
+| Total PAYE | Compare as a proportion of gross against last month |
+| Total NAPSA | Should be roughly 5% of gross, less the ceiling effect |
+| Total NHIMA | Should be roughly 1% of total basic — not of gross |
+| Total net against your bank balance | Can you actually pay this? |
+
+## Step 2 — Process
+
+<Steps>
+  <Step title="Choose Process payroll">
+    Confirm the period.
+  </Step>
+  <Step title="Bumara calculates and saves">
+    In order: daily rate, basic pay adjusted for absence, allowances, overtime, then NHIMA at 1% of
+    basic, NAPSA at 5% of gross up to the ceiling, and PAYE across the progressive bands. Then
+    employee deductions and loan instalments.
+  </Step>
+  <Step title="Payslips are generated">
+    One per employee.
+  </Step>
+  <Step title="The run enters Draft">
+    Calculated and saved, but not yet authorised for payment.
+  </Step>
+</Steps>
+
+## Step 3 — Approve
+
+Approval should be done by someone other than the person who processed the run. That separation is
+the main control in payroll.
+
+<Steps>
+  <Step title="The approver reviews the run">
+    Totals, and a sample of individual payslips.
+  </Step>
+  <Step title="They check the total against the budget">
+    And against last month.
+  </Step>
+  <Step title="They approve">
+    Status moves to **Approved**, authorised for payment.
+  </Step>
+</Steps>
+
+## Step 4 — Pay
+
+<Steps>
+  <Step title="Produce the payment list">
+    Export the run with employee bank details and net amounts.
+  </Step>
+  <Step title="Make the transfers">
+    Through your bank, as a batch file or individually.
+  </Step>
+  <Step title="Mark the run as Paid">
+    Once the transfers are made.
+  </Step>
+  <Step title="Pay the statutory amounts">
+    PAYE, NAPSA and NHIMA are separate payments to separate bodies, on their own deadlines. Paying
+    staff is not the end of the month.
+  </Step>
+</Steps>
+
+<Warning>
+  Employees' net pay and the statutory deductions are two different payments. The PAYE, NAPSA and
+  NHIMA you deducted is not your money — it is held on behalf of the employee and the regulator.
+  Do not spend it.
+</Warning>
+
+## Step 5 — Distribute payslips
+
+From the pay run detail page:
+
+| Action | Use |
+| --- | --- |
+| **Email individual** | The email icon on a payslip row |
+| **Email all payslips** | Sends to every employee at once |
+| **Download PDF** | Individual or bulk, for printing |
+
+See [Payslips](/payroll/payslips).
+
+## Step 6 — File the statutory returns
+
+<Steps>
+  <Step title="PAYE, by the 10th">
+    Pre-fill the PAYE filing from this run. See [PAYE returns](/regulators/zra/paye).
+  </Step>
+  <Step title="NAPSA and NHIMA">
+    Download the return files from the pay run and lodge them. See
+    [NAPSA and NHIMA](/regulators/napsa-and-nhima).
+  </Step>
+  <Step title="Attach the payroll summary">
+    It satisfies the required document on the PAYE filing.
+  </Step>
+</Steps>
+
+## Step 7 — Reconcile and lock
+
+<Steps>
+  <Step title="Match against your bank statement">
+    Every transfer out should match a net pay figure.
+  </Step>
+  <Step title="Investigate differences">
+    A failed transfer, a wrong account number, a payment made twice.
+  </Step>
+  <Step title="Mark as Reconciled">
+    Once everything matches.
+  </Step>
+  <Step title="The run locks">
+    Permanently sealed. This is what makes your payroll history reliable.
+  </Step>
+</Steps>
+
+## If something is wrong after processing
+
+| Stage | What to do |
+| --- | --- |
+| **Draft** | Correct at source and re-run. Nothing has been paid |
+| **Approved, not paid** | Reverse the approval, correct, re-run |
+| **Paid** | Adjust in the following month. Do not unwind a paid run |
+| **Reconciled or locked** | Adjust in the following month |
+
+<Warning>
+  Reversing a paid run affects payslips already sent, statutory returns possibly already filed, and
+  your bank reconciliation. Correcting forward is almost always the right answer — and be explicit
+  with the employee about what is being adjusted and why.
+</Warning>
+
+## The monthly rhythm
+
+| When | What |
+| --- | --- |
+| Through the month | Add joiners, record leavers, record salary changes |
+| A few days before cutoff | Remind managers to submit inputs |
+| Cutoff day | Close inputs |
+| Cutoff plus one | Preview, correct, preview again |
+| Cutoff plus two | Process and approve |
+| Payment day | Pay staff, distribute payslips |
+| By the 10th | File PAYE |
+| Per their schedules | File NAPSA and NHIMA |
+| Month end | Reconcile and lock |
+
+<Note>
+  Next: [Payslips](/payroll/payslips) and [Statutory returns](/payroll/statutory-returns).
+</Note>

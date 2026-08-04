@@ -1,0 +1,241 @@
+---
+title: "Troubleshooting"
+description: "The problems people actually hit in Bumara, and how to resolve each one."
+---
+
+## Access and visibility
+
+<AccordionGroup>
+  <Accordion title="A section is missing from my sidebar">
+    Three possible causes, in order of likelihood:
+
+    1. **Your role does not include it.** Check with an Owner or Admin. See
+       [Team and roles](/account/team-and-roles).
+    2. **Your plan does not include it.** NHIMA needs Plus; local councils need Pro. See
+       [Plan and billing](/account/plan-and-billing).
+    3. **The regulator is not connected.** See [Set up your business](/start/set-up-your-business).
+  </Accordion>
+  <Accordion title="I can see less than I could yesterday">
+    Almost always a role change. Ask an Owner or Admin whether your role was changed — Bumara does
+    not notify people when it happens.
+  </Accordion>
+  <Accordion title="My inventory dashboard shows nothing">
+    You are probably not assigned to any location. In a multi-location business, users see only
+    their assigned locations. Ask an Admin to assign you.
+  </Accordion>
+  <Accordion title="I cannot see the data I expect">
+    Check the organisation switcher at the top of the sidebar. If your login belongs to more than
+    one organisation, you may be looking at the wrong one.
+  </Accordion>
+</AccordionGroup>
+
+## Filings and submissions
+
+<AccordionGroup>
+  <Accordion title="I cannot request submission">
+    The blockers panel at the top of the filing names exactly what is missing. It will be one of:
+
+    - A **required task** not done
+    - A task that is **blocked** — this stops submission even if the task is optional
+    - A **required document** not uploaded
+    - A **fee** not yet paid and verified
+
+    See [Submitting to a regulator](/compliance/submitting-to-a-regulator).
+  </Accordion>
+  <Accordion title="It says 8 of 10 tasks done but is still not ready">
+    Progress and readiness are different things. Readiness requires all **required** tasks done,
+    **no** blocked tasks, and all **required** documents uploaded. Two optional tasks outstanding
+    does not block; one required task does.
+  </Accordion>
+  <Accordion title="My submission has not moved for days">
+    Check the Messages panel on that filing. A message showing **Waiting on you** stops the work
+    entirely, and it is the commonest cause. See
+    [Messages and timeline](/compliance/messages-and-timeline).
+  </Accordion>
+  <Accordion title="An obligation I do not owe has appeared">
+    Check your entity type in organisation settings, and which tax types you ticked on your ZRA
+    connection. Ticking both turnover tax and income tax, or ticking PAYE with no employees, are
+    the usual causes.
+  </Accordion>
+  <Accordion title="An obligation I do owe is missing">
+    Same two causes in reverse. Also check that the relevant regulator is connected and that your
+    plan includes it.
+  </Accordion>
+  <Accordion title="My annual return due date looks wrong">
+    Check your financial year end in organisation settings. Correcting it fixes future filings but
+    not ones already created — those keep the dates they were made with.
+  </Accordion>
+  <Accordion title="My submission was blocked by authorisation">
+    Your authorised representative is missing or expired. This is not checked when you request
+    submission, only when the team goes to lodge. See
+    [Authorised representative](/compliance/authorised-representative).
+  </Accordion>
+</AccordionGroup>
+
+## Payments
+
+<AccordionGroup>
+  <Accordion title="I paid but the filing still shows Awaiting payment">
+    Most likely a reference mismatch. The payment must be matched to your specific request.
+
+    1. Check you used the exact reference shown on the payment panel
+    2. Upload your proof of payment to the request
+    3. Raise a message on the filing if it has been more than a few hours
+
+    Bank transfers also simply take longer than mobile money.
+  </Accordion>
+  <Accordion title="My payment failed">
+    Retry, or use a different method. If your bank shows the money as debited but Bumara shows the
+    payment as failed, raise a message so it is tracked — do not simply pay again.
+  </Accordion>
+</AccordionGroup>
+
+## Invoicing
+
+<AccordionGroup>
+  <Accordion title="I cannot edit an invoice">
+    Only drafts can be edited. Once sent, correct it with a
+    [credit note](/invoicing/credit-and-debit-notes) or void it and reissue.
+  </Accordion>
+  <Accordion title="My ZRA transmission failed">
+    Open the invoice and read the rejection reason. Usually:
+
+    | Reason | Fix |
+    | --- | --- |
+    | Customer TPIN missing or invalid | Correct it on the customer record |
+    | Invalid tax code | Check the tax rate on the affected line |
+    | Device not initialised | Re-initialise in Settings |
+    | Connection failure | Retry |
+
+    Bumara retries automatically a limited number of times, then stops. After that it waits for you.
+    See [Smart Invoice](/invoicing/smart-invoice).
+  </Accordion>
+  <Accordion title="My transmitted count is lower than my invoice count">
+    The difference is invoices ZRA does not have. Filter your transmissions to failed and work
+    through them. Check this monthly rather than quarterly.
+  </Accordion>
+  <Accordion title="An invoice total does not match what I expected">
+    Check whether your products are set up as tax-inclusive or tax-exclusive, and whether the
+    setting is consistent across the lines. Mixing the two is the usual cause.
+  </Accordion>
+</AccordionGroup>
+
+## Payroll
+
+<AccordionGroup>
+  <Accordion title="An employee's pay is lower than expected">
+    In order of likelihood:
+
+    1. An allowance's **effective date** has not started yet
+    2. Days absent were entered in monthly inputs
+    3. A new deduction started this month
+    4. A loan instalment began
+  </Accordion>
+  <Accordion title="An employee's pay is higher than expected">
+    Usually a temporary allowance whose end date was never set, or overtime hours entered wrongly.
+  </Accordion>
+  <Accordion title="PAYE looks too low">
+    A taxable allowance is probably configured as non-taxable. See
+    [Pay elements](/payroll/pay-elements). Correct the element rather than the return.
+  </Accordion>
+  <Accordion title="NAPSA looks wrong">
+    Either an allowance is excluded from the gross base when it should be included, or the employee
+    is above the ceiling and the contribution has correctly been capped.
+  </Accordion>
+  <Accordion title="NHIMA does not look proportional to NAPSA">
+    That is correct. NAPSA is 5% of **gross**; NHIMA is 1% of **basic salary**. An employee with
+    large allowances will show a much wider gap.
+  </Accordion>
+  <Accordion title="A deduction did not fully apply">
+    The deduction cap was reached — total deductions cannot exceed your configured percentage of
+    gross. The shortfall carries into next month.
+  </Accordion>
+  <Accordion title="My statutory return was rejected">
+    Nearly always a missing regulatory number. Every employee needs a TPIN, a NAPSA number and an
+    NHIMA number. Add them to the employee record and re-run the pre-fill.
+  </Accordion>
+  <Accordion title="An employee is missing from the return">
+    Check whether they were marked inactive before the run they should have been on. A leaver must
+    be included in the month they were last paid, then made inactive after that run.
+  </Accordion>
+</AccordionGroup>
+
+## Inventory
+
+<AccordionGroup>
+  <Accordion title="I cannot post — it says stock would go negative">
+    Your records show less stock than the operation needs. Either goods were received and never
+    entered, or a previous operation was recorded wrongly.
+
+    Find the cause in the item's movement history rather than overriding the block. An override is
+    for the case where you know goods have physically arrived and simply have not been entered yet.
+  </Accordion>
+  <Accordion title="An item is not showing at the till">
+    Items with zero stock are hidden by default. Either the stock is genuinely zero, goods were
+    received but not entered, the stock is at a different location, or the item is archived.
+  </Accordion>
+  <Accordion title="My barcode scanner finds nothing">
+    Check the item has a barcode recorded, that it is the right barcode, and that the item is not
+    archived. Then check the light and the label condition. See [Scanning](/inventory/scanning).
+  </Accordion>
+  <Accordion title="The visual scanner does not recognise a product">
+    It needs a reference photo on the item. If a photo exists but recognition is poor, retake it —
+    plain background, good light, product filling the frame.
+  </Accordion>
+  <Accordion title="A stock balance is wrong">
+    Open the item's movement history and work backwards until the numbers stop making sense. Every
+    change is recorded with its reason and who made it, so the cause is always findable.
+  </Accordion>
+  <Accordion title="Available stock includes goods on lay-by">
+    Correct behaviour. Stock is only deducted when a lay-by completes. Set lay-by goods aside
+    physically and label them.
+  </Accordion>
+</AccordionGroup>
+
+## Notifications
+
+<AccordionGroup>
+  <Accordion title="I am not receiving emails">
+    Check, in order: your email address in Settings → Profile; your spam folder; your preferences
+    in Settings → Notifications; and whether your role gives you access to that area — you are not
+    notified about what you cannot see.
+
+    If in-app notifications are arriving but emails are not, the problem is delivery. Start with
+    spam.
+  </Accordion>
+  <Accordion title="I am getting too many notifications">
+    Do not turn them all off. Narrow the channels instead — keep deadlines on email and move
+    routine items to in-app only. Constant low-stock alerts usually mean reorder levels are set too
+    high.
+  </Accordion>
+</AccordionGroup>
+
+## Plan limits
+
+<AccordionGroup>
+  <Accordion title="I cannot create another service request">
+    You have used this month's allowance. Upgrade, or wait for the monthly reset. If a deadline is
+    involved, upgrade — the deadline does not wait.
+  </Accordion>
+  <Accordion title="I cannot invite anyone else">
+    You are at your user limit. Upgrade, or remove someone who has left.
+  </Accordion>
+  <Accordion title="I cannot upload documents">
+    You are at your storage limit. Add the extra storage add-on, or remove duplicates. See
+    [Document vault](/account/document-vault).
+  </Accordion>
+</AccordionGroup>
+
+## When to contact support
+
+Raise a **message on the specific filing or request** when the question is about that item — a
+rejection you do not understand, a submission that has stalled, a figure that looks wrong.
+
+Use **support in Settings** for anything else — how a feature works, a billing question, a problem
+with your account, or something that does not belong to one record.
+
+<Note>
+  Including what you already checked makes any support request faster to resolve. "The blockers
+  panel says the payroll summary is missing, but I uploaded it on Tuesday" gets a better answer
+  than "my filing is stuck".
+</Note>
