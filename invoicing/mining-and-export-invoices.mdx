@@ -1,0 +1,225 @@
+---
+title: "Mining and export invoices"
+description: "Commercial, provisional and final invoices for mineral exporters, plus reverse VAT and import declarations."
+---
+
+ZRA requires exporters of minerals — and the incidental services around them, such as transport and
+insurance — to follow a specific invoicing chain. It is separate from ordinary sales invoicing
+because it carries far more information, and it is deliberately kept apart so those extra fields do
+not clutter your everyday invoicing.
+
+<Note>
+  This surface applies only to mining-sector exporters. If you do not export minerals, you will not
+  see it and can ignore this page entirely.
+</Note>
+
+## The export chain
+
+Four documents, in order:
+
+<Steps>
+  <Step title="Commercial invoice">
+    Issued **before** any export leaves. It acts as your customs declaration and tells ZRA what is
+    going out.
+  </Step>
+  <Step title="Customs declaration">
+    Handled through customs on the strength of the commercial invoice.
+  </Step>
+  <Step title="Provisional invoice">
+    Issued when the goods have gone but the final price is not yet settled — normal in mineral
+    sales, where price depends on assay results and market movement.
+  </Step>
+  <Step title="Final invoice">
+    Closes the provisional once the real figure is known. Issued as a tax invoice, a credit note,
+    or both, depending on which way the price moved.
+  </Step>
+</Steps>
+
+## Commercial invoices
+
+A commercial invoice is your pre-export declaration. It carries considerably more than an ordinary
+invoice:
+
+| Group | Covers |
+| --- | --- |
+| **Identity and dates** | Reference numbers, issue and shipment dates |
+| **Shipment** | What is being shipped, and how |
+| **Currency** | The currency of sale, and rates |
+| **Export details** | Destination, export codes |
+| **Incoterms** | The agreed delivery terms |
+| **Sender and receiver** | Full details of both parties |
+| **Delivery** | Where the goods are going |
+| **Transporter** | Who is carrying them |
+| **Bank** | Where payment is to be received |
+| **Totals** | Values and tax breakdown |
+
+<Warning>
+  Commercial invoices do **not** move stock. They are a declaration, not a sale. Your inventory
+  balances are unaffected until the corresponding sale is invoiced.
+</Warning>
+
+### Lifecycle
+
+| Status | Means |
+| --- | --- |
+| **Draft** | Being prepared. Nothing declared |
+| **Issued** | Transmitted to ZRA. The export can proceed |
+| **Acquitted** | A provisional or final invoice has been raised against it. The chain is closed |
+| **Reversed** | Corrected after issue |
+| **Cancelled** | Withdrawn before use |
+
+### Acquittal
+
+A commercial invoice is **acquitted** when a provisional or final invoice is successfully
+transmitted against it. This happens automatically — you do not acquit it by hand.
+
+Acquittal is what closes the loop for ZRA: it shows the export you declared was actually invoiced.
+
+<Warning>
+  An issued commercial invoice that is never acquitted is a declared export with no matching sale.
+  Review your unacquitted commercial invoices monthly — this is exactly the sort of gap ZRA
+  questions.
+</Warning>
+
+### Correcting an issued commercial invoice
+
+You cannot edit one after issue. You reverse it.
+
+<Steps>
+  <Step title="Open the commercial invoice">
+    It must be in **Issued** status.
+  </Step>
+  <Step title="Choose Reverse">
+    Select a reversal reason from ZRA's list. You cannot write your own.
+  </Step>
+  <Step title="The reversal is transmitted">
+    ZRA is told the original is reversed, referencing the original receipt.
+  </Step>
+  <Step title="Issue a corrected invoice">
+    A new commercial invoice with the right details.
+  </Step>
+</Steps>
+
+An already-reversed invoice cannot be reversed again.
+
+## Provisional invoices
+
+Issued when the goods have gone but the final price is not yet known.
+
+<Steps>
+  <Step title="Create the provisional invoice">
+    It carries the same full detail as an ordinary sales invoice — tax breakdown, line items with
+    their VAT categories, payment details.
+  </Step>
+  <Step title="Link the commercial invoices it covers">
+    One provisional invoice can cover several commercial invoices. Select all that apply.
+  </Step>
+  <Step title="Transmit to ZRA">
+    The linked commercial invoices are sent with it.
+  </Step>
+  <Step title="The commercial invoices are acquitted">
+    Automatically, on successful transmission.
+  </Step>
+</Steps>
+
+<Note>
+  You can only link commercial invoices belonging to your own organisation, and acquittal cannot be
+  undone. Check the links before transmitting.
+</Note>
+
+## Final invoices
+
+A final invoice closes a provisional once the real figure is known.
+
+Which form it takes depends on how the price moved:
+
+| If the final price is | Issue |
+| --- | --- |
+| **Higher** than the provisional | A final tax invoice for the difference |
+| **Lower** than the provisional | A final credit note for the difference |
+| **Both**, across different lines | A combined document |
+
+<Steps>
+  <Step title="Open the provisional invoice">
+    From your provisional list.
+  </Step>
+  <Step title="Create the final invoice">
+    Choose the form — tax invoice, credit note, or combined.
+  </Step>
+  <Step title="Enter the settled figures">
+    The actual price now known.
+  </Step>
+  <Step title="Transmit">
+    The provisional is recorded as closed by this final invoice, and the link is kept both ways.
+  </Step>
+</Steps>
+
+## Reverse VAT invoices
+
+Where reverse VAT applies, the invoice is raised against a registered principal rather than
+carrying VAT in the normal way. The principal must be recorded before you can raise the invoice
+against them.
+
+Reverse VAT invoices are a variant of the ordinary sales invoice — they behave the same way, but
+are flagged so ZRA treats them correctly.
+
+## Sale types
+
+Every sales invoice carries a sale type, which is what distinguishes these documents:
+
+| Type | Means |
+| --- | --- |
+| **Normal** | An ordinary sales invoice. The default |
+| **Reverse VAT** | Raised against a registered principal |
+| **Provisional** | References one or more issued commercial invoices |
+| **Final** | Closes a provisional |
+
+## Import declarations
+
+Where you import as well as export, import declarations are recorded against your account and
+reconciled with your ZRA position.
+
+## A working routine
+
+<AccordionGroup>
+  <Accordion title="Before every export">
+    - Issue the commercial invoice **before** the goods leave
+    - Check the shipment, incoterms and transporter details are right
+    - Confirm it transmitted successfully before dispatch
+  </Accordion>
+  <Accordion title="When the goods have gone">
+    - Raise the provisional invoice
+    - Link every commercial invoice it covers
+    - Confirm those commercial invoices moved to acquitted
+  </Accordion>
+  <Accordion title="When the price settles">
+    - Raise the final invoice in the right form
+    - Check it links back to the correct provisional
+  </Accordion>
+  <Accordion title="Monthly">
+    - Review issued commercial invoices with no acquittal
+    - Review provisional invoices with no final
+    - Check for failed transmissions across all document types
+  </Accordion>
+</AccordionGroup>
+
+## Common problems
+
+| Problem | Cause | Fix |
+| --- | --- | --- |
+| Commercial invoice stuck at issued | No provisional or final raised against it | Raise the downstream invoice |
+| Cannot link a commercial invoice | It belongs to another organisation, or is already acquitted | Check the status and the organisation |
+| Reversal refused | It has already been reversed | A reversed invoice cannot be reversed again |
+| Transmission failed | Usually a missing or invalid field in the extended detail | Read the rejection reason and correct it |
+| Provisional never closed | The final price was settled but no final invoice raised | Raise the final invoice |
+
+<Warning>
+  This is a compliance chain, not a filing convenience. A broken chain — an unacquitted commercial
+  invoice, or a provisional never closed — is visible to ZRA and is the sort of discrepancy that
+  triggers an audit. Review it monthly.
+</Warning>
+
+<Note>
+  Related: [Smart Invoice](/invoicing/smart-invoice) for device setup and transmission, and
+  [Credit and debit notes](/invoicing/credit-and-debit-notes) for ordinary corrections.
+</Note>

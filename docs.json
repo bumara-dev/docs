@@ -135,6 +135,7 @@
             "pages": [
               "invoicing/purchases",
               "invoicing/smart-invoice",
+              "invoicing/mining-and-export-invoices",
               "invoicing/reports-and-statements"
             ]
           }
