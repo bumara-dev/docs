@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Bumara",
+  "public": true,
   "description": "Help centre for Bumara — compliance, invoicing, payroll and inventory for Zambian businesses.",
   "colors": {
     "primary": "#007f7f",
@@ -17,6 +18,15 @@
   "appearance": {
     "default": "system"
   },
+  "icons": {
+    "library": "fontawesome"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "metadata": {
+    "timestamp": true
+  },
   "navbar": {
     "primary": {
       "type": "button",
@@ -26,6 +36,9 @@
   },
   "search": {
     "prompt": "Search the Bumara help centre"
+  },
+  "contextual": {
+    "options": ["copy", "view", "chatgpt", "claude"]
   },
   "navigation": {
     "tabs": [
@@ -233,5 +246,46 @@
         ]
       }
     ]
+  },
+  "footer": {
+    "links": [
+      {
+        "header": "Help centre",
+        "items": [
+          { "label": "Getting started", "href": "/start/what-is-bumara" },
+          { "label": "Glossary", "href": "/help/glossary" },
+          { "label": "Troubleshooting", "href": "/help/troubleshooting" },
+          { "label": "FAQ", "href": "/help/faq" }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          { "label": "Contact support", "href": "mailto:support@bumara.com" }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:type": "website",
+      "og:site_name": "Bumara Help Centre",
+      "og:locale": "en_ZM",
+      "twitter:card": "summary_large_image",
+      "apple-mobile-web-app-title": "Bumara Help Centre"
+    },
+    "organization": {
+      "name": "Bumara",
+      "url": "https://bumara.com",
+      "logo": "https://docs.bumara.com/logo/light.svg"
+    }
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "We can't find that page",
+      "description": "This page may have moved or been renamed. Try the search at the top, or start again from the help centre home."
+    }
   }
 }

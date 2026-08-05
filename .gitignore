@@ -1,0 +1,14 @@
+# Mintlify local preview
+.mintlify/
+.mint/
+node_modules/
+
+# Editor and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
