@@ -1,0 +1,17 @@
+/* Bumara help centre — custom styles.
+   Mintlify loads any .css file in the content directory automatically;
+   there is nothing to reference from docs.json. */
+
+/* Navbar logo.
+   Mintlify's default is 28px on desktop (Tailwind h-7) and 26px on mobile.
+   The Bumara wordmark reads small at that size, so nudge it up.
+   !important is needed to win against the utility classes on the element. */
+.nav-logo {
+  height: 34px !important;
+}
+
+@media (max-width: 640px) {
+  .nav-logo {
+    height: 30px !important;
+  }
+}
